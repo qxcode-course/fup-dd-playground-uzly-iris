@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-16-40",
+            "content": "@@ -37,52 +37,8 @@\n ) %7B%0A\n-    fmt.Println(%2215%22)%0A    fmt.Println(%22-3%22)%0A\n     \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-26-39",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,25 +37,29 @@\n ) %7B%0A\n-%09var Pu, Ssi int \n+    fmt.Println(%2215%22)\n %0A   \n@@ -67,26 +67,26 @@\n fmt.\n-p\n+P\n rintln(\n-Pu, Ssi)%0A%09\n+%22-3%22)%0A    \n fmt.\n@@ -191,9 +191,12 @@\n !%22)%0A\n-%09\n+    \n fmt.\n@@ -238,17 +238,17 @@\n us throu\n-g\n+f\n h the da\n@@ -252,17 +252,16 @@\n  darknes\n-s\n  of the \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_17-40-10",
+            "content": "@@ -55,55 +55,19 @@\n  int\n-%0A    fmt.Scan(&Pu)%0A    fmt.Scan(&Ssi)%0A    fmt.P\n+ %0A    fmt.p\n rint\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-49-20",
+            "content": "@@ -107,34 +107,18 @@\n intln(Pu\n-)%0A    fmt.Println(\n+, \n Ssi)%0A%09fm\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_17-50-11",
+            "content": "@@ -52,17 +52,20 @@\n Ssi int%0A\n-%09\n+    \n fmt.Scan\n@@ -70,17 +70,20 @@\n an(&Pu)%0A\n-%09\n+    \n fmt.Scan\n@@ -85,24 +85,65 @@\n .Scan(&Ssi)%0A\n+    fmt.Println(Pu)%0A    fmt.Println(Ssi)%0A\n %09fmt.Println\n@@ -240,24 +240,8 @@\n n!%22)\n- //The cunty 14;\n %0A%09fm\n@@ -342,52 +342,5 @@\n !%22)%0A\n-%09fmt.Println(Pu + Ssi)%0A%09fmt.Println(Pu - Ssi)%0A%7D%0A\n+%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-57-30",
+            "content": "@@ -79,24 +79,248 @@\n .Scan(&Ssi)%0A\n+%09fmt.Println(%22Mother CupcakKe will save us from the sadness and the dark side of our own assholes, amen!%22) //The cunty 14;%0A%09fmt.Println(%22Mother CupcakKe will lead us through the darkness of the mad dicks and dildos, amen!%22)%0A\n %09fmt.Println\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-57-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar Pu, Ssi int\n\tfmt.Scan(&Pu)\n\tfmt.Scan(&Ssi)\n\tfmt.Println(Pu + Ssi)\n\tfmt.Println(Pu - Ssi)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

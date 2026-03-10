@@ -1,5 +1,11 @@
 package main
+
 import "fmt"
+
 func main() {
-    fmt.Println("Mother CupcakKe will save us from the sadness and the dark side of our own assholes, amen!")
+	var Pu, Ssi int
+	fmt.Scan(&Pu)
+	fmt.Scan(&Ssi)
+	fmt.Println(Pu + Ssi)
+	fmt.Println(Pu - Ssi)
 }

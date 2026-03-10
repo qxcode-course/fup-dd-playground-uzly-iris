@@ -1,4 +1,4 @@
----
+e---
 # Não altere essa chave, ela deve ser única para cada rascunho
 key=user_000
 ---
@@ -12,7 +12,7 @@ O texto abaixo é informativo e você pode apagar depois de aprender como usar o
 
 - Para renomear seu rascunho, basta renomear a pasta do rascunho.
 - Para reorganizar, você pode criar subpastas dentro do sandbox e mover as pastas de rascunhos pra lá.
-- Você pode usar o atalho R(Reload) no TKO para recarregar os rascunhos depois de criar, renomear ou reorganizar eles.
+- Você pode usar o tatalho R(Reload) no TKO para recarregar os rascunhos depois de criar, renomear ou reorganizar eles.
 - Tudo que você fizer nos rascunhos também será rastreado pela ferramenta.
 
 ## Como criar seus próprios testes
@@ -25,15 +25,15 @@ Exemplo de teste para ler dois números, um por linha, e imprimir a soma e a sub
 
 Se quiser habilitar esses casos de teste e ver funcionando, altere o fenced abaixo de `bash` para `toml` e execute novamente a tarefa no TKO.
 
-```bash
+```toml
 [[tests]]
 input = '''
-3
-2
+6
+9
 '''
 output = '''
-5
-1
+15
+-3
 '''
 
 [[tests]]
