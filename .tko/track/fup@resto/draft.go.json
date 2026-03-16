@@ -7,8 +7,38 @@
         },
         {
             "label": "2026-03-10_18-21-00",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar b, c int\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\tfmt.Print(b/c, b%c)\n}\n",
+            "content": "@@ -91,17 +91,17 @@\n rint(b/c\n-)%0A%09fmt\n+, b%25c)\n %0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-03-15_00-11-32",
+            "content": "@@ -93,10 +93,15 @@\n nt(b/c)%0A\n+%09fmt%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-15_00-11-40",
+            "content": "@@ -91,14 +91,12 @@\n rint(b/c\n-, \n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-15_00-33-35",
+            "content": "@@ -97,11 +97,8 @@\n /c, \n-b%25c\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-15_00-34-33",
+            "content": "@@ -48,14 +48,8 @@\n b, c\n-, q, r\n  int\n@@ -81,30 +81,8 @@\n &c)%0A\n-%09q = b / c%0A%09r = b %25 c%0A\n %09fmt\n@@ -92,12 +92,16 @@\n int(\n-q, r\n+b/c, b%25c\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-15_00-56-19",
+            "content": "@@ -119,10 +119,8 @@\n rint\n-ln\n (q, \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_15-43-47",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar b, c, q, r int\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\tq = b / c\n\tr = b % c\n\tfmt.Println(q, r)\n}\n",
+            "lines": "12"
         }
     ]
 }

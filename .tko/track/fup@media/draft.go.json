@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_15-47-48",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,101 +37,32 @@\n ) %7B%0A\n-%09var n1, n2, m float64%0A%09fmt.Scan(&n1)%0A%09fmt.Scan(&n2)%0A%09m = (n1 + n2) / 2%0A%09fmt.Printf(%22%25.1f%22, m\n+    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_15-57-01",
+            "content": "@@ -124,10 +124,8 @@\n tf(%22\n-%5Cn\n %25.1f\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_15-57-29",
+            "content": "@@ -124,14 +124,14 @@\n tf(%22\n+%5Cn\n %25.1f\n-%5Cn\n %22, m\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_15-57-47",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, m float64\n\tfmt.Scan(&n1)\n\tfmt.Scan(&n2)\n\tm = (n1 + n2) / 2\n\tfmt.Printf(\"%.1f\\n\", m)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

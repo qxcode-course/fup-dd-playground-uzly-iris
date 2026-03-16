@@ -38,3 +38,4 @@
 2026-03-10 18:13:08, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
 2026-03-10 18:21:00, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:10
 2026-03-10 18:25:50, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-10 18:29:52, SELF, v:1, k:fup@tres, self:1, rate:100, study:20, friend:no

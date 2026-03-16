@@ -1,0 +1,12 @@
+2026-03-16 15:42:35, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-16 15:42:39, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-16 15:43:47, EXEC, v:1, k:fup@resto, mode:FULL, rate:100, size:12
+2026-03-16 15:44:01, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-16 15:47:40, SELF, v:1, k:fup@resto, self:1, rate:100, study:60, friend:Sim, monitor Mario
+2026-03-16 15:47:45, MOVE, v:1, k:fup@media, mode:DOWN
+2026-03-16 15:47:47, MOVE, v:1, k:fup@media, mode:PICK
+2026-03-16 15:47:48, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:5
+2026-03-16 15:57:01, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:11
+2026-03-16 15:57:29, EXEC, v:1, k:fup@media, mode:FULL, rate:0, size:11
+2026-03-16 15:57:47, EXEC, v:1, k:fup@media, mode:FULL, rate:100, size:11
+2026-03-16 15:57:52, MOVE, v:1, k:fup@media, mode:BACK

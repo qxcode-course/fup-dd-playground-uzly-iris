@@ -30,7 +30,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ## Testes
 
 ```py
->>>>>>>> INSERT 0
+>>>>>>>> INSERT 
 51
 31
 ======== EXPECT
@@ -39,7 +39,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 1
+>>>>>>>> INSERT 
 398
 50
 ======== EXPECT
@@ -48,7 +48,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 2
+>>>>>>>> INSERT 
 350
 40
 ======== EXPECT
@@ -57,7 +57,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 3
+>>>>>>>> INSERT 
 587
 460
 ======== EXPECT
@@ -66,7 +66,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 4
+>>>>>>>> INSERT 
 215
 158
 ======== EXPECT
@@ -75,7 +75,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 5
+>>>>>>>> INSERT 
 760
 360
 ======== EXPECT
@@ -84,7 +84,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 6
+>>>>>>>> INSERT 
 498
 203
 ======== EXPECT
@@ -93,7 +93,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 7
+>>>>>>>> INSERT 
 61
 25
 ======== EXPECT
@@ -102,7 +102,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 8
+>>>>>>>> INSERT 
 32
 7
 ======== EXPECT
@@ -111,7 +111,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 9
+>>>>>>>> INSERT 
 873
 254
 ======== EXPECT
@@ -120,7 +120,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 10
+>>>>>>>> INSERT 
 689
 326
 ======== EXPECT
@@ -129,7 +129,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 11
+>>>>>>>> INSERT 
 939
 155
 ======== EXPECT
@@ -138,7 +138,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 12
+>>>>>>>> INSERT 
 302
 78
 ======== EXPECT
@@ -147,7 +147,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 13
+>>>>>>>> INSERT 
 584
 318
 ======== EXPECT
@@ -156,7 +156,7 @@ quociente e resto da divisão do primeiro pelo segundo número.
 ```
 
 ```py
->>>>>>>> INSERT 14
+>>>>>>>> INSERT 
 899
 317
 ======== EXPECT
