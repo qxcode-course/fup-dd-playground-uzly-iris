@@ -25,3 +25,7 @@
 2026-03-17 17:24:52, SELF, v:1, k:fup@bala, self:1, rate:100, study:30, friend:Nao
 2026-03-17 17:24:52, MOVE, v:1, k:fup@bala, mode:PICK
 2026-03-17 17:24:54, MOVE, v:1, k:fup@bala, mode:BACK
+2026-03-17 17:30:14, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-17 17:30:16, EXEC, v:1, k:fup@bala, mode:FULL, rate:100
+2026-03-17 17:30:52, EXEC, v:1, k:fup@bala, mode:FULL, rate:100, size:18
+2026-03-17 17:30:54, MOVE, v:1, k:fup@bala, mode:BACK

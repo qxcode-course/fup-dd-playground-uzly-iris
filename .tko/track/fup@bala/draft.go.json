@@ -37,8 +37,13 @@
         },
         {
             "label": "2026-03-17_17-23-26",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, y1, x2, y2, d, x, y, qx, qy float64\n\tfmt.Scan(&x1)\n\tfmt.Scan(&y1)\n\tfmt.Scan(&x2)\n\tfmt.Scan(&y2)\n\tx = x2 - x1\n\ty = y2 - y1\n\tqx = math.Pow(x, 2)\n\tqy = math.Pow(y, 2)\n\td = math.Sqrt(qx + qy)\n\tfmt.Printf(\"%.2f\\n\", d)\n}\n",
+            "content": "@@ -106,18 +106,28 @@\n Scan(&x1\n-, \n+)%0A%09fmt.Scan(\n &y1)%0A%09fm\n@@ -136,18 +136,28 @@\n Scan(&x2\n-, \n+)%0A%09fmt.Scan(\n &y2)%0A%09x \n",
             "lines": "20"
+        },
+        {
+            "label": "2026-03-17_17-30-52",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, y1, x2, y2, d, x, y, qx, qy float64\n\tfmt.Scan(&x1, &y1)\n\tfmt.Scan(&x2, &y2)\n\tx = x2 - x1\n\ty = y2 - y1\n\tqx = math.Pow(x, 2)\n\tqy = math.Pow(y, 2)\n\td = math.Sqrt(qx + qy)\n\tfmt.Printf(\"%.2f\\n\", d)\n}\n",
+            "lines": "18"
         }
     ]
 }
