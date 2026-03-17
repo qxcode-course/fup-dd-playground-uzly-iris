@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-51-58",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,232 +37,8 @@\n ) %7B%0A\n-    var q1, q2, q3, v1, v2, v3, d, pt, tr float64%0A    fmt.Scan(&q1)%0A    fmt.Scan(&q2)%0A    fmt.Scan(&q3)%0A    fmt.Scan(&v1)%0A    fmt.Scan(&v2)%0A    fmt.Scan(&v3)%0A    fmt.Scan(&d)%0A    pt = (q1*v2)+(q1*v2)+(q1*v2)%0A    tr = d - pt%0A\n     \n@@ -53,10 +53,16 @@\n tln(\n-tr\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-02-38",
+            "content": "@@ -276,20 +276,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n tr)%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-16_18-04-14",
+            "content": "@@ -228,25 +228,25 @@\n q1*v\n-1\n+2\n )+(q\n-2\n+1\n *v2)+(q\n-3*v3\n+1*v2\n )%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-16_18-04-53",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var q1, q2, q3, v1, v2, v3, d, pt, tr float64\n    fmt.Scan(&q1)\n    fmt.Scan(&q2)\n    fmt.Scan(&q3)\n    fmt.Scan(&v1)\n    fmt.Scan(&v2)\n    fmt.Scan(&v3)\n    fmt.Scan(&d)\n    pt = (q1*v1)+(q2*v2)+(q3*v3)\n    tr = d - pt\n    fmt.Printf(\"%.2f\\n\", tr)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

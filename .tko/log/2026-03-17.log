@@ -1,0 +1,27 @@
+2026-03-17 16:22:58, MOVE, v:1, k:fup@segundos, mode:PICK
+2026-03-17 16:23:06, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100
+2026-03-17 16:23:06, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100
+2026-03-17 16:24:32, MOVE, v:1, k:fup@segundos, mode:BACK
+2026-03-17 16:24:41, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-17 16:39:29, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-03-17 16:39:35, MOVE, v:1, k:fup@pintando, mode:DOWN
+2026-03-17 16:39:36, MOVE, v:1, k:fup@pintando, mode:PICK
+2026-03-17 16:39:38, EXEC, v:1, k:fup@pintando, mode:FULL, rate:0, size:5
+2026-03-17 16:52:36, EXEC, v:1, k:fup@pintando, mode:FULL, rate:100, size:16
+2026-03-17 16:52:55, EXEC, v:1, k:fup@pintando, mode:FULL, rate:100
+2026-03-17 16:52:57, MOVE, v:1, k:fup@pintando, mode:BACK
+2026-03-17 16:53:38, SELF, v:1, k:fup@pintando, self:1, rate:100, study:10, friend:Nao
+2026-03-17 16:54:26, MOVE, v:1, k:fup@bala, mode:DOWN
+2026-03-17 16:54:36, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-17 16:54:38, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:5
+2026-03-17 17:07:57, EXEC, v:1, k:fup@bala, mode:FULL, size:17, fail:COMP
+2026-03-17 17:10:11, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:16
+2026-03-17 17:10:51, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:16
+2026-03-17 17:12:07, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:18
+2026-03-17 17:17:17, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:18
+2026-03-17 17:18:19, EXEC, v:1, k:fup@bala, mode:FULL, rate:0, size:18
+2026-03-17 17:23:26, EXEC, v:1, k:fup@bala, mode:FULL, rate:100, size:20
+2026-03-17 17:23:42, MOVE, v:1, k:fup@bala, mode:BACK
+2026-03-17 17:24:52, SELF, v:1, k:fup@bala, self:1, rate:100, study:30, friend:Nao
+2026-03-17 17:24:52, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-17 17:24:54, MOVE, v:1, k:fup@bala, mode:BACK

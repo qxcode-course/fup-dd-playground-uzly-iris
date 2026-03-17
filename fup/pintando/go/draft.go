@@ -1,0 +1,16 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var a, b, c, p, area float64
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+	fmt.Scan(&c)
+	p = (a + b + c) / 2
+	area = math.Sqrt(p * (p - a) * (p - b) * (p - c))
+	fmt.Printf("%.2f\n", area)
+}

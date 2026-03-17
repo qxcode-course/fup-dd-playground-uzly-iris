@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-06-45",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,144 +41,28 @@\n     \n-var tempo, h, m, s int%0A    fmt.Scan(&tempo)%0A    h = tempo/3600%0A    m = (tempo%253600)/60%0A    s = m%2560%0A    fmt.Printf(%22%25v:%25v:%25v%5Cn%22, h, m, s\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-15-56",
+            "content": "@@ -135,17 +135,17 @@\n    s = m\n-/\n+%25\n 60%0A    f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-17-03",
+            "content": "@@ -135,17 +135,17 @@\n    s = m\n-%25\n+/\n 60%0A    f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-17-17",
+            "content": "@@ -138,22 +138,11 @@\n s = \n-(tempo%25360)/12\n+m%256\n 0%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-18-27",
+            "content": "@@ -144,17 +144,16 @@\n empo%25360\n-0\n )/120%0A  \n@@ -174,17 +174,16 @@\n %25v:%25v:%25v\n- \n %5Cn%22, h, \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-18-42",
+            "content": "@@ -150,10 +150,11 @@\n 600)\n-%256\n+/12\n 0%0A  \n@@ -175,16 +175,17 @@\n %25v:%25v:%25v\n+ \n %5Cn%22, h, \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-19-38",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var tempo, h, m, s int\n    fmt.Scan(&tempo)\n    h = tempo/3600\n    m = (tempo%3600)/60\n    s = (tempo%3600)%60\n    fmt.Printf(\"%v:%v:%v\\n\", h, m, s)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

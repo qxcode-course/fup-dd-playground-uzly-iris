@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-21-29",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,91 +41,28 @@\n     \n-var tc, tf float64%0A    fmt.Scan(&tc)%0A    tf = tc*1.8+32%0A    fmt.Printf(%22%25.6f%5Cn%22, tf\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-25-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var tc, tf float64\n    fmt.Scan(&tc)\n    tf = tc*1.8+32\n    fmt.Printf(\"%.6f\\n\", tf)\n}\n",
+            "lines": "10"
+        }
+    ]
+}

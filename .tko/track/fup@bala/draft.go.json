@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-54-38",
+            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A%0A\n func\n@@ -37,200 +37,32 @@\n ) %7B%0A\n-%09var x1, y1, x2, y2, d, x, y float64%0A%09fmt.Scan(&x1, &y1)%0A%09fmt.Scan(&x2, &y2)%0A%09x = math.Pow(x2, x1)%0A%09y = math.Pow(y2, y1)%0A    fmt.Println(x, y)%0A%09//d = math.Sqrt(x + y)%0A%09//fmt.Printf(%22%25.2f%5Cn%22, d\n+    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_17-07-57",
+            "content": "@@ -139,17 +139,15 @@\n ath.\n-Exp2(x2 -\n+Pow(x2,\n  x1)\n@@ -161,23 +161,45 @@\n ath.\n-Exp2(y2 -\n+Pow(y2,\n  y1)%0A\n-%09\n+    fmt.Println(x, y)%0A%09//\n d = \n@@ -216,16 +216,18 @@\n x + y)%0A%09\n+//\n fmt.Prin\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-17_17-10-11",
+            "content": "@@ -144,17 +144,16 @@\n xp2(\n-(\n x2 - x1)\n )%0A%09y\n@@ -148,17 +148,16 @@\n x2 - x1)\n-)\n %0A%09y = ma\n@@ -168,17 +168,16 @@\n xp2(\n-(\n y2 - y1)\n )%0A%09d\n@@ -172,17 +172,16 @@\n y2 - y1)\n-)\n %0A%09d = ma\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-10-51",
+            "content": "@@ -98,28 +98,18 @@\n Scan(&x1\n-)%0A%09fmt.Scan(\n+, \n &y1)%0A%09fm\n@@ -118,28 +118,18 @@\n Scan(&x2\n-)%0A%09fmt.Scan(\n+, \n &y2)%0A%09x \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-12-07",
+            "content": "@@ -166,14 +166,14 @@\n 2((x\n-1\n+2\n  - x\n-2\n+1\n ))%0A%09\n@@ -192,14 +192,14 @@\n 2((y\n-1\n+2\n  - y\n-2\n+1\n ))%0A%09\n@@ -216,16 +216,14 @@\n qrt(\n-(\n x + y)\n-)\n %0A%09fm\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-17_17-17-17",
+            "content": "@@ -166,14 +166,14 @@\n 2((x\n-2\n+1\n  - x\n-1\n+2\n ))%0A%09\n@@ -192,14 +192,14 @@\n 2((y\n-2\n+1\n  - y\n-1\n+2\n ))%0A%09\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-17_17-18-19",
+            "content": "@@ -80,16 +80,8 @@\n x, y\n-, qx, qy\n  flo\n@@ -85,16 +85,16 @@\n float64%0A\n+\n %09fmt.Sca\n@@ -154,69 +154,53 @@\n x = \n+math.Exp2((\n x2 - x1\n+))\n %0A%09y = \n-y2 - y1%0A%09qx = math.Pow(x, 2)%0A%09qy = math.Pow(y, 2\n+math.Exp2((y2 - y1)\n )%0A%09d\n@@ -216,15 +216,15 @@\n qrt(\n-q\n+(\n x + \n-q\n y\n+)\n )%0A%09f\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-17_17-23-26",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar x1, y1, x2, y2, d, x, y, qx, qy float64\n\tfmt.Scan(&x1)\n\tfmt.Scan(&y1)\n\tfmt.Scan(&x2)\n\tfmt.Scan(&y2)\n\tx = x2 - x1\n\ty = y2 - y1\n\tqx = math.Pow(x, 2)\n\tqy = math.Pow(y, 2)\n\td = math.Sqrt(qx + qy)\n\tfmt.Printf(\"%.2f\\n\", d)\n}\n",
+            "lines": "20"
+        }
+    ]
+}
