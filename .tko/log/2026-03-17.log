@@ -29,3 +29,7 @@
 2026-03-17 17:30:16, EXEC, v:1, k:fup@bala, mode:FULL, rate:100
 2026-03-17 17:30:52, EXEC, v:1, k:fup@bala, mode:FULL, rate:100, size:18
 2026-03-17 17:30:54, MOVE, v:1, k:fup@bala, mode:BACK
+2026-03-17 18:01:52, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-17 18:01:54, EXEC, v:1, k:fup@bala, mode:FULL, rate:100
+2026-03-17 18:05:59, EXEC, v:1, k:fup@bala, mode:FULL, rate:100, size:16
+2026-03-17 18:06:02, MOVE, v:1, k:fup@bala, mode:BACK
