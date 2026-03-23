@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-03-36",
+            "content": "@@ -117,29 +117,21 @@\n )%0A%0A%09\n-switch o %7B%0A%09case\n+if o ==\n  %22+%22\n-:\n+ %7B\n %0A%09%09r\n@@ -163,17 +163,28 @@\n r)%0A%09\n-case\n+%7D else if o ==\n  %22-%22\n-:\n+ %7B\n %0A%09%09r\n@@ -216,17 +216,28 @@\n r)%0A%09\n-case\n+%7D else if o ==\n  %22*%22\n-:\n+ %7B\n %0A%09%09r\n@@ -269,16 +269,16 @@\n r)%0A%09\n-default:\n+%7D else %7B\n %0A%09%09r\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_16-05-24",
+            "content": "@@ -130,17 +130,19 @@\n %7B%0A%09case \n-+\n+%22+%22\n :%0A%09%09r = \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_16-06-56",
+            "content": "@@ -128,20 +128,15 @@\n o %7B%0A\n-    \n+%09\n case \n-%22x%22\n++\n :%0A%09%09\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_16-07-23",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, r int\n\tvar o string\n\tfmt.Scan(&n1)\n\tfmt.Scan(&n2)\n\tfmt.Scan(o)\n\n\tswitch o {\n    case \"x\":\n\t\tr = n1 + n2\n\t\tfmt.Println(r)\n\tcase \"-\":\n\t\tr = n1 - n2\n\t\tfmt.Println(r)\n\tcase \"*\":\n\t\tr = n1 * n2\n\t\tfmt.Println(r)\n\tdefault:\n\t\tr = n1 / n2\n\t\tfmt.Println(r)\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

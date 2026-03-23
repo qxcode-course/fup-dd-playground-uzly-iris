@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_15-42-58",
+            "content": "@@ -134,15 +134,20 @@\n ln(%22N%C3%83O%22\n+%0A    \n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_15-43-40",
+            "content": "@@ -135,9 +135,9 @@\n n(%22N\n-A\n+%C3%83\n O%22)%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_15-43-51",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar x int\n\tfmt.Scan(&x)\n\n\tif x == 3 || x == 5 {\n\t\tfmt.Println(\"SIM\")\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n}\n",
+            "lines": "14"
+        }
+    ]
+}
