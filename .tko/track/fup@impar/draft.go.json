@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_18-09-03",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,162 +37,32 @@\n ) %7B%0A\n-%09var p, d1, d2, dt int%0A%09fmt.Scan(&p)%0A%09fmt.Scan(&d1)%0A%09fmt.Scan(&d2)%0A%0A%09dt = d1 + d2%0A%0A%09if p == 0 && dt%252 == 0 %7B%0A%09%09fmt.Println(0)%0A%09%7D else %7B%0A%09%09fmt.Println(1)%0A%09%7D\n+    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_18-18-31",
+            "content": "@@ -173,146 +173,28 @@\n lse \n-if p == 0 && dt%252 != 0 %7B%0A%09%09fmt.Println(1)%0A%09%7D else if p == 1 && dt%252 != 0 %7B%0A        fmt.Println(1)%0A    %7D else %7B%0A        fmt.Println(0)%0A    \n+%7B%0A%09%09fmt.Println(1)%0A%09\n %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_18-23-34",
+            "content": "@@ -133,14 +133,10 @@\n = 0 \n-%7B%0A%09%09if\n+&&\n  dt%25\n@@ -140,36 +140,26 @@\n dt%252 == 0 %7B%0A\n-            \n+%09%09\n fmt.Println(\n@@ -165,92 +165,85 @@\n (0)%0A\n-        %7D else %7B%0A            fmt.Println(1)%0A        %7D%0A    %7D else %7B%0A        if\n+%09%7D else if p == 0 && dt%252 != 0 %7B%0A%09%09fmt.Println(1)%0A%09%7D else if p == 1 &&\n  dt%252 \n-=\n+!\n = 0 \n@@ -244,36 +244,32 @@\n  != 0 %7B%0A        \n-  \n-  \n fmt.Println(1)%0A \n@@ -267,20 +267,16 @@\n ntln(1)%0A\n-    \n     %7D el\n@@ -284,28 +284,24 @@\n e %7B%0A        \n- \n-   \n fmt.Println(\n@@ -307,18 +307,8 @@\n (0)%0A\n-        %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-23_18-26-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar p, d1, d2, dt int\n\tfmt.Scan(&p)\n\tfmt.Scan(&d1)\n\tfmt.Scan(&d2)\n\n\tdt = d1 + d2\n\n\tif p == 0 {\n\t\tif dt%2 == 0 {\n            fmt.Println(0)\n        } else {\n            fmt.Println(1)\n        }\n    } else {\n        if dt%2 == 0 {\n            fmt.Println(1)\n        } else {\n            fmt.Println(0)\n        }\n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

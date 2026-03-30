@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_15-53-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, n3, m1, m2 float64\n\tfmt.Scan(&n1)\n\tfmt.Scan(&n2)\n\tfmt.Scan(&n3)\n\n\tm1 = (n1 + n2) / 2\n\n\tif m1 >= 7 {\n\t\tfmt.Println(\"aprovado\")\n\t} else if m1 < 4 {\n\t\tfmt.Println(\"reprovado\")\n\t} else {\n\t\tm2 = (m1 + n3) / 2\n\n\t\tif m2 >= 5 {\n\t\t\tfmt.Println(\"aprovado na final\")\n\t\t} else {\n\t\t\tfmt.Println(\"reprovado na final\")\n\t\t}\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

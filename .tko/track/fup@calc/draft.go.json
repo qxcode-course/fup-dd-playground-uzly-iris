@@ -17,8 +17,98 @@
         },
         {
             "label": "2026-03-23_16-07-23",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2, r int\n\tvar o string\n\tfmt.Scan(&n1)\n\tfmt.Scan(&n2)\n\tfmt.Scan(o)\n\n\tswitch o {\n    case \"x\":\n\t\tr = n1 + n2\n\t\tfmt.Println(r)\n\tcase \"-\":\n\t\tr = n1 - n2\n\t\tfmt.Println(r)\n\tcase \"*\":\n\t\tr = n1 * n2\n\t\tfmt.Println(r)\n\tdefault:\n\t\tr = n1 / n2\n\t\tfmt.Println(r)\n\t}\n}\n",
+            "content": "@@ -50,13 +50,16 @@\n , n2\n+, r\n  int%0A\n-\n %09var\n@@ -138,25 +138,24 @@\n se %22x%22:%0A%09%09r \n-:\n = n1 + n2%0A%09%09\n@@ -180,25 +180,24 @@\n se %22-%22:%0A%09%09r \n-:\n = n1 - n2%0A%09%09\n@@ -222,25 +222,24 @@\n se %22*%22:%0A%09%09r \n-:\n = n1 * n2%0A%09%09\n@@ -267,13 +267,12 @@\n lt:%0A\n+\n %09%09r \n-:\n = n1\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-03-23_16-44-09",
+            "content": "@@ -131,17 +131,17 @@\n   case %22\n-+\n+x\n %22:%0A%09%09r :\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_16-44-47",
+            "content": "@@ -114,21 +114,160 @@\n )%0A%0A%09\n-if o == %22+%22 %7B\n+switch o %7B%0A    case %22+%22:%0A%09%09r := n1 + n2%0A%09%09fmt.Println(r)%0A%09case %22-%22:%0A%09%09r := n1 - n2%0A%09%09fmt.Println(r)%0A%09case %22*%22:%0A%09%09r := n1 * n2%0A%09%09fmt.Println(r)%0A%09default:\n %0A%09%09r\n@@ -265,33 +265,33 @@\n ault:%0A%09%09r := n1 \n-+\n+/\n  n2%0A%09%09fmt.Printl\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_16-50-23",
+            "content": "@@ -114,157 +114,21 @@\n )%0A%0A%09\n-switch o %7B%0A%09case %22+%22:%0A%09%09r := n1 + n2%0A%09%09fmt.Println(r)%0A%09case %22-%22:%0A%09%09r := n1 - n2%0A%09%09fmt.Println(r)%0A%09case %22*%22:%0A%09%09r := n1 * n2%0A%09%09fmt.Println(r)%0A%09default:\n+if o == %22+%22 %7B\n %0A%09%09r\n@@ -138,9 +138,9 @@\n  n1 \n-/\n++\n  n2%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_16-53-21",
+            "content": "@@ -50,16 +50,13 @@\n , n2\n-, r\n  int%0A\n+\n %09var\n@@ -132,24 +132,25 @@\n se %22+%22:%0A%09%09r \n+:\n = n1 + n2%0A%09%09\n@@ -175,24 +175,25 @@\n se %22-%22:%0A%09%09r \n+:\n = n1 - n2%0A%09%09\n@@ -218,24 +218,25 @@\n se %22*%22:%0A%09%09r \n+:\n = n1 * n2%0A%09%09\n@@ -260,20 +260,21 @@\n efault:%0A\n-\n %09%09r \n+:\n = n1 / n\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_16-54-01",
+            "content": "@@ -114,93 +114,8 @@\n n(o)\n-%0A%09soma := n1 + n2%0A%09subtra%C3%A7%C3%A3o := n1 - n2%0A%09multiplica%C3%A7%C3%A3o := n1 * n2%0A%09divis%C3%A3o := n1 / n2\n %0A%0A%09s\n@@ -135,16 +135,30 @@\n se %22+%22:%0A\n+%09%09r = n1 + n2%0A\n %09%09fmt.Pr\n@@ -167,12 +167,9 @@\n tln(\n-soma\n+r\n )%0A%09c\n@@ -177,16 +177,30 @@\n se %22-%22:%0A\n+%09%09r = n1 - n2%0A\n %09%09fmt.Pr\n@@ -209,17 +209,9 @@\n tln(\n-subtra%C3%A7%C3%A3o\n+r\n )%0A%09c\n@@ -225,44 +225,60 @@\n :%0A%09%09\n-fmt.Println(multiplica%C3%A7%C3%A3o)%0A%09default:\n+r = n1 * n2%0A%09%09fmt.Println(r)%0A%09default:%0A%09%09r = n1 / n2\n %0A%09%09f\n@@ -292,15 +292,9 @@\n tln(\n-divis%C3%A3o\n+r\n )%0A%09%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-03-31",
+            "content": "@@ -46,16 +46,19 @@\n r n1, n2\n+, r\n  int%0A%09va\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-03-38",
+            "content": "@@ -199,21 +199,29 @@\n 2%0A%0A%09\n-if o ==\n+switch o %7B%0A%09case\n  %22+%22\n- %7B\n+:\n %0A%09%09f\n@@ -232,16 +232,18 @@\n rint\n+ln\n (soma)%0A%09\n %7D el\n@@ -242,28 +242,17 @@\n a)%0A%09\n-%7D else if o ==\n+case\n  %22-%22\n- %7B\n+:\n %0A%09%09f\n@@ -259,16 +259,18 @@\n mt.Print\n+ln\n (subtra%C3%A7\n@@ -278,28 +278,17 @@\n o)%0A%09\n-%7D else if o ==\n+case\n  %22*%22\n- %7B\n+:\n %0A%09%09f\n@@ -295,16 +295,18 @@\n mt.Print\n+ln\n (multipl\n@@ -318,16 +318,16 @@\n o)%0A%09\n-%7D else %7B\n+default:\n %0A%09%09f\n@@ -334,16 +334,18 @@\n mt.Print\n+ln\n (divis%C3%A3o\n@@ -349,9 +349,10 @@\n s%C3%A3o)%0A%09%7D%0A\n-\n %7D\n+%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-06-55",
+            "content": "@@ -220,18 +220,16 @@\n mt.Print\n-ln\n (soma)%0A%09\n@@ -260,18 +260,16 @@\n mt.Print\n-ln\n (subtra%C3%A7\n@@ -305,18 +305,16 @@\n mt.Print\n-ln\n (multipl\n@@ -346,10 +346,8 @@\n rint\n-ln\n (div\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_17-07-14",
+            "content": "@@ -224,19 +224,15 @@\n rint\n+ln\n (soma\n-, %22%5Cn%22\n )%0A%09%7D\n@@ -262,16 +262,18 @@\n mt.Print\n+ln\n (subtra%C3%A7\n@@ -270,30 +270,24 @@\n ln(subtra%C3%A7%C3%A3o\n-, %22%5Cn%22\n )%0A%09%7D else if\n@@ -309,16 +309,18 @@\n mt.Print\n+ln\n (multipl\n@@ -325,22 +325,16 @@\n plica%C3%A7%C3%A3o\n-, %22%5Cn%22\n )%0A%09%7D els\n@@ -352,16 +352,18 @@\n rint\n+ln\n (divis%C3%A3o\n , %22%5C\n@@ -362,17 +362,10 @@\n is%C3%A3o\n-, %22%5Cn%22\n )%0A%09%7D%0A%7D\n-%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_17-08-09",
+            "content": "@@ -225,16 +225,22 @@\n int(soma\n+, %22%5Cn%22\n )%0A%09%7D els\n@@ -272,24 +272,30 @@\n nt(subtra%C3%A7%C3%A3o\n+, %22%5Cn%22\n )%0A%09%7D else if\n@@ -331,16 +331,22 @@\n plica%C3%A7%C3%A3o\n+, %22%5Cn%22\n )%0A%09%7D els\n@@ -372,10 +372,17 @@\n is%C3%A3o\n+, %22%5Cn%22\n )%0A%09%7D%0A%7D\n+%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_17-08-45",
+            "content": "@@ -105,17 +105,16 @@\n mt.Scan(\n-&\n o)%0A%09soma\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_17-12-10",
+            "content": "@@ -221,18 +221,16 @@\n mt.Print\n-ln\n (soma)%0A%09\n@@ -261,18 +261,16 @@\n mt.Print\n-ln\n (subtra%C3%A7\n@@ -306,18 +306,16 @@\n mt.Print\n-ln\n (multipl\n@@ -347,10 +347,8 @@\n rint\n-ln\n (div\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_17-13-03",
+            "content": "@@ -200,29 +200,21 @@\n 2%0A%0A%09\n-switch o %7B%0A%09case\n+if o ==\n  %22+%22\n-:\n+ %7B\n %0A%09%09f\n@@ -235,17 +235,28 @@\n a)%0A%09\n-case\n+%7D else if o ==\n  %22-%22\n-:\n+ %7B\n %0A%09%09f\n@@ -282,17 +282,28 @@\n o)%0A%09\n-case\n+%7D else if o ==\n  %22*%22\n-:\n+ %7B\n %0A%09%09f\n@@ -333,16 +333,16 @@\n o)%0A%09\n-default:\n+%7D else %7B\n %0A%09%09f\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_17-13-44",
+            "content": "@@ -200,21 +200,29 @@\n 2%0A%0A%09\n-if o ==\n+switch o %7B%0A%09case\n  %22+%22\n- %7B\n+:\n %0A%09%09f\n@@ -243,28 +243,17 @@\n a)%0A%09\n-%7D else if o ==\n+case\n  %22-%22\n- %7B\n+:\n %0A%09%09f\n@@ -279,28 +279,17 @@\n o)%0A%09\n-%7D else if o ==\n+case\n  %22*%22\n- %7B\n+:\n %0A%09%09f\n@@ -319,89 +319,38 @@\n o)%0A%09\n-%7D else if o == %22/%22 && n2 != 0 %7B%0A%09%09fmt.Println(divis%C3%A3o)%0A%09%7D else %7B%0A%09%09fmt.Println(n1\n+default:%0A%09%09fmt.Println(divis%C3%A3o\n )%0A%09%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-18-58",
+            "content": "@@ -412,13 +412,10 @@\n tln(\n-%22N%C3%A3o%22\n+n1\n )%0A%09%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-23_17-23-41",
+            "content": "@@ -114,45 +114,107 @@\n o)%0A%09\n-%0A%0A%09%0A%0A%09if o == %22+%22 %7B%0A%09%09soma\n+soma := n1 + n2%0A%09subtra%C3%A7%C3%A3o := n1 - n2%0A%09multiplica%C3%A7%C3%A3o := n1 * n2%0A%09divis%C3%A3o\n  := n1 \n-+\n+/\n  n2\n+%0A%0A%09if o == %22+%22 %7B\n %0A%09%09f\n@@ -256,31 +256,8 @@\n %22 %7B%0A\n-%09%09subtra%C3%A7%C3%A3o := n1 - n2%0A\n %09%09fm\n@@ -303,35 +303,8 @@\n %22 %7B%0A\n-%09%09multiplica%C3%A7%C3%A3o := n1 * n2%0A\n %09%09fm\n@@ -365,29 +365,8 @@\n 0 %7B%0A\n-%09%09divis%C3%A3o := n1 / n2%0A\n %09%09fm\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-23_17-29-43",
+            "content": "@@ -111,16 +111,20 @@\n n(&o)%0A%09%0A\n+%0A%09%0A%0A\n %09if o ==\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-23_18-04-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n1, n2 int\n\tvar o string\n\tfmt.Scan(&n1)\n\tfmt.Scan(&n2)\n\tfmt.Scan(&o)\n\t\n\tif o == \"+\" {\n\t\tsoma := n1 + n2\n\t\tfmt.Println(soma)\n\t} else if o == \"-\" {\n\t\tsubtra\u00e7\u00e3o := n1 - n2\n\t\tfmt.Println(subtra\u00e7\u00e3o)\n\t} else if o == \"*\" {\n\t\tmultiplica\u00e7\u00e3o := n1 * n2\n\t\tfmt.Println(multiplica\u00e7\u00e3o)\n\t} else if o == \"/\" && n2 != 0 {\n\t\tdivis\u00e3o := n1 / n2\n\t\tfmt.Println(divis\u00e3o)\n\t} else {\n\t\tfmt.Println(\"N\u00e3o\")\n\t}\n}",
+            "lines": "27"
         }
     ]
 }

@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_15-10-36",
+            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A%0A\n func\n@@ -37,538 +37,39 @@\n ) %7B%0A\n-%09var n, x, y, s float64%0A%09var c string%0A%09fmt.Scan(&n)%0A%09fmt.Scan(&x)%0A%09fmt.Scan(&y)%0A%09fmt.Scan(&c)%0A%09fmt.Scan(&s)%0A%0A%09if c == %22U%22 %7C%7C c == %22D%22 %7B%0A%09%09if c == %22U%22 %7B%0A%09%09%09yn := int(math.Abs(y - s))%0A%09%09%09nn := int(n)%0A%09%09%09yn = yn %25 nn%0A%0A%09%09%09fmt.Println(x, yn)%0A%09%09%7D else %7B%0A%09%09%09nn := int(n)%0A%09%09%09yn := int(y + s)%0A%09%09%09yn = yn %25 nn%0A%0A%09%09%09fmt.Println(x, yn)%0A%09%09%7D%0A%09%7D else %7B%0A%09%09if c == %22L%22 %7B%0A%09%09%09xn := int(math.Abs(x - s))%0A%09%09%09nn := int(n)%0A%09%09%09xn = xn %25 nn%0A%0A%09%09%09fmt.Println(xn, y)%0A%09%09%7D else %7B%0A%09%09%09nn := int(n)%0A%09%09%09xn := int(x + s)%0A%09%09%09xn = xn %25 nn%0A%0A%09%09%09fmt.Println(xn, y)%0A%09%09%7D%0A%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_15-43-04",
+            "content": "@@ -240,28 +240,26 @@\n %09nn := int(n\n--1\n )%0A\n+\n %09%09%09yn = yn %25\n@@ -306,26 +306,24 @@\n %09nn := int(n\n--1\n )%0A%09%09%09yn := i\n@@ -437,34 +437,32 @@\n )%0A%09%09%09nn := int(n\n--1\n )%0A%09%09%09xn = xn %25 n\n@@ -489,32 +489,32 @@\n , y)%0A%09%09%7D else %7B%0A\n+\n %09%09%09nn := int(n-1\n@@ -515,10 +515,8 @@\n nt(n\n--1\n )%0A%09%09\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-30_15-47-16",
+            "content": "@@ -240,26 +240,28 @@\n %09nn := int(n\n+-1\n )%0A\n-\n %09%09%09yn = yn %25\n@@ -308,24 +308,26 @@\n %09nn := int(n\n+-1\n )%0A%09%09%09yn := i\n@@ -441,32 +441,34 @@\n )%0A%09%09%09nn := int(n\n+-1\n )%0A%09%09%09xn = xn %25 n\n@@ -495,32 +495,32 @@\n , y)%0A%09%09%7D else %7B%0A\n-\n %09%09%09nn := int(n)%0A\n@@ -517,16 +517,18 @@\n := int(n\n+-1\n )%0A%09%09%09xn \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-30_15-47-49",
+            "content": "@@ -23,16 +23,24 @@\n %0A%09%22fmt%22%0A\n+%09%22math%22%0A\n )%0A%0Afunc \n@@ -64,19 +64,23 @@\n x, y, s \n-int\n+float64\n %0A%09var c \n@@ -208,35 +208,65 @@\n %09%09%09y\n- = (y + s) - 1\n+n := int(math.Abs(y - s))%0A%09%09%09nn := int(n)\n %0A%09%09%09y\n+n\n  = y\n+n\n  %25 n\n+n\n %0A%0A%09%09\n@@ -278,24 +278,25 @@\n Println(x, y\n+n\n )%0A%09%09%7D else %7B\n@@ -303,31 +303,56 @@\n %0A%09%09%09\n-y := \n+nn := int(n)%0A%09%09%09yn := int(\n y + s\n+)\n %0A%09%09%09y\n+n\n  = y\n+n\n  %25 n\n+n\n %0A%0A%09%09\n@@ -364,24 +364,25 @@\n Println(x, y\n+n\n )%0A%09%09%7D%0A%09%7D els\n@@ -409,35 +409,65 @@\n %09%09%09x\n- = (x + s) - 1\n+n := int(math.Abs(x - s))%0A%09%09%09nn := int(n)\n %0A%09%09%09x\n+n\n  = x\n+n\n  %25 n\n+n\n %0A%0A%09%09\n@@ -479,16 +479,17 @@\n Println(\n+x\n n, y)%0A%09%09\n@@ -504,30 +504,56 @@\n %0A%09%09%09\n-x = \n+nn := int(n)%0A%09%09%09xn := int(\n x + s\n+)\n %0A%09%09%09x\n+n\n  = x\n+n\n  %25 n\n+n\n %0A%0A%09%09\n@@ -566,16 +566,17 @@\n rintln(x\n+n\n , y)%0A%09%09%7D\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-03-30_16-07-21",
+            "content": "@@ -201,25 +201,25 @@\n = (y + s) - \n-n\n+1\n %0A%09%09%09y = y %25 \n@@ -349,17 +349,17 @@\n  + s) - \n-n\n+1\n %0A%09%09%09x = \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-30_16-10-29",
+            "content": "@@ -198,22 +198,22 @@\n %09y = (y \n--\n++\n  s) \n-+\n+-\n  n%0A%09%09%09y \n@@ -346,14 +346,14 @@\n  (x \n--\n++\n  s) \n-+\n+-\n  n%0A%09\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-30_16-14-43",
+            "content": "@@ -343,19 +343,32 @@\n x = \n+(\n x \n-+ (s\n+- s) + n%0A%09%09%09x = x\n  %25 n\n-)\n %0A%0A%09%09\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-30_16-22-07",
+            "content": "@@ -359,33 +359,33 @@\n %0A%09%09%09fmt.Println(\n-x\n+n\n , y)%0A%09%09%7D else %7B%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-30_16-22-32",
+            "content": "@@ -199,19 +199,19 @@\n y = \n+(\n y - \n-(s %25\n+s) +\n  n\n-)\n %0A%09%09%09\n@@ -341,17 +341,17 @@\n %09%09x = x \n--\n++\n  (s %25 n)\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-30_16-23-12",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n)\n\tfmt.Scan(&x)\n\tfmt.Scan(&y)\n\tfmt.Scan(&c)\n\tfmt.Scan(&s)\n\n\tif c == \"U\" || c == \"D\" {\n\t\tif c == \"U\" {\n\t\t\ty = y - (s % n)\n\t\t\ty = y % n\n\n\t\t\tfmt.Println(x, y)\n\t\t} else {\n\t\t\ty := y + s\n\t\t\ty = y % n\n\n\t\t\tfmt.Println(x, y)\n\t\t}\n\t} else {\n\t\tif c == \"L\" {\n\t\t\tx = x - (s % n)\n\n\t\t\tfmt.Println(x, y)\n\t\t} else {\n\t\t\tx = x + s\n\t\t\tx = x % n\n\n\t\t\tfmt.Println(x, y)\n\t\t}\n\n\t}\n}\n",
+            "lines": "41"
+        }
+    ]
+}

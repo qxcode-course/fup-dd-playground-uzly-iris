@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_17-04-43",
+            "content": "@@ -1,8 +1,9 @@\n+%0A\n package \n@@ -7,17 +7,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -20,17 +20,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -42,323 +42,35 @@\n     \n-var b, t, atpe, atpd int%0A    fmt.Scan(&b)%0A    fmt.Scan(&t)%0A%0A    // lado esquerdo%0A    atpe = (b + t) * 70 / 2%0A    %0A    // lado direito%0A    atpd = ((160 - b) + (160 - t)) * 70 / 2%0A%0A    if atpe %3E atpd %7B%0A        fmt.Println(1)%0A    %7D else if atpe == atpd %7B%0A        fmt.Println(0)%0A    %7D else %7B%0A        fmt.Println(2)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-24_17-43-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var b, t, atpe, atpd int\n    fmt.Scan(&b)\n    fmt.Scan(&t)\n\n    // lado esquerdo\n    atpe = (b + t) * 70 / 2\n    \n    // lado direito\n    atpd = ((160 - b) + (160 - t)) * 70 / 2\n\n    if atpe > atpd {\n        fmt.Println(1)\n    } else if atpe == atpd {\n        fmt.Println(0)\n    } else {\n        fmt.Println(2)\n    }\n}\n",
+            "lines": "23"
+        }
+    ]
+}

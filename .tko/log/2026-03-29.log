@@ -1,0 +1,6 @@
+2026-03-29 03:29:35, MOVE, v:1, k:fup@monica, mode:DOWN
+2026-03-29 03:29:53, MOVE, v:1, k:fup@monica, mode:PICK
+2026-03-29 03:35:59, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:14
+2026-03-29 03:41:36, MOVE, v:1, k:fup@monica, mode:BACK
+2026-03-29 03:42:55, MOVE, v:1, k:fup@cobra, mode:DOWN
+2026-03-29 03:42:56, MOVE, v:1, k:fup@cobra, mode:PICK

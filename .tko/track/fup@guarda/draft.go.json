@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-27-15",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-30-56",
+            "content": "@@ -1,8 +1,9 @@\n+%0A\n package \n@@ -7,17 +7,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -20,17 +20,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -38,312 +38,32 @@\n ) %7B%0A\n-%09var wifi, login, admin int%0A%09fmt.Scan(&wifi)%0A%09fmt.Scan(&login)%0A%09fmt.Scan(&admin)%0A%0A%09if wifi == 0 %7B%0A%09%09fmt.Println(%22you must connect to wifi%22)%0A%09%7D else if login == 0 %7B%0A%09%09fmt.Println(%22you need to login firsti%22)%0A%09%7D else if admin == 0 %7B%0A%09%09fmt.Println(%22you must login as admin%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22done%22)%0A%09%7D\n+    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-23_17-35-39",
+            "content": "@@ -237,16 +237,17 @@\n in first\n+i\n %22)%0A%09%7D el\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-23_17-35-47",
+            "content": "@@ -288,19 +288,16 @@\n ou must \n-to \n login as\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-23_17-36-04",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar wifi, login, admin int\n\tfmt.Scan(&wifi)\n\tfmt.Scan(&login)\n\tfmt.Scan(&admin)\n\n\tif wifi == 0 {\n\t\tfmt.Println(\"you must connect to wifi\")\n\t} else if login == 0 {\n\t\tfmt.Println(\"you need to login first\")\n\t} else if admin == 0 {\n\t\tfmt.Println(\"you must to login as admin\")\n\t} else {\n\t\tfmt.Println(\"done\")\n\t}\n}\n",
+            "lines": "20"
+        }
+    ]
+}

@@ -13,9 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@jogos-em-modo-texto
-- fup@missão-seleção-1
-- fup@campanha-principal
+- fup@if1
 tasks:
   fup@tres: '{self:1, rate:100, study:20, friend:no}'
   fup@resto: '{self:1, rate:100, study:60, friend:Sim}'
@@ -30,12 +28,23 @@ tasks:
   fup@ou: '{self:1, rate:100, study:3}'
   fup@positivo: '{self:1, rate:100, study:2}'
   fup@multiplo: '{self:1, rate:100, study:2}'
+  fup@calc: '{self:1, rate:100, study:90, friend:Denilson}'
+  fup@guarda: '{self:1, rate:100, study:5}'
+  fup@quantos: '{self:1, rate:100, study:20, friend:amigo}'
+  fup@impar: '{self:1, rate:100, study:15, friend:David Sena}'
+  fup@mumia: '{self:1, rate:100, study:12}'
+  fup@final: '{self:1, rate:100, study:10}'
+  fup@semana: '{self:1, rate:100, study:7}'
+  fup@varetas: '{self:1, rate:100, study:5}'
+  fup@bhaskara: '{self:1, rate:100, study:20}'
+  fup@cortada: '{self:1, rate:100, study:25}'
+  fup@monica: '{rate:62}'
+  fup@cobra: '{self:1, rate:100}'
 flags:
-  painel: 0
-  quests: 2
-  tracks: 0
-  tasks: 0
+  panel: 3
+  inbox: 0
+  show_panel: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@calc
+selected: fup@base

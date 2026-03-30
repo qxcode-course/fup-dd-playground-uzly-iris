@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-29_03-35-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar m, a, b, c int\n\tfmt.Scan(&m)\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tc = m - (a + b)\n\n\tfmt.Println(c)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

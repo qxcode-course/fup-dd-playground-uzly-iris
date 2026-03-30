@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_16-37-21",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\tif a+b > c && a+c > b && c+b > a {\n\t\tfmt.Println(\"True\")\n\t} else {\n\t\tfmt.Println(\"False\")\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}

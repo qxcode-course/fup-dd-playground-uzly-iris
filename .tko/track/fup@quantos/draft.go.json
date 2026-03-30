@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-36-34",
+            "content": "@@ -1,47 +1,32 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09\n+@@ -41,157 +41,28 @@%0A     %0A-\n var \n@@ -39,18 +39,23 @@\n , d3 int\n-%0A%09\n+%250A    \n fmt.Scan\n@@ -59,18 +59,23 @@\n can(&d1)\n-%0A%09\n+%250A    \n fmt.Scan\n@@ -79,18 +79,23 @@\n can(&d2)\n-%0A%09\n+%250A    \n fmt.Scan\n@@ -103,11 +103,18 @@\n &d3)\n-%0A%0A%09\n+%250A%250A    \n if d\n@@ -129,28 +129,38 @@\n && d2 == d3 \n-%7B%0A%09%09\n+%257B%250A        \n fmt.Println(\n@@ -161,19 +161,26 @@\n intln(3)\n-%0A%09%7D\n+%250A    %257D\n  else if\n@@ -187,85 +187,49 @@\n  d1 \n-=\n+!\n = d2 \n-%7C%7C d2 == d3 %7C%7C d1 == d3 %7B%0A%09%09fmt.Println(2)%0A%09%7D else %7B%0A%09%09fmt.Println(1)%0A%09%7D%0A%7D\n+%0A+fmt.Println(%2522qxcode%2522)%0A %250A%257D%250A\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_18-03-18",
+            "content": "@@ -222,16 +222,10 @@\n e %7B%0A\n-        \n+%09%09\n fmt.\n@@ -236,15 +236,12 @@\n tln(\n-0)%0A    \n+1)%0A%09\n %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_18-07-10",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar d1, d2, d3 int\n\tfmt.Scan(&d1)\n\tfmt.Scan(&d2)\n\tfmt.Scan(&d3)\n\n\tif d1 == d2 && d2 == d3 {\n\t\tfmt.Println(3)\n\t} else if d1 == d2 || d2 == d3 || d1 == d3 {\n\t\tfmt.Println(2)\n\t} else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
