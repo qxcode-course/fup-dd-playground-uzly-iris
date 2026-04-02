@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-13-56",
+            "content": "@@ -186,20 +186,14 @@\n := (\n-(c - 1) / a)\n+c-1)/a\n  + 1\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-17-31",
+            "content": "@@ -182,16 +182,27 @@\n ens := (\n+(c - 1) / a\n ) + 1%0A%09%09\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-19-36",
+            "content": "@@ -123,23 +123,27 @@\n gens := \n-a/(c-1)\n+(c - 1) / a\n %0A%09%09fmt.P\n@@ -186,15 +186,8 @@\n := (\n-a/(c-1)\n ) + \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-20-39",
+            "content": "@@ -186,16 +186,20 @@\n a/(c-1))\n+ + 1\n %0A%09%09fmt.P\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-20-47",
+            "content": "@@ -124,24 +124,20 @@\n ens := a\n- / (c - \n+/(c-\n 1)%0A%09%09fmt\n@@ -183,16 +183,12 @@\n = (a\n- / (c - \n+/(c-\n 1))%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-21-46",
+            "content": "@@ -87,20 +87,16 @@\n r :=\n- a %25\n  (c - 1)\n %0A%0A%09i\n@@ -91,16 +91,20 @@\n  (c - 1)\n+ %25 a\n %0A%0A%09if r \n@@ -198,12 +198,8 @@\n  1))\n- + 1\n %0A%09%09f\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_18-22-10",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar c, a int\n\tfmt.Scan(&c)\n\tfmt.Scan(&a)\n\n\tr := a % (c - 1)\n\n\tif r == 0 {\n\t\tviagens := a / (c - 1)\n\t\tfmt.Println(viagens)\n\t} else {\n\t\tviagens := (a / (c - 1)) + 1\n\t\tfmt.Println(viagens)\n\t}\n}\n",
+            "lines": "19"
+        }
+    ]
+}

@@ -10,5 +10,12 @@ func main() {
 
 	c = m - (a + b)
 
-	fmt.Println(c)
+	if a > b && a > c {
+		fmt.Println(a)
+	} else if b > a && b > c {
+		fmt.Println(b)
+	} else {
+		fmt.Println(c)
+	}
+
 }

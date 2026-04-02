@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-03-29_03-35-59",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar m, a, b, c int\n\tfmt.Scan(&m)\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tc = m - (a + b)\n\n\tfmt.Println(c)\n}\n",
+            "content": "@@ -120,102 +120,8 @@\n b)%0A%0A\n-%09if a %3E b && a %3E c %7B%0A%09%09fmt.Println(a)%0A%09%7D else if b %3E a && b %3E c %7B%0A%09%09fmt.Println(b)%0A%09%7D else %7B%0A%09\n %09fmt\n@@ -136,10 +136,6 @@\n (c)%0A\n-%09%7D%0A%0A\n %7D%0A\n",
             "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-35-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar m, a, b, c int\n\tfmt.Scan(&m)\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tc = m - (a + b)\n\n\tif a > b && a > c {\n\t\tfmt.Println(a)\n\t} else if b > a && b > c {\n\t\tfmt.Println(b)\n\t} else {\n\t\tfmt.Println(c)\n\t}\n\n}\n",
+            "lines": "21"
         }
     ]
 }

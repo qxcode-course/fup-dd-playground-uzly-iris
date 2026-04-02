@@ -13,6 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@if2
 - fup@if1
 tasks:
   fup@tres: '{self:1, rate:100, study:20, friend:no}'
@@ -32,19 +33,27 @@ tasks:
   fup@guarda: '{self:1, rate:100, study:5}'
   fup@quantos: '{self:1, rate:100, study:20, friend:amigo}'
   fup@impar: '{self:1, rate:100, study:15, friend:David Sena}'
+  fup@round: '{self:1, rate:100}'
   fup@mumia: '{self:1, rate:100, study:12}'
+  fup@meio: '{self:1, rate:100}'
+  fup@jokenpo: '{self:1, rate:100}'
   fup@final: '{self:1, rate:100, study:10}'
   fup@semana: '{self:1, rate:100, study:7}'
   fup@varetas: '{self:1, rate:100, study:5}'
   fup@bhaskara: '{self:1, rate:100, study:20}'
   fup@cortada: '{self:1, rate:100, study:25}'
-  fup@monica: '{rate:62}'
+  fup@monica: '{self:1, rate:100}'
+  fup@drone: '{self:1, rate:100}'
+  fup@teleferico: '{self:1, rate:100}'
+  fup@goiabas: '{self:1, rate:100}'
   fup@cobra: '{self:1, rate:100}'
+  fup@game10: '{self:1, rate:100}'
+  fup@salario: '{self:1, rate:100}'
 flags:
   panel: 3
-  inbox: 0
-  show_panel: 0
+  inbox: 1
+  show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@base
+selected: fup@str1

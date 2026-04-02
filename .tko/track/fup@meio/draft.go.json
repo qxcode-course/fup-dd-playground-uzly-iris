@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-03-24_15-29-41",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,215 +37,39 @@\n ) %7B%0A\n-%09var a, b, c int%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%09fmt.Scan(&c)%0A%0A%09if a %3C b && b %3C c %7C%7C c %3C b && b %3C a %7B%0A%09%09fmt.Println(b)%0A%09%7D else if b %3C a && a %3C c %7C%7C c %3C a && a %3C b %7B%0A%09%09fmt.Println(a)%0A%09%7D else %7B%0A%09%09fmt.Println(c)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-30_16-58-41",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\tif a < b && b < c || c < b && b < a {\n\t\tfmt.Println(b)\n\t} else if b < a && a < c || c < a && a < b {\n\t\tfmt.Println(a)\n\t} else {\n\t\tfmt.Println(c)\n\t}\n}\n",
+            "lines": "18"
         }
     ]
 }

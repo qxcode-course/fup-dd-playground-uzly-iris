@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_16-53-07",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar o string\n\tvar n float64\n\tfmt.Scan(&o)\n\tfmt.Scan(&n)\n\n\tswitch o {\n\tcase \"r\":\n\t\tn = math.Round(n)\n\t\tfmt.Println(n)\n\tcase \"f\":\n\t\tn = math.Floor(n)\n\t\tfmt.Println(n)\n\tdefault:\n\t\tn = math.Ceil(n)\n\t\tfmt.Println(n)\n\t}\n}\n",
+            "lines": "25"
+        }
+    ]
+}

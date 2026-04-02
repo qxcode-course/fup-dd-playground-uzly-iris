@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-46-12",
+            "content": "@@ -119,17 +119,18 @@\n := (\n-n - d) + \n+a - n) * -\n 1%0A%09%09\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-30_17-49-00",
+            "content": "@@ -128,9 +128,9 @@\n ) + \n-3\n+1\n %0A%09%09f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-30_17-49-12",
+            "content": "@@ -1,222 +1,67 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09var n, d, a int%0A%09fmt.Scan(&n)%0A%09fmt.Scan(&d)%0A%09fmt.Scan(&a)%0A%0A%09if d %3C a %7B%0A%09%09c := a %0A%09%09fmt.Println(c)%0A%09%7D else if d %3E a %7B%0A%09%09c := d - a%0A%09%09fmt.Println(c)%0A%09%7D else %7B%0A%09%09fmt.Println(0)%0A%09%7D%0A%7D\n+@@ -114,16 +114,27 @@%0A %250A%2509%2509c := %0A+(n - d) + 3%0A %250A%2509%2509fmt.P\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-30_17-52-01",
+            "content": "@@ -118,19 +118,10 @@\n  := \n-(n - a) + d\n+a \n %0A%09%09f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-30_17-52-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, d, a int\n\tfmt.Scan(&n)\n\tfmt.Scan(&d)\n\tfmt.Scan(&a)\n\n\tif d < a {\n\t\tc := (n - a) + d\n\t\tfmt.Println(c)\n\t} else if d > a {\n\t\tc := d - a\n\t\tfmt.Println(c)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "20"
+        }
+    ]
+}

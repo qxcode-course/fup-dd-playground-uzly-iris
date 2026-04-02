@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-59-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar ct, a, b, c int\n\tfmt.Scan(&ct)\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\tr := ((a + b + c) % ct)\n\n\tif r == 0 {\n\t\tm := ((a + b + c) / ct)\n\t\tfmt.Println(m)\n\t} else {\n\t\tm := ((a + b + c) / ct) + 1\n\t\tfmt.Println(m)\n\t}\n}\n",
+            "lines": "21"
+        }
+    ]
+}
