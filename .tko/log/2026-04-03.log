@@ -1,0 +1,5 @@
+2026-04-03 02:41:03, MOVE, v:1, k:fup@loop_i, mode:PICK
+2026-04-03 02:41:08, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:0, size:14
+2026-04-03 02:41:58, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:0, size:14
+2026-04-03 02:42:23, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:0, size:14
+2026-04-03 02:44:47, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:0, size:14

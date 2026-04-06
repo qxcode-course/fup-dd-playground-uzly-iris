@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_15-58-01",
+            "content": "@@ -49,98 +49,7 @@\n a, b\n- int %0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A%0A    for ; a %3C b ; a++ %7B%0A        fmt.Print(a)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_15-58-59",
+            "content": "@@ -129,17 +129,16 @@\n .Print(a\n-,\n )%0A    %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_15-59-23",
+            "content": "@@ -134,12 +134,8 @@\n t(a,\n- %22 %22\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_15-59-31",
+            "content": "@@ -90,24 +90,8 @@\n b)%0A%0A\n-    print(%22%5B %22)%0A\n     \n@@ -146,25 +146,6 @@\n   %7D%0A\n-        print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_16-00-30",
+            "content": "@@ -86,29 +86,25 @@\n an(&b)%0A%0A    \n-fmt.P\n+p\n rint(%22%5B %22)%0A \n@@ -158,29 +158,29 @@\n )%0A    %7D%0A    \n-fmt.P\n+    p\n rint(%22%5D%22)%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-00-48",
+            "content": "@@ -182,10 +182,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-00-59",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var a, b\n@@ -49,18 +49,22 @@\n a, b int\n-%0A%09\n+ %0A    \n fmt.Scan\n@@ -68,17 +68,20 @@\n can(&a)%0A\n-%09\n+    \n fmt.Scan\n@@ -86,17 +86,20 @@\n an(&b)%0A%0A\n-%09\n+    \n fmt.Prin\n@@ -106,17 +106,20 @@\n t(%22%5B %22)%0A\n-%09\n+    \n for ; a \n@@ -125,16 +125,17 @@\n  %3C b\n+ \n ; a++ %7B%0A\n %09%09fm\n@@ -134,10 +134,16 @@\n + %7B%0A\n-%09%09\n+        \n fmt.\n@@ -160,12 +160,18 @@\n  %22)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-01-13",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tfmt.Print(\"[ \")\n\tfor ; a < b; a++ {\n\t\tfmt.Print(a, \" \")\n\t}\n\tfmt.Print(\"]\\n\")\n}\n",
+            "lines": "15"
+        }
+    ]
+}

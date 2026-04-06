@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-02_23-30-14",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n\tvar p, r1, r2 float64\n\tfmt.Scan(&p)\n\tfmt.Scan(&r1)\n\tfmt.Scan(&r2)\n\n\tc1 := int(math.Abs(p - r1))\n\tc2 := int(math.Abs(p - r2))\n\n\tif c1 == c2 {\n\t\tfmt.Println(\"empate\")\n\t} else if c1 < c2 {\n\t\tfmt.Println(\"primeiro\")\n\t} else {\n\t\tfmt.Println(\"segundo\")\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

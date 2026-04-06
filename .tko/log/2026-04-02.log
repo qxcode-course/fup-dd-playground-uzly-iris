@@ -1,0 +1,16 @@
+2026-04-02 23:14:00, MOVE, v:1, k:fup@chute, mode:DOWN
+2026-04-02 23:14:01, MOVE, v:1, k:fup@chute, mode:PICK
+2026-04-02 23:30:14, EXEC, v:1, k:fup@chute, mode:FULL, rate:100, size:24
+2026-04-02 23:30:16, MOVE, v:1, k:fup@chute, mode:BACK
+2026-04-02 23:30:22, SELF, v:1, k:fup@chute, self:1, rate:100
+2026-04-02 23:30:22, MOVE, v:1, k:fup@chute, mode:PICK
+2026-04-02 23:30:23, EXEC, v:1, k:fup@chute, mode:FULL, rate:100
+2026-04-02 23:30:24, MOVE, v:1, k:fup@chute, mode:BACK
+2026-04-02 23:30:39, MOVE, v:1, k:fup@quebrada, mode:DOWN
+2026-04-02 23:30:53, MOVE, v:1, k:fup@operacoes, mode:DOWN
+2026-04-02 23:30:58, MOVE, v:1, k:fup@data, mode:DOWN
+2026-04-02 23:31:01, MOVE, v:1, k:fup@opala, mode:DOWN
+2026-04-02 23:31:05, MOVE, v:1, k:fup@tv, mode:DOWN
+2026-04-02 23:31:27, MOVE, v:1, k:fup@loop_i, mode:DOWN
+2026-04-02 23:31:31, MOVE, v:1, k:fup@loop_i, mode:PICK
+2026-04-02 23:40:39, EXEC, v:1, k:fup@loop_i, mode:FULL, rate:0, size:18
