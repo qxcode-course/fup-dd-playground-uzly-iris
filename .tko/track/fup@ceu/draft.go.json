@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_15-46-13",
+            "content": "@@ -41,134 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    for i := 0; ; i++ %7B%0A        if i == n %7B%0A            return%0A        %7D%0A        fmt.Print(i)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_15-58-44",
+            "content": "@@ -125,16 +125,14 @@\n     \n-continue\n+return\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_15-59-21",
+            "content": "@@ -125,13 +125,16 @@\n     \n-break\n+continue\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_16-00-12",
+            "content": "@@ -69,28 +69,8 @@\n n)%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -160,39 +160,14 @@\n nt(i\n-, %22 %22\n )%0A    %7D\n-%0A%0A    fmt.Print(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_16-01-02",
+            "content": "@@ -145,16 +145,13 @@\n     \n-continue\n+break\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_16-01-17",
+            "content": "@@ -163,20 +163,9 @@\n    %7D\n- else %7B%0A    \n+%0A\n     \n@@ -194,28 +194,28 @@\n     \n-    %7D%0A        %0A    %7D%0A\n+%7D%0A%0A    fmt.Print(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_16-05-10",
+            "content": "@@ -126,15 +126,53 @@\n f i \n-!\n+=\n = n %7B%0A\n+            continue%0A        %7D else %7B%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_16-05-52",
+            "content": "@@ -104,15 +104,8 @@\n = 0;\n- i %3C 10\n  ; i\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_16-06-22",
+            "content": "@@ -195,29 +195,7 @@\n   %7D%0A\n-    fmt.Print(%22ceu %5D%22)\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_16-06-44",
+            "content": "@@ -208,10 +208,8 @@\n rint\n-ln\n (%22ce\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_16-06-51",
+            "content": "@@ -104,17 +104,16 @@\n = 0; i %3C\n-=\n  10 ; i+\n@@ -179,66 +179,8 @@\n    %7D\n-%0A%0A        if n != 10 %7B%0A        fmt.Print(%22ceu %22)%0A        %7D\n %0A   \n@@ -208,14 +208,18 @@\n rintln(%22\n+ceu \n %5D%22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_16-08-11",
+            "content": "@@ -181,23 +181,13 @@\n   %7D%0A\n-        \n %0A    \n-%7D%0A\n     \n@@ -221,24 +221,43 @@\n int(%22ceu %22)%0A\n+        %7D%0A        %0A\n     %7D%0A    fm\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-09-03",
+            "content": "@@ -104,16 +104,17 @@\n = 0; i %3C\n+=\n  10 ; i+\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_16-09-29",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var n in\n@@ -47,17 +47,20 @@\n r n int%0A\n-%09\n+    \n fmt.Scan\n@@ -65,17 +65,20 @@\n an(&n)%0A%0A\n-%09\n+    \n fmt.Prin\n@@ -85,17 +85,20 @@\n t(%22%5B %22)%0A\n-%09\n+    \n for i :=\n@@ -111,16 +111,17 @@\n %3C 10\n+ \n ; i++ %7B%0A\n %09%09if\n@@ -116,18 +116,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n if i != \n@@ -140,11 +140,20 @@\n n %7B%0A\n-%09%09%09\n+            \n fmt.\n@@ -170,17 +170,37 @@\n  %22)%0A\n-%09%09%7D%0A%0A%09%7D%0A%09\n+        %7D%0A        %0A    %7D%0A    \n if n\n@@ -212,10 +212,16 @@\n 0 %7B%0A\n-%09%09\n+        \n fmt.\n@@ -238,12 +238,18 @@\n  %22)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n fmt.\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_16-11-28",
+            "content": "@@ -64,48 +64,9 @@\n &n)%0A\n-%09contagem(n)%0A%0A%7D%0A%0Afunc contagem(n int)%7B%0A%09\n+%0A\n %09fmt\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-07-17",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\tcontagem(n)\n\n}\n\nfunc contagem(n int){\n\t\tfmt.Print(\"[ \")\n\tfor i := 0; i < 10; i++ {\n\t\tif i != n {\n\t\t\tfmt.Print(i, \" \")\n\t\t}\n\n\t}\n\tif n != 10 {\n\t\tfmt.Print(\"ceu \")\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_15-31-39",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var idad\n@@ -62,17 +62,17 @@\n dade\n-, x\n  int%0A\n-%09\n+    \n fmt.\n@@ -84,17 +84,20 @@\n &idade)%0A\n-%09\n+    \n fmt.Scan\n@@ -111,17 +111,20 @@\n idade)%0A%0A\n-%09\n+    \n for i :=\n@@ -133,67 +133,10 @@\n dade\n+ \n ; \n-x %3C= quantidade; i += 2 %7B%0A%09%09x += 1%0A%09%09fmt.Println(idade)%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_15-38-53",
+            "content": "@@ -57,16 +57,19 @@\n antidade\n+, x\n  int%0A%09fm\n@@ -109,19 +109,8 @@\n ade)\n-%0A    x := 1\n %0A%0A%09f\n@@ -144,17 +144,19 @@\n ade; i +\n-+\n+= 2\n  %7B%0A%09%09x +\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_15-40-35",
+            "content": "@@ -150,16 +150,17 @@\n idade; i\n+ \n ++ %7B%0A%09%09x\n@@ -169,23 +169,8 @@\n = 1%0A\n-        i += 1%0A\n %09%09fm\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_15-42-00",
+            "content": "@@ -150,19 +150,18 @@\n idade; i\n- +=\n+++\n  %7B%0A%09%09x +\n@@ -194,15 +194,19 @@\n rintln(i\n+dade\n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_15-42-30",
+            "content": "@@ -157,10 +157,8 @@\n i +=\n- 2\n  %7B%0A%09\n@@ -165,16 +165,31 @@\n %09x += 1%0A\n+        i += 1%0A\n %09%09fmt.Pr\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_15-42-49",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar idade, quantidade int\n\tfmt.Scan(&idade)\n\tfmt.Scan(&quantidade)\n    x := 1\n\n\tfor i := idade; x <= quantidade; i += 2 {\n\t\tx += 1\n\t\tfmt.Println(i)\n\t}\n}\n",
+            "lines": "15"
+        }
+    ]
+}

@@ -40,3 +40,53 @@
 2026-04-06 16:20:38, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:100, size:24
 2026-04-06 16:20:40, MOVE, v:1, k:fup@loop_v, mode:BACK
 2026-04-06 16:20:48, SELF, v:1, k:fup@loop_v, self:1, rate:100, friend:5
+2026-04-06 16:41:54, MOVE, v:1, k:fup@loop_v, mode:PICK
+2026-04-06 16:41:59, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:100
+2026-04-06 16:43:28, MOVE, v:1, k:fup@loop_v, mode:BACK
+2026-04-06 16:43:45, MOVE, v:1, k:fup@pares, mode:DOWN
+2026-04-06 16:44:08, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-06 16:44:10, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:5
+2026-04-06 16:54:00, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-06 16:56:50, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-04-06 16:56:51, EXEC, v:1, k:fup@mumia, mode:FULL, rate:100
+2026-04-06 16:56:53, MOVE, v:1, k:fup@mumia, mode:BACK
+2026-04-06 16:56:57, SELF, v:1, k:fup@mumia, self:1, rate:100
+2026-04-06 16:57:03, SELF, v:1, k:fup@meio, self:1, rate:100
+2026-04-06 16:57:06, MOVE, v:1, k:fup@jokenpo, mode:PICK
+2026-04-06 16:57:07, MOVE, v:1, k:fup@jokenpo, mode:BACK
+2026-04-06 16:57:11, SELF, v:1, k:fup@jokenpo, self:1, rate:100
+2026-04-06 16:58:25, SELF, v:1, k:fup@monica, self:1, rate:100
+2026-04-06 16:58:31, SELF, v:1, k:fup@salario, self:1, rate:100
+2026-04-06 17:01:55, SELF, v:1, k:fup@celsius, self:1, rate:100
+2026-04-06 17:02:01, SELF, v:1, k:fup@bala, self:1, rate:100
+2026-04-06 17:48:18, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-06 17:48:21, EXEC, v:1, k:fup@pares, mode:FULL, size:7, fail:COMP
+2026-04-06 17:50:58, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-06 17:53:47, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-06 17:58:58, EXEC, v:1, k:fup@pares, mode:FULL, rate:85, size:21
+2026-04-06 17:59:10, EXEC, v:1, k:fup@pares, mode:FULL, rate:100, size:22
+2026-04-06 18:03:53, EXEC, v:1, k:fup@pares, mode:FULL, rate:100, size:28
+2026-04-06 18:04:05, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-06 18:04:09, SELF, v:1, k:fup@pares, self:1, rate:100
+2026-04-06 18:05:56, MOVE, v:1, k:fup@sapatos, mode:DOWN
+2026-04-06 18:06:05, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-04-06 18:06:06, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:0, size:5
+2026-04-06 18:06:45, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-04-06 18:07:04, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-06 18:07:12, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-06 18:07:14, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-04-06 18:07:16, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:0
+2026-04-06 18:07:28, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-04-06 18:09:10, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-04-06 18:12:01, EXEC, v:1, k:fup@sapatos, mode:FULL, size:29, fail:COMP
+2026-04-06 18:12:45, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:25, size:40
+2026-04-06 18:13:25, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:25, size:41
+2026-04-06 18:13:39, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:25, size:41
+2026-04-06 18:19:38, EXEC, v:1, k:fup@sapatos, mode:FULL, size:28, fail:COMP
+2026-04-06 18:19:51, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:87, size:28
+2026-04-06 18:22:53, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:100
+2026-04-06 18:22:54, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-04-06 18:23:05, SELF, v:1, k:fup@sapatos, self:1, rate:100
+2026-04-06 18:24:27, SELF, v:1, k:fup@sapatos, self:1, rate:100, friend:Hanna
+2026-04-06 18:24:41, MOVE, v:1, k:fup@filhos, mode:DOWN
+2026-04-06 18:24:43, MOVE, v:1, k:fup@filhos, mode:PICK

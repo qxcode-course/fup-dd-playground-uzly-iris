@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_18-06-06",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,349 +37,39 @@\n ) %7B%0A\n-%09var a, b, d2, d3 int%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%09if a %3E b %7B%0A%09%09fmt.Println(%22invalido%22)%0A%09%09return%0A%09%7D%0A%0A%09d2 = dividir_por_2(a, b)%0A%09d3 = dividir_por_3(a, b)%0A%09fmt.Println()%0A%7D%0A%0Afunc dividir_por_2(a, b int) int %7B%0A    d2 := 0%0A    for x := a ; x %3C= b ; x++ %7B%0A        if x%252 == 0 %7B%0A            d2 += x%0A            continue%0A        %7D%0A    %7D%0A    return d2%0A%7D\n+    fmt.Println(%22Hello, World!%22)%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_18-12-01",
+            "content": "@@ -202,22 +202,16 @@\n Println(\n-d2, d3\n )%0A%7D%0A%0Afun\n@@ -384,179 +384,4 @@\n d2%0A%7D\n-%0A%0Afunc dividir_por_3(a, b int) int %7B%0A    d3 := 0%0A    for x := a ; x %3C= b ; x++ %7B%0A        if x%252 == 0 %7B%0A            d3 += x%0A            continue%0A        %7D%0A    %7D%0A    return d3%0A%7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-06_18-12-45",
+            "content": "@@ -193,24 +193,8 @@\n  b)%0A\n-%09smt := d2 + d3%0A\n %09fmt\n@@ -206,11 +206,14 @@\n tln(\n-smt\n+d2, d3\n )%0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-04-06_18-13-25",
+            "content": "@@ -493,17 +493,17 @@\n    if x%25\n-3\n+2\n  == 0 %7B%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-06_18-13-39",
+            "content": "@@ -138,21 +138,19 @@\n rn%0A%09%7D%0A%0A%09\n-smt :\n+d2 \n = dividi\n@@ -160,18 +160,56 @@\n or_2\n-_e_3\n (a, b)\n+%0A%09d3 = dividir_por_3(a, b)%0A%09smt := d2 + d3\n %0A%09fm\n@@ -248,12 +248,8 @@\n or_2\n-_e_3\n (a, \n@@ -265,19 +265,24 @@\n t %7B%0A\n-%09smt\n+    d2\n  := 0%0A\n-%09\n+    \n for \n@@ -291,16 +291,17 @@\n := a\n+ \n ; x %3C= b\n ; x+\n@@ -300,16 +300,17 @@\n %3C= b\n+ \n ; x++ %7B%0A\n %09%09if\n@@ -305,18 +305,24 @@\n ; x++ %7B%0A\n-%09%09\n+        \n if x%252 =\n@@ -329,63 +329,253 @@\n = 0 \n-&& x%253 == 0 %7B%0A%09%09%09smt += x%0A%09%09%09continue%0A%09%09%7D%0A%09%7D%0A%09\n+%7B%0A            d2 += x%0A            continue%0A        %7D%0A    %7D%0A    return d2%0A%7D%0A%0Afunc dividir_por_3(a, b int) int %7B%0A    d3 := 0%0A    for x := a ; x %3C= b ; x++ %7B%0A        if x%253 == 0 %7B%0A            d3 += x%0A            continue%0A        %7D%0A    %7D%0A    \n return \n-smt\n+d3\n %0A%7D\n-%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-06_18-19-38",
+            "content": "@@ -46,19 +46,22 @@\n r a, b, \n-smt\n+d2, d3\n  int%0A%09fm\n@@ -142,16 +142,17 @@\n %7D%0A%0A%09smt \n+:\n = dividi\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-06_18-19-51",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, smt int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tif a > b {\n\t\tfmt.Println(\"invalido\")\n\t\treturn\n\t}\n\n\tsmt = dividir_por_2_e_3(a, b)\n\tfmt.Println(smt)\n}\n\nfunc dividir_por_2_e_3(a, b int) int {\n\tsmt := 0\n\tfor x := a; x <= b; x++ {\n\t\tif x%2 == 0 && x%3 == 0 {\n\t\t\tsmt += x\n\t\t\tcontinue\n\t\t}\n\t}\n\treturn smt\n}\n",
+            "lines": "28"
+        }
+    ]
+}

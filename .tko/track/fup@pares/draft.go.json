@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_16-44-10",
+            "content": "@@ -41,41 +41,35 @@\n     \n-var a, b int%0A    fmt.Scan(&a)%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-48-21",
+            "content": "@@ -49,11 +49,8 @@\n a, b\n-, x\n  int\n@@ -75,220 +75,7 @@\n     \n-fmt.Scan(&b)%0A%0A    acc := 0%0A    if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A    %7D%0A%0A    for x = a ; x %3C= b ; x++ %7B%0A        if x%252 == 0 %7B%0A            acc += x%0A            continue%0A        %7D%0A    %7D%0A%0A    fmt.Println(acc)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-06_17-58-58",
+            "content": "@@ -152,23 +152,8 @@\n o%22)%0A\n-        return%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-06_17-59-10",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var a, b\n@@ -51,17 +51,18 @@\n  b, \n-acc\n+x\n  int%0A\n-%09\n+    \n fmt.\n@@ -70,17 +70,20 @@\n can(&a)%0A\n-%09\n+    \n fmt.Scan\n@@ -88,17 +88,33 @@\n an(&b)%0A%0A\n-%09\n+    acc := 0%0A    \n if a %3E b\n@@ -116,18 +116,24 @@\n a %3E b %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -152,106 +152,29 @@\n o%22)%0A\n-%09%09return%0A%09%7D%0A%0A%09acc = soma_par(a, b)%0A%09fmt.Println(acc)%0A%7D%0A%0Afunc soma_par(a, b int) int %7B%0A    acc := 0\n+        return%0A    %7D%0A\n %0A   \n@@ -180,17 +180,16 @@\n   for x \n-:\n = a ; x \n@@ -285,21 +285,28 @@\n   %7D%0A\n+%0A\n     \n-return \n+fmt.Println(\n acc\n+)\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_18-03-53",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, acc int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tif a > b {\n\t\tfmt.Println(\"invalido\")\n\t\treturn\n\t}\n\n\tacc = soma_par(a, b)\n\tfmt.Println(acc)\n}\n\nfunc soma_par(a, b int) int {\n    acc := 0\n    for x := a ; x <= b ; x++ {\n        if x%2 == 0 {\n            acc += x\n            continue\n        }\n    }\n    return acc\n}\n",
+            "lines": "28"
+        }
+    ]
+}
