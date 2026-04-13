@@ -1,0 +1,23 @@
+2026-04-12 17:21:59, MOVE, v:1, k:fup@fuga, mode:PICK
+2026-04-12 17:22:07, EXEC, v:1, k:fup@fuga, mode:FULL, rate:0
+2026-04-12 17:22:07, MOVE, v:1, k:fup@fuga, mode:BACK
+2026-04-12 17:22:18, MOVE, v:1, k:fup@lotado, mode:DOWN
+2026-04-12 17:22:19, MOVE, v:1, k:fup@lotado, mode:PICK
+2026-04-12 17:24:57, EXEC, v:1, k:fup@lotado, mode:FULL, rate:0, size:5
+2026-04-12 17:22:05, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-04-12 17:22:18, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-12 17:22:18, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-12 17:24:57, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-12 17:30:02, MOVE, v:1, k:fup@lotado, mode:BACK
+2026-04-12 17:30:04, MOVE, v:1, k:fup@fuga, mode:PICK
+2026-04-12 17:30:07, EXEC, v:1, k:fup@fuga, mode:FULL, rate:0
+2026-04-12 17:29:38, MOVE, v:1, k:fup@lotado, mode:EDIT
+2026-04-12 17:30:05, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-04-12 17:31:57, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-04-12 17:32:10, EXEC, v:1, k:fup@fuga, mode:FULL, rate:0, size:28
+2026-04-12 17:32:21, EXEC, v:1, k:fup@fuga, mode:FULL, rate:0, size:28
+2026-04-12 17:35:12, MOVE, v:1, k:fup@fuga, mode:BACK
+2026-04-12 17:35:40, MOVE, v:1, k:fup@fuga, mode:PICK
+2026-04-12 17:36:12, EXEC, v:1, k:fup@fuga, mode:FULL, rate:0, size:30
+2026-04-12 17:36:07, MOVE, v:1, k:fup@fuga, mode:EDIT
+2026-04-12 17:36:10, MOVE, v:1, k:fup@fuga, mode:EDIT
