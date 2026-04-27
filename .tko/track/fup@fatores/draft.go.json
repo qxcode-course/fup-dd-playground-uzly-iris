@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-15_15-22-54",
+            "content": "@@ -41,217 +41,35 @@\n     \n-var n, i, cont, div int%0A    fmt.Scan(&n)%0A    cont = 0%0A    div = n%0A%0A    for i = 2 ; i %3C n ; %7B%0A        if div%25i == 0 %7B%0A            div = div / i%0A            cont += 1%0A        %7D else %7B%0A            %0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-15_15-46-32",
+            "content": "@@ -235,66 +235,8 @@\n     \n-fmt.Println(i, cont)%0A            cont = 0%0A            i ++\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-15_15-48-03",
+            "content": "@@ -223,40 +223,8 @@\n e %7B%0A\n-            if div%25i == 0 %7B%0A    \n     \n@@ -256,22 +256,8 @@\n nt)%0A\n-            %7D%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-15_15-50-01",
+            "content": "@@ -106,23 +106,8 @@\n  = n\n-%0A    seg := div\n %0A%0A  \n@@ -206,74 +206,8 @@\n = 1%0A\n-            if div %25 i == 0 %7B%0A            seg = div%0A            %7D%0A\n     \n@@ -238,14 +238,12 @@\n  if \n-seg %25 \n+div%25\n i ==\n@@ -348,31 +348,9 @@\n     \n-    %0A        %7D%0A        \n+%7D\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-15_15-58-08",
+            "content": "@@ -43,16 +43,19 @@\n   var n,\n+ i,\n  cont, d\n@@ -129,17 +129,16 @@\n   for i \n-:\n = 2 ; i \n@@ -259,20 +259,16 @@\n         \n-    \n seg = di\n@@ -302,20 +302,8 @@\n lse \n-if div != 1 \n %7B%0A  \n@@ -436,43 +436,8 @@\n    %0A\n-        %7D else %7B%0A            break%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-15_16-03-43",
+            "content": "@@ -300,16 +300,28 @@\n  %7D else \n+if div != 1 \n %7B%0A      \n@@ -442,24 +442,59 @@\n            %0A\n+        %7D else %7B%0A            break%0A\n         %7D%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-15_16-04-01",
+            "content": "@@ -137,19 +137,17 @@\n 2 ; i %3C \n-div\n+n\n  ; %7B%0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-15_16-05-48",
+            "content": "@@ -137,17 +137,19 @@\n 2 ; i %3C \n-n\n+div\n  ; %7B%0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-15_16-06-22",
+            "content": "@@ -137,19 +137,17 @@\n 2 ; i %3C \n-seg\n+n\n  ; %7B%0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-15_16-07-00",
+            "content": "@@ -137,17 +137,19 @@\n 2 ; i %3C \n-n\n+seg\n  ; %7B%0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-15_16-07-10",
+            "content": "@@ -147,58 +147,8 @@\n ; %7B%0A\n-        if div == 1 %7B%0A            break%0A        %7D%0A\n     \n@@ -421,16 +421,29 @@\n    i ++%0A\n+            %0A\n         \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-15_16-08-17",
+            "content": "@@ -151,16 +151,57 @@\n         \n+if div == 1 %7B%0A            break%0A        %7D\n %0A       \n@@ -493,49 +493,8 @@\n     \n-if div == 1 %7B%0A            break%0A        %7D\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-15_16-09-05",
+            "content": "@@ -430,24 +430,30 @@\n    i ++%0A    \n+    %7D%0A\n         if d\n@@ -494,27 +494,8 @@\n   %7D%0A\n-        %7D%0A        %0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-15_16-10-10",
+            "content": "@@ -382,34 +382,8 @@\n nt)%0A\n-                seg = div%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-15_16-15-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, cont, div int\n    fmt.Scan(&n)\n    cont = 0\n    div = n\n    seg := div\n\n    for i := 2 ; i < n ; {\n        \n        if div%i == 0 {\n            div = div / i\n            cont += 1\n            if div % i == 0 {\n                seg = div\n            }\n        } else {\n            if seg % i == 0 {\n                fmt.Println(i, cont)\n                seg = div\n            }\n            cont = 0\n            i ++\n            if div == 1 {\n            break\n        }\n        }\n        \n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

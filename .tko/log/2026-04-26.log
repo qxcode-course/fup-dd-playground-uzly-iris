@@ -1,0 +1,7 @@
+2026-04-26 18:54:33, MOVE, v:1, k:sandbox@user_002, mode:PICK
+2026-04-26 18:54:36, EXEC, v:1, k:sandbox@user_002, mode:LOCK, rate:0
+2026-04-26 18:54:37, MOVE, v:1, k:sandbox@user_002, mode:BACK
+2026-04-26 18:54:36, MOVE, v:1, k:sandbox@user_002, mode:EDIT
+2026-04-26 19:05:15, MOVE, v:1, k:fup@vet_i, mode:PICK
+2026-04-26 19:05:17, EXEC, v:1, k:fup@vet_i, mode:FULL, rate:75
+2026-04-26 19:05:16, MOVE, v:1, k:fup@vet_i, mode:EDIT

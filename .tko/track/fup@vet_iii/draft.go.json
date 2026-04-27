@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_17-15-20",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,337 +37,38 @@\n ) %7B%0A\n-%09var qtd int%0A%09fmt.Scan(&qtd)%0A%09numeros := make(%5B%5Dint, qtd)%0A%0A%09for i := range numeros %7B%0A%09%09fmt.Scan(&numeros%5Bi%5D)%0A%09%7D%0A%0A    fmt.Print(%22%5B%22)%0A%09if qtd == 0 %7B%0A%09%09fmt.Print(%22%22)%0A%09%7D else %7B%0A        for _, valor := range numeros %7B%0A            if qtd != 0 %7B%0A                fmt.Printf(%22%25v, %22, valor)%0A            %7D%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn\n+    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-27_17-17-26",
+            "content": "@@ -220,17 +220,17 @@\n     for \n-i\n+_\n , valor \n@@ -267,81 +267,16 @@\n  if \n-i == qtd - 1 %7B%0A                fmt.Printf(%22%25v%22, valor)%0A            %7D else\n+qtd != 0\n  %7B%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-27_17-26-31",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tnumeros := make([]int, qtd)\n\n\tfor i := range numeros {\n\t\tfmt.Scan(&numeros[i])\n\t}\n\n    fmt.Print(\"[\")\n\tif qtd == 0 {\n\t\tfmt.Print(\"\")\n\t} else {\n        for i, valor := range numeros {\n            if i == qtd - 1 {\n                fmt.Printf(\"%v\", valor)\n            } else {\n                fmt.Printf(\"%v, \", valor)\n            }\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "27"
+        }
+    ]
+}

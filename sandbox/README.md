@@ -8,4 +8,7 @@ Sinta-se à vontade para organizar seus rascunhos em subpastas dentro do sandbox
 ## sandbox
 
 <!--autoload_cluster=.-->
+- [ ]`@user_001 `[vetores](user_001/README.md)
+- [ ]`@user_002 `[googleforms](user_002/README.md)
+- [ ]`@user_003 `[copiando vetores](user_003/README.md)
 

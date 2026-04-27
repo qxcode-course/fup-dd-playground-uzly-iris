@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_16-48-28",
+            "content": "@@ -41,57 +41,35 @@\n     \n-numeros := %5B%5Dint%7B6, 0, 8%7D%0A    fmt.Println(numeros\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_16-50-31",
+            "content": "@@ -92,34 +92,6 @@\n os)%0A\n-    fmt.Println(numeros%5B0%5D)%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-14_16-51-12",
+            "content": "@@ -36,19 +36,16 @@\n () %7B%0A   \n- //\n  numeros\n@@ -62,27 +62,24 @@\n 6, 0, 8%7D%0A   \n- //\n  fmt.Println\n@@ -95,11 +95,8 @@\n %0A   \n- //\n  fmt\n@@ -119,95 +119,7 @@\n %5B0%5D)\n-%0A%0A    var qtd int%0A    fmt.Scan(&qtd)%0A%0A    idades := make(%5B%5Dint, qtd)%0A    println(idades)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-14_17-01-47",
+            "content": "@@ -170,25 +170,16 @@\n     \n-var \n idades \n-%5B%5Dint \n+:\n = ma\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_17-07-48",
+            "content": "@@ -125,27 +125,24 @@\n ros%5B0%5D)%0A%0A   \n- //\n  var qtd int\n@@ -141,27 +141,24 @@\n  qtd int%0A   \n- //\n  fmt.Scan(&q\n@@ -161,22 +161,20 @@\n n(&qtd)%0A\n+%0A\n    \n- //\n  var ida\n@@ -202,32 +202,25 @@\n t, qtd)%0A    \n-// fmt.P\n+p\n rintln(idade\n@@ -225,186 +225,7 @@\n des)\n-%0A%0A    spcs := %5B%5Dstring%7B%22yamoki%22, %22leo%22, %22sani%22, %22miguel%22%7D%0A    fmt.Print(%22%5B %22)%0A    for pos, valor := range spcs %7B%0A        fmt.Printf(%22%25v %25v%22, pos, valor)%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_17-18-25",
+            "content": "@@ -371,17 +371,16 @@\n intf(%22%25v\n-,\n  %25v%22, po\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-14_17-18-38",
+            "content": "@@ -375,13 +375,12 @@\n (%22%25v\n+,\n  %25v\n-%5Cn\n %22, p\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-14_17-18-58",
+            "content": "@@ -310,18 +310,17 @@\n Print(%22%5B\n-%5Cn\n+ \n %22)%0A    f\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-14_17-19-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    // numeros := []int{6, 0, 8}\n    // fmt.Println(numeros)\n    // fmt.Println(numeros[0])\n\n    // var qtd int\n    // fmt.Scan(&qtd)\n    // var idades []int = make([]int, qtd)\n    // fmt.Println(idades)\n\n    spcs := []string{\"yamoki\", \"leo\", \"sani\", \"miguel\"}\n    fmt.Print(\"[\\n\")\n    for pos, valor := range spcs {\n        fmt.Printf(\"%v %v\\n\", pos, valor)\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "19"
+        }
+    ]
+}

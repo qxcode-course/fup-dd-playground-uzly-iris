@@ -12,22 +12,35 @@ func main() {
 
 
 func contagem(n int, pe string) {
+	var cont int
 	fmt.Print("[ ")
     if pe == "e" {
         for i := 0; i < 10; i++ {
-		    if i != n && i%2 == 0 {
-			    fmt.Print(i, "e ")
-		    } else {
-                fmt.Print(i, "d ")
-            }
-	    }
-    } else {
+			if i == n {
+				continue
+			} else {
+				if cont%2 == 0 {
+					fmt.Print(i, "e ")
+					cont += 1
+				} else if cont%2 != 0 {
+					fmt.Print(i, "d ")
+					cont += 1
+				}
+			}
+		}
+	} else {
         for i := 0; i < 10; i++ {
-		    if i != n && i%2 == 0 {
-			    fmt.Print(i, "d ")
-		    } else {
-                fmt.Print(i, "e ")
-            }
+			if i == n {
+				continue
+			} else {
+				if cont%2 == 0 {
+					fmt.Print(i, "d ")
+					cont += 1
+				} else if cont%2 != 0 {
+					fmt.Print(i, "e ")
+					cont += 1
+				}
+			}
 	    }
     }
 

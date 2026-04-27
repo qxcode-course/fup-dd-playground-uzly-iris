@@ -2,8 +2,108 @@
     "patches": [
         {
             "label": "2026-04-12_17-24-57",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,11 +41,35 @@\n     \n-var \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-13_18-12-40",
+            "content": "@@ -45,29 +45,7 @@\n var \n-c int%0A    fmt.Scan(c)%0A\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_18-17-02",
+            "content": "@@ -46,11 +46,8 @@\n ar c\n-, m\n  int\n@@ -64,455 +64,10 @@\n can(\n-&c, &m)%0A    for i := m ; i %3C= c ; %7B%0A        if i == 0 %7B%0A            fmt.Println(%22vazio%22)%0A            fmt.Scan(&m)%0A            continue%0A        %7D else if i %3C c %7B%0A            fmt.Println(%22ainda cabe%22)%0A            fmt.Scan(&m)%0A            continue%0A        %7D else if i %3E= c && i != c*2 %7B%0A            fmt.Println(%22lotado%22)%0A            fmt.Scan(&m)%0A        %7D else if i %3E= c*2 %7B%0A            fmt.Println(%22hora de partir%22)%0A            break%0A        %7D%0A    %7D\n+c)\n %0A%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-13_18-26-07",
+            "content": "@@ -406,37 +406,16 @@\n can(&m)%0A\n-            continue%0A\n         \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_18-26-21",
+            "content": "@@ -94,18 +94,16 @@\n ; i %3C= c\n-*2\n  ; %7B%0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_18-26-59",
+            "content": "@@ -87,16 +87,25 @@\n i := m ;\n+ i %3C= c*2\n  ; %7B%0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_18-27-11",
+            "content": "@@ -325,12 +325,24 @@\n f i \n-=\n+%3E= c && i !\n = c\n+*2\n  %7B%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_18-28-08",
+            "content": "@@ -88,37 +88,16 @@\n  := \n-0\n+m\n  ; ; %7B%0A\n-        fmt.Scan(&m)%0A\n     \n@@ -141,24 +141,49 @@\n ln(%22vazio%22)%0A\n+            fmt.Scan(&m)%0A\n             \n@@ -255,16 +255,41 @@\n  cabe%22)%0A\n+            fmt.Scan(&m)%0A\n         \n@@ -324,24 +324,24 @@\n if i == c %7B%0A\n-\n             \n@@ -358,24 +358,49 @@\n n(%22lotado%22)%0A\n+            fmt.Scan(&m)%0A\n             \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_22-58-15",
+            "content": "@@ -93,14 +93,8 @@\n  ; ;\n- i = m\n  %7B%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_22-59-58",
+            "content": "@@ -96,9 +96,8 @@\n ; i \n-+\n = m \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_23-03-32",
+            "content": "@@ -308,19 +308,8 @@\n = c \n-%7C%7C i %3C c*2 \n %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_23-07-40",
+            "content": "@@ -89,16 +89,23 @@\n := 0 ; ;\n+ i += m\n  %7B%0A     \n@@ -124,23 +124,8 @@\n &m)%0A\n-        i += m%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_23-08-16",
+            "content": "@@ -121,16 +121,22 @@\n         \n+i += m\n %0A       \n@@ -479,31 +479,16 @@\n       %7D%0A\n-        i += m%0A\n     %7D%0A%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_23-08-59",
+            "content": "@@ -125,14 +125,8 @@\n     \n-i += m\n %0A   \n@@ -473,16 +473,31 @@\n       %7D%0A\n+        i += m%0A\n     %7D%0A%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_23-09-15",
+            "content": "@@ -109,24 +109,39 @@\n mt.Scan(&m)%0A\n+        i += m%0A\n         if i\n@@ -148,16 +148,16 @@\n  == 0 %7B%0A\n-\n         \n@@ -181,35 +181,16 @@\n vazio%22)%0A\n-            i += m%0A\n         \n@@ -266,35 +266,16 @@\n  cabe%22)%0A\n-            i += m%0A\n         \n@@ -321,24 +321,24 @@\n %7C i %3C c*2 %7B%0A\n+\n             \n@@ -363,27 +363,8 @@\n o%22)%0A\n-            i += m%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_23-10-20",
+            "content": "@@ -117,23 +117,8 @@\n &m)%0A\n-        i += m%0A\n     \n@@ -133,16 +133,16 @@\n  == 0 %7B%0A\n+\n         \n@@ -162,24 +162,43 @@\n ln(%22vazio%22)%0A\n+            i += m%0A\n             \n@@ -270,16 +270,35 @@\n  cabe%22)%0A\n+            i += m%0A\n         \n@@ -344,24 +344,24 @@\n %7C i %3C c*2 %7B%0A\n-\n             \n@@ -378,24 +378,43 @@\n n(%22lotado%22)%0A\n+            i += m%0A\n             \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-13_23-11-15",
+            "content": "@@ -94,14 +94,8 @@\n ; ; \n-i += m\n %7B%0A  \n@@ -109,24 +109,39 @@\n mt.Scan(&m)%0A\n+        i += m%0A\n         if i\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_23-12-57",
+            "content": "@@ -49,11 +49,8 @@\n c, m\n-, i\n  int\n@@ -85,16 +85,17 @@\n r i \n+:\n = 0 ; ; \n %7B%0A  \n@@ -90,16 +90,22 @@\n = 0 ; ; \n+i += m\n %7B%0A      \n@@ -123,23 +123,8 @@\n &m)%0A\n-        i += m%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_23-14-40",
+            "content": "@@ -45,16 +45,19 @@\n var c, m\n+, i\n  int%0A   \n@@ -88,9 +88,8 @@\n r i \n-:\n = 0 \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_23-14-49",
+            "content": "@@ -65,16 +65,20 @@\n .Scan(&c\n+, &m\n )%0A    fo\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_23-16-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, m int\n    fmt.Scan(&c)\n    for i := 0 ; ; {\n        fmt.Scan(&m)\n        i += m\n        if i == 0 {\n            fmt.Println(\"vazio\")\n            continue\n        } else if i < c {\n            fmt.Println(\"ainda cabe\")\n            continue\n        } else if i == c || i < c*2 {\n            fmt.Println(\"lotado\")\n            continue\n        } else if i >= c*2 {\n            fmt.Println(\"hora de partir\")\n            break\n        }\n    }\n\n}\n",
+            "lines": "24"
         }
     ]
 }

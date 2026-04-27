@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-41-12",
+            "content": "@@ -294,65 +294,70 @@\n lse \n-if i != n && i%252 != 0 %7B%0A%09%09%09%09fmt.Print(i, %22d %22)%0A%09%09%09%7D%0A%09%09%7D%0A%09\n+%7B%0A                fmt.Print(i, %22d %22)%0A            %7D%0A%09    %7D%0A    \n %7D el\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-13_17-44-37",
+            "content": "@@ -341,33 +341,8 @@\n  %22)%0A\n-%09%09%09%7D else %7B%0A%09%09%09%09continue%0A\n %09%09%09%7D\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-13_17-46-04",
+            "content": "@@ -117,16 +117,466 @@\n pe)%0A%7D%0A%0A%0A\n+func contagem(n int, pe string) %7B%0A%09fmt.Print(%22%5B %22)%0A    if pe == %22e%22 %7B%0A        for i := 0; i %3C 10; i++ %7B%0A%09%09    if i != n && i%252 == 0 %7B%0A%09%09%09    fmt.Print(i, %22e %22)%0A%09%09    %7D else if i != n && i%252 != 0 %7B%0A%09%09%09%09fmt.Print(i, %22d %22)%0A%09%09%09%7D else %7B%0A%09%09%09%09continue%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D else %7B%0A        for i := 0; i %3C 10; i++ %7B%0A%09%09    if i != n && i%252 == 0 %7B%0A%09%09%09    fmt.Print(i, %22d %22)%0A%09%09    %7D else %7B%0A                fmt.Print(i, %22e %22)%0A            %7D%0A%09    %7D%0A    %7D%0A%0A    pedra_ceu(n)%0A%7D\n %09%0A%0A%0Afunc\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-04-13_17-47-17",
+            "content": "@@ -121,433 +121,8 @@\n %7D%0A%0A%0A\n-func contagem(n int, pe string) %7B%0A%09fmt.Print(%22%5B %22)%0A    if pe == %22e%22 %7B%0A        for i := 0; i %3C 10; i++ %7B%0A%09%09    if i != n && i%252 == 0 %7B%0A%09%09%09    fmt.Print(i, %22e %22)%0A%09%09    %7D else if i != n && i%252 != 0 %7B%0A%09%09%09%09fmt.Print(i, %22d %22)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D else %7B%0A        for i := 0; i %3C 10; i++ %7B%0A%09%09    if i != n && i%252 == 0 %7B%0A%09%09%09    fmt.Print(i, %22d %22)%0A%09%09    %7D else %7B%0A                fmt.Print(i, %22e %22)%0A            %7D%0A%09    %7D%0A    %7D%0A%0A    pedra_ceu(n)%0A%7D\n %09%0A%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_17-47-48",
+            "content": "@@ -463,36 +463,26 @@\n lse \n-if i != n && i%252 != 0 %7B%0A%09%09%09%09\n+%7B%0A                \n fmt.\n@@ -491,24 +491,33 @@\n int(i, %22\n-d\n+e\n  %22)%0A\n-%09%09%09\n+            \n %7D%0A%09    %7D\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-13_17-48-19",
+            "content": "@@ -398,16 +398,26 @@\n %09%09    if\n+ i != n &&\n  i%252 == \n@@ -461,16 +461,26 @@\n  else if\n+ i != n &&\n  i%252 != \n@@ -497,25 +497,25 @@\n t.Print(i, %22\n-e\n+d\n  %22)%0A%09%09%09%7D%0A%09  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-13_17-55-55",
+            "content": "@@ -396,50 +396,12 @@\n %7B%0A%09%09\n-%09if i == n %7B%0A%09%09%09%09continue%0A%09%09%09%7D else %7B%0A%09%09%09%09\n+    \n if i\n@@ -405,34 +405,36 @@\n f i%252 == 0 %7B%0A%09%09%09\n-%09%09\n+    \n fmt.Print(i, %22d \n@@ -438,18 +438,20 @@\n %22d %22)%0A%09%09\n-%09%09\n+    \n %7D else i\n@@ -467,17 +467,16 @@\n 0 %7B%0A%09%09%09%09\n-%09\n fmt.Prin\n@@ -490,14 +490,8 @@\n  %22)%0A\n-%09%09%09%09%7D%0A\n %09%09%09%7D\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-13_17-57-26",
+            "content": "@@ -155,22 +155,8 @@\n ) %7B%0A\n-%09var cont int%0A\n %09fmt\n@@ -168,16 +168,16 @@\n t(%22%5B %22)%0A\n+\n     if p\n@@ -227,57 +227,26 @@\n %7B%0A%09%09\n-%09\n+    \n if i \n-=\n+!\n = n \n-%7B%0A%09%09%09%09continue%0A%09%09%09%7D else %7B%0A%09%09%09%09if cont\n+&& i\n %252 =\n@@ -246,34 +246,36 @@\n & i%252 == 0 %7B%0A%09%09%09\n-%09%09\n+    \n fmt.Print(i, %22e \n@@ -275,26 +275,28 @@\n (i, %22e %22)%0A%09%09\n-%09%09\n+    \n %7D else if co\n@@ -285,36 +285,43 @@\n %09%09    %7D else if \n-cont\n+i != n && i\n %252 != 0 %7B%0A%09%09%09%09%09f\n@@ -306,33 +306,32 @@\n n && i%252 != 0 %7B%0A\n-%09\n %09%09%09%09fmt.Print(i,\n@@ -333,30 +333,24 @@\n nt(i, %22d %22)%0A\n-%09%09%09%09%7D%0A\n %09%09%09%7D%0A%09%09%7D%0A%09%7D \n@@ -437,20 +437,17 @@\n %0A%09%09%09%09if \n-cont\n+i\n %252 == 0 \n@@ -486,20 +486,17 @@\n else if \n-cont\n+i\n %252 != 0 \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-13_18-00-07",
+            "content": "@@ -316,39 +316,24 @@\n nt(i, %22e %22)%0A\n-%09%09%09%09%09cont += 1%0A\n %09%09%09%09%7D else i\n@@ -340,32 +340,32 @@\n f cont%252 != 0 %7B%0A\n+\n %09%09%09%09%09fmt.Print(i\n@@ -368,39 +368,24 @@\n nt(i, %22d %22)%0A\n-%09%09%09%09%09cont += 1%0A\n %09%09%09%09%7D%0A%09%09%09%7D%0A%09\n@@ -512,39 +512,24 @@\n nt(i, %22d %22)%0A\n-%09%09%09%09%09cont += 1%0A\n %09%09%09%09%7D else i\n@@ -536,32 +536,32 @@\n f cont%252 != 0 %7B%0A\n+\n %09%09%09%09%09fmt.Print(i\n@@ -572,23 +572,8 @@\n  %22)%0A\n-%09%09%09%09%09cont += 1%0A\n %09%09%09%09\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-04-13_18-01-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n    var pe string\n\tfmt.Scan(&n)\n    fmt.Scan(&pe)\n\tcontagem(n, pe)\n}\n\n\nfunc contagem(n int, pe string) {\n\tvar cont int\n\tfmt.Print(\"[ \")\n    if pe == \"e\" {\n        for i := 0; i < 10; i++ {\n\t\t\tif i == n {\n\t\t\t\tcontinue\n\t\t\t} else {\n\t\t\t\tif cont%2 == 0 {\n\t\t\t\t\tfmt.Print(i, \"e \")\n\t\t\t\t\tcont += 1\n\t\t\t\t} else if cont%2 != 0 {\n\t\t\t\t\tfmt.Print(i, \"d \")\n\t\t\t\t\tcont += 1\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t} else {\n        for i := 0; i < 10; i++ {\n\t\t\tif i == n {\n\t\t\t\tcontinue\n\t\t\t} else {\n\t\t\t\tif cont%2 == 0 {\n\t\t\t\t\tfmt.Print(i, \"d \")\n\t\t\t\t\tcont += 1\n\t\t\t\t} else if cont%2 != 0 {\n\t\t\t\t\tfmt.Print(i, \"e \")\n\t\t\t\t\tcont += 1\n\t\t\t\t}\n\t\t\t}\n\t    }\n    }\n\n    pedra_ceu(n)\n}\t\n\n\nfunc pedra_ceu(n int) {\n    if n != 10 {\n\t\tfmt.Print(\"ceu \")\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "56"
+        }
+    ]
+}

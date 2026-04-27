@@ -23,9 +23,11 @@ func main() {
             if i == p {
                 fmt.Println("N")
                 break
-            } else  if i == h {
+            } else if i == h {
                 fmt.Println("S")
                 break
+            } else if i == 15 {
+                i -= 16
             }
         }
     }

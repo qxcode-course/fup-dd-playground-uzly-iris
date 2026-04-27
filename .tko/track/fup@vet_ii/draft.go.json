@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_17-07-58",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,240 +37,39 @@\n ) %7B%0A\n-%09var qtd int%0A%09fmt.Scan(&qtd)%0A%09numeros := make(%5B%5Dint, qtd)%0A%0A%09for i := range numeros %7B%0A%09%09fmt.Scan(&numeros%5Bi%5D)%0A%09%7D%0A%0A%09if qtd == 0 %7B%0A%09%09fmt.Println(%22%22)%0A%09%7D%0A%09for _, valor := range numeros %7B%0A%09%09if qtd != 0 %7B%0A%09%09%09fmt.Printf(%22%25v%5Cn%22, valor)%0A%09%09%7D%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-27_17-09-42",
+            "content": "@@ -188,28 +188,8 @@\n %0A%09%7D%0A\n-    fmt.Print(%22%5B %22)%0A\n %09for\n@@ -250,17 +250,18 @@\n intf(%22%25v\n- \n+%5Cn\n %22, valor\n@@ -273,25 +273,6 @@\n %0A%09%7D%0A\n-    fmt.Print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_17-13-02",
+            "content": "@@ -308,10 +308,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-27_17-13-14",
+            "content": "@@ -152,28 +152,8 @@\n %09%7D%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n %09if \n@@ -184,16 +184,36 @@\n (%22%22)%0A%09%7D%0A\n+    fmt.Print(%22%5B %22)%0A\n %09for _, \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-27_17-13-37",
+            "content": "@@ -207,24 +207,10 @@\n )%0A%09%7D\n- else %7B%0A        \n+%0A%09\n for \n@@ -237,28 +237,18 @@\n meros %7B%0A\n-            \n+%09%09\n if qtd !\n@@ -257,24 +257,11 @@\n 0 %7B%0A\n-                \n+%09%09%09\n fmt.\n@@ -285,36 +285,13 @@\n or)%0A\n-            %7D%0A        %7D%0A    \n+%09%09%7D%0A%09\n %7D%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-27_17-14-11",
+            "content": "@@ -194,16 +194,18 @@\n mt.Print\n+ln\n (%22%22)%0A%09%7D \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-27_17-14-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tnumeros := make([]int, qtd)\n\n\tfor i := range numeros {\n\t\tfmt.Scan(&numeros[i])\n\t}\n\n    fmt.Print(\"[ \")\n\tif qtd == 0 {\n\t\tfmt.Print(\"\")\n\t} else {\n        for _, valor := range numeros {\n            if qtd != 0 {\n                fmt.Printf(\"%v \", valor)\n            }\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}
