@@ -1,0 +1,159 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-06_00-29-25",
+            "content": "@@ -41,189 +41,35 @@\n     \n-var q1, q2 int%0A    v1 := make(%5B%5Dint, q1)%0A    for i := range v1 %7B%0A        fmt.Scan(&v1%5Bi%5D)%0A    %7D%0A    v2 := make(%5B%5Dint, q2)%0A    for i := range v2 %7B%0A        fmt.Scan(&v2%5Bi%5D)%0A    %7D%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-06_00-52-45",
+            "content": "@@ -218,241 +218,12 @@\n   %7D%0A\n+%0A\n     \n-x := contains(v1, v2)%0A    if x == true %7B%0A        fmt.Println(%22sim%22)%0A    %7D %0A%0A%7D%0A%0Afunc contains(v1 %5B%5Dint, v2 %5B%5Dint) bool %7B%0A    cont := 0%0A    for %7B%0A        %0A        %0A    %7D%0A    if cont == () %7B%0A        return true%0A    %7D%0A    return false\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-11_16-36-38",
+            "content": "@@ -364,84 +364,51 @@\n for \n-_, i := range v1%7B%0A        for _, elem := range v2 %7B%0A    \n+%7B%0A        %0A        %0A\n     \n+%7D%0A\n     if \n-i == elem\n+cont == ()\n  %7B%0A \n@@ -418,54 +418,41 @@\n     \n-        cont := %0A            %7D%0A        %7D%0A    %7D%0A\n+return true%0A    %7D%0A    return false\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_16-44-55",
+            "content": "@@ -290,48 +290,8 @@\n m%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22n%C3%A3o%22)%0A\n     \n@@ -464,34 +464,11 @@\n ont \n-+\n+:\n = \n-1%0A                break\n %0A   \n@@ -498,67 +498,7 @@\n   %7D%0A\n-    if cont %3E 1 %7B%0A        return true%0A    %7D%0A    return false\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_16-49-48",
+            "content": "@@ -321,17 +321,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A    \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_16-50-21",
+            "content": "@@ -213,24 +213,29 @@\n %5D)%0A    %7D%0A   \n+ x :=\n  contains(v1\n@@ -239,16 +239,109 @@\n (v1, v2)\n+%0A    if x == true %7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22nao%22)%0A    %7D \n %0A%0A%7D%0A%0Afun\n@@ -370,16 +370,21 @@\n 2 %5B%5Dint)\n+ bool\n  %7B%0A    c\n@@ -587,71 +587,41 @@\n     \n-fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22nao%22)%0A    %7D\n+return true%0A    %7D%0A    return false\n %0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_16-51-53",
+            "content": "@@ -402,16 +402,38 @@\n nt += 1%0A\n+                break%0A\n         \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_16-52-10",
+            "content": "@@ -380,39 +380,8 @@\n m %7B%0A\n-                fmt.Println(i)%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_16-58-59",
+            "content": "@@ -365,49 +365,53 @@\n     \n-fmt.Println(i)%0A            if i == elem %7B\n+if i == elem %7B%0A                fmt.Println(i)\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_16-59-13",
+            "content": "@@ -319,31 +319,8 @@\n v1%7B%0A\n-        fmt.Println(i)%0A\n     \n@@ -341,32 +341,59 @@\n m := range v2 %7B%0A\n+            fmt.Println(i)%0A\n             if i\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_16-59-23",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var q1, \n@@ -52,17 +52,20 @@\n  q2 int%0A\n-%09\n+    \n v1 := ma\n@@ -78,17 +78,20 @@\n nt, q1)%0A\n-%09\n+    \n for i :=\n@@ -98,26 +98,32 @@\n  range v1 %7B%0A\n-%09%09\n+        \n fmt.Scan(&v1\n@@ -127,20 +127,26 @@\n &v1%5Bi%5D)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n v2 := ma\n@@ -159,17 +159,20 @@\n nt, q2)%0A\n-%09\n+    \n for i :=\n@@ -183,18 +183,24 @@\n ge v2 %7B%0A\n-%09%09\n+        \n fmt.Scan\n@@ -208,20 +208,26 @@\n &v2%5Bi%5D)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n contains\n@@ -275,17 +275,20 @@\n %5Dint) %7B%0A\n-%09\n+    \n cont := \n@@ -289,17 +289,20 @@\n nt := 0%0A\n-%09\n+    \n for _, i\n@@ -313,21 +313,26 @@\n range v1\n- \n %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -338,18 +338,24 @@\n ntln(i)%0A\n-%09%09\n+        \n for _, e\n@@ -372,19 +372,28 @@\n ge v2 %7B%0A\n-%09%09%09\n+            \n if i == \n@@ -403,35 +403,68 @@\n m %7B%0A\n-%09%09%09%09cont += 1%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09\n+                cont += 1%0A            %7D%0A        %7D%0A    %7D%0A    \n if c\n@@ -473,18 +473,24 @@\n t %3E 1 %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -500,17 +500,20 @@\n (%22sim%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -517,10 +517,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -544,9 +544,12 @@\n o%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_16-59-32",
+            "content": "@@ -278,16 +278,30 @@\n  v1 %7B%0A%09%09\n+fmt.Println(i)\n %0A%09%09for _\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_17-00-32",
+            "content": "@@ -261,96 +261,29 @@\n for \n-i:= 0; i %3C len(v1); i++ %7B%0A%0A        if v1%5Bi%5D == v2%5Bi%5D %7B%0A            cont++%0A        %7D%0A%09%09/*\n+_, i := range v1 %7B%0A%09%09\n %0A%09%09f\n@@ -355,19 +355,8 @@\n %0A%09%7D%0A\n-        */%0A\n %09if \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_17-03-33",
+            "content": "@@ -429,22 +429,16 @@\n      */%0A\n-    %7D%0A\n %09if cont\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-11_17-04-08",
+            "content": "@@ -287,49 +287,9 @@\n + %7B%0A\n-        for j:= 0; j %3C len(v2); j++%7B%0A    \n+%0A\n     \n@@ -311,9 +311,9 @@\n  v2%5B\n-j\n+i\n %5D %7B%0A\n@@ -328,56 +328,15 @@\n     \n-    \n cont++%0A\n-                break%0A            %7D%0A%0A\n     \n@@ -341,17 +341,16 @@\n       %7D%0A\n-%0A\n %09%09/*%0A%09%09f\n@@ -439,114 +439,8 @@\n   %7D%0A\n-    if cont == len(v1)%7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A         fmt.Println(%22nao%22)%0A    %7D%0A%0A    /*%0A\n %09if \n@@ -505,21 +505,10 @@\n ao%22)%0A%09%7D%0A\n-        */%0A\n %7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-11_17-09-19",
+            "content": "@@ -543,10 +543,8 @@\n (v1)\n-/2\n %7B%0A  \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-10-00",
+            "content": "@@ -536,21 +536,15 @@\n  == \n-(\n len(v1)\n- - 1)\n /2%7B%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-11-30",
+            "content": "@@ -532,23 +532,29 @@\n cont == \n+(\n len(v1)\n+ - 1)\n /2%7B%0A    \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-11-36",
+            "content": "@@ -529,17 +529,17 @@\n if cont \n-%3E\n+=\n = len(v1\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-13-10",
+            "content": "@@ -530,24 +530,25 @@\n f cont %3E\n+=\n  len(v1)\n -2%7B%0A    \n@@ -543,9 +543,9 @@\n (v1)\n--\n+/\n 2%7B%0A \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-51-46",
+            "content": "@@ -530,17 +530,16 @@\n f cont %3E\n-=\n  len(v1)\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-52-18",
+            "content": "@@ -540,17 +540,17 @@\n len(v1)-\n-1\n+2\n %7B%0A      \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-11_17-52-37",
+            "content": "@@ -261,57 +261,69 @@\n for \n-_, i := range v1%7B%0A        for _, elem := range v2\n+i:= 0; i %3C len(v1); i++ %7B%0A        for j:= 0; j %3C len(v2); j++\n %7B%0A  \n@@ -417,24 +417,113 @@\n %7D%0A%0A        %7D\n+%0A%0A%09%09/*%0A%09%09for _, elem := range v2 %7B%0A%09%09%09if i == elem %7B%0A%09%09%09%09cont += 1%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A        */\n %0A    %7D%0A    i\n@@ -611,16 +611,105 @@\n (%22nao%22)%0A\n-\n     %7D\n+%0A%0A    /*%0A%09if cont %3E 1 %7B%0A%09%09fmt.Println(%22sim%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22nao%22)%0A%09%7D%0A        */\n %0A%7D%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-12_16-49-26",
+            "content": "@@ -11,25 +11,8 @@\n in%0A%0A\n-import %22slices%22%0A%0A\n impo\n@@ -287,53 +287,133 @@\n     \n-if slices.Contains(v2, i) %7B%0A%09%09%09%09cont += 1%0A%09%09%09\n+for _, elem := range v2%7B%0A            if v1%5Bi%5D == v2%5Bj%5D %7B%0A                cont++%0A                break%0A            %7D%0A%0A        \n %7D%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-12_16-55-20",
+            "content": "@@ -369,9 +369,9 @@\n ont \n-%3C\n+%3E\n = le\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-12_16-55-35",
+            "content": "@@ -369,9 +369,10 @@\n ont \n-%3E\n+%3C=\n  len\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-12_16-55-43",
+            "content": "@@ -346,18 +346,8 @@\n = 1%0A\n-%09%09%09%09break%0A\n %09%09%09%7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-12_16-55-56",
+            "content": "@@ -7,16 +7,33 @@\n e main%0A%0A\n+import %22slices%22%0A%0A\n import %22\n@@ -304,57 +304,33 @@\n     \n-for _, elem := range v2%7B%0A            if i == elem\n+if slices.Contains(v2, i)\n  %7B%0A%09\n@@ -350,24 +350,19 @@\n %09%09%09%09\n+break\n %0A%09%09%09%7D%0A\n-        %7D%0A\n     \n@@ -376,17 +376,16 @@\n f cont %3E\n-=\n  len(v1)\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-58-50",
+            "content": "@@ -392,11 +392,19 @@\n nt %3E\n- 1 \n+= len(v1)-1\n %7B%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-59-16",
+            "content": "@@ -357,13 +357,8 @@\n %09%09%09%09\n-break\n %0A%09%09%09\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-59-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar q1, q2 int\n\tv1 := make([]int, q1)\n\tfor i := range v1 {\n\t\tfmt.Scan(&v1[i])\n\t}\n\tv2 := make([]int, q2)\n\tfor i := range v2 {\n\t\tfmt.Scan(&v2[i])\n\t}\n\tcontains(v1, v2)\n\n}\n\nfunc contains(v1 []int, v2 []int) {\n\tcont := 0\n\tfor _, i := range v1{\n        for _, elem := range v2{\n            if i == elem {\n\t\t\t\tcont += 1\n\t\t\t\tbreak\n\t\t\t}\n        }\n    }\n    if cont > 1 {\n        fmt.Println(\"sim\")\n    } else {\n         fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "34"
+        }
+    ]
+}

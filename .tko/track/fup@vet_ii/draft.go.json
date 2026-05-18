@@ -32,8 +32,13 @@
         },
         {
             "label": "2026-04-27_17-14-22",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tnumeros := make([]int, qtd)\n\n\tfor i := range numeros {\n\t\tfmt.Scan(&numeros[i])\n\t}\n\n    fmt.Print(\"[ \")\n\tif qtd == 0 {\n\t\tfmt.Print(\"\")\n\t} else {\n        for _, valor := range numeros {\n            if qtd != 0 {\n                fmt.Printf(\"%v \", valor)\n            }\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "content": "@@ -249,16 +249,42 @@\n meros %7B%0A\n+            if qtd != 0 %7B%0A\n         \n@@ -316,16 +316,30 @@\n  valor)%0A\n+            %7D%0A\n         \n",
             "lines": "25"
+        },
+        {
+            "label": "2026-04-28_17-00-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar qtd int\n\tfmt.Scan(&qtd)\n\tnumeros := make([]int, qtd)\n\n\tfor i := range numeros {\n\t\tfmt.Scan(&numeros[i])\n\t}\n\n    fmt.Print(\"[ \")\n\tif qtd == 0 {\n\t\tfmt.Print(\"\")\n\t} else {\n        for _, valor := range numeros {\n                fmt.Printf(\"%v \", valor)\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "23"
         }
     ]
 }

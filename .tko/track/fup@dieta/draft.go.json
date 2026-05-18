@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-01-36",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,213 +37,39 @@\n ) %7B%0A\n-%09var qtd, x int%0A%09fmt.Scan(&qtd)%0A%09cals := make(%5B%5Dfloat64, qtd)%0A%0A%09for i := range cals %7B%0A%09%09fmt.Scan(&cals%5Bi%5D)%0A%09%7D%0A    media_cals(cals, qtd)%0A%7D%0A%0Afunc media_cals(cals%5B%5D float64, qtd int) float64 %7B%0A    for _, i := \n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-15-42",
+            "content": "@@ -43,24 +43,23 @@\n %09var qtd\n- float64\n+, x int\n %0A%09fmt.Sc\n@@ -96,17 +96,12 @@\n 64, \n-int(\n qtd)\n-)\n %0A%0A%09f\n@@ -148,21 +148,16 @@\n )%0A%09%7D%0A   \n- m :=\n  media_c\n@@ -175,27 +175,8 @@\n td)%0A\n-    fmt.Println(m)%0A\n %7D%0A%0Af\n@@ -210,23 +210,19 @@\n 64, qtd \n-float64\n+int\n ) float6\n@@ -233,102 +233,19 @@\n     \n-var i, x float64%0A    for _, i = range cals %7B%0A        x += i%0A    %7D%0A    m := x / qtd%0A    return m\n+for _, i := \n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_17-19-18",
+            "content": "@@ -199,18 +199,11 @@\n rint\n-f(%22%25.1f%22, \n+ln(\n m)%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-28_17-20-04",
+            "content": "@@ -206,10 +206,8 @@\n %25.1f\n-%5Cn\n %22, m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-28_17-20-13",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar qtd float64\n\tfmt.Scan(&qtd)\n\tcals := make([]float64, int(qtd))\n\n\tfor i := range cals {\n\t\tfmt.Scan(&cals[i])\n\t}\n    m := media_cals(cals, qtd)\n    fmt.Printf(\"%.1f\\n\", m)\n}\n\nfunc media_cals(cals[] float64, qtd float64) float64 {\n    var i, x float64\n    for _, i = range cals {\n        x += i\n    }\n    m := x / qtd\n    return m\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -192,6 +192,16 @@
         },
         {
             "label": "2026-04-13_18-05-08",
+            "content": "@@ -654,15 +654,8 @@\n    %7D\n-meudeus\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-54-17",
+            "content": "@@ -642,32 +642,39 @@\n 16%0A            %7D\n+meudeus\n %0A        %7D%0A    %7D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-57-36",
             "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar h, p, f, d int\n\tfmt.Scan(&h, &p, &f, &d)\n\n    if d == -1 {\n        for i := f;  ; i -- {\n            if i == p {\n                fmt.Println(\"N\")\n                break\n            } else if i == h {\n                fmt.Println(\"S\")\n                break\n            } else if i == 0 {\n                i += 16\n            }\n        }\n    } else {\n        for i := f;  ; i ++ {\n            if i == p {\n                fmt.Println(\"N\")\n                break\n            } else if i == h {\n                fmt.Println(\"S\")\n                break\n            } else if i == 15 {\n                i -= 16\n            }\n        }\n    }\n}\n",
             "lines": "34"
         }

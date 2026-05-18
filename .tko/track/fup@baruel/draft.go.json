@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_17-16-21",
+            "content": "@@ -41,419 +41,35 @@\n     \n-var qtd int%0A    fmt.Scan(&qtd)%0A    montante %0A%7D%0A%0Afunc sep_fig(montante %5B%5Dint) (%5B%5Dint, %5B%5Dint) %7B //tupla%0A    album := make(%5B%5Dint, 0, len(montante))%0A    repetidas := make(%5B%5Dint, 0, len(montante))%0A    for _, fig := range montante %7B%0A        if fig !contains(album, fig) %7B%0A            album = append(album, fig)%0A        %7D else %7B%0A            repetidas = append(repetidas, fig)%0A        %7D%0A    %7D%0A    return album, repetidas\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-11_17-31-34",
+            "content": "@@ -85,50 +85,9 @@\n nte \n-:= make(%5B%5Dint, qtd)%0A    sep_fig(montante)\n %0A\n+\n %7D%0A%0Af\n@@ -275,16 +275,21 @@\n      if \n+fig !\n contains\n@@ -304,17 +304,8 @@\n fig)\n- == false\n  %7B%0A \n@@ -414,32 +414,32 @@\n         %7D%0A    %7D%0A\n+\n     return album\n@@ -456,165 +456,4 @@\n s%0A%7D%0A\n-%0Afunc contains(album %5B%5Dint, fig int) bool %7B%0A    for _, elem := range album %7B%0A        if elem == fig %7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-11_17-39-17",
+            "content": "@@ -48,11 +48,8 @@\n  qtd\n-, B\n  int\n@@ -70,105 +70,9 @@\n &qtd\n-,&B)%0A    Baruel := make(%5B%5Dint, qtd)%0A    for i := range Baruel %7B%0A        fmt.Scan(Baruel%5Bi%5D)%0A    %7D\n+)\n %0A   \n@@ -154,16 +154,31 @@\n e %5B%5Dint)\n+ (%5B%5Dint, %5B%5Dint)\n  %7B //tup\n@@ -475,323 +475,31 @@\n     \n-for i, elem := range repetidas %7B%0A        if i == len(repetidas) - 1%7B%0A            fmt.Printf(%22%5B %25v %5D%22, elem)%0A        %7D%0A        fmt.Printf(%22%5B %25v %5D %22, elem)%0A    %7D%0A    for i, elem := range album %7B%0A        if i == len(album) - 1%7B%0A            fmt.Printf(%22%5B %25v %5D%22, elem)%0A        %7D%0A        fmt.Printf(%22%5B %25v %5D %22, elem)%0A    %7D\n+return album, repetidas\n %0A%7D%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-47-25",
+            "content": "@@ -646,34 +646,32 @@\n t.Printf(%22%5B %25v %5D\n-%5Cn\n %22, elem)%0A       \n@@ -814,10 +814,8 @@\n %25v %5D\n-%5Cn\n %22, e\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-11_17-54-05",
+            "content": "@@ -643,33 +643,33 @@\n  fmt.Printf(%22%5B %25\n-d\n+v\n  %5D%5Cn%22, elem)%0A   \n@@ -690,33 +690,33 @@\n  fmt.Printf(%22%5B %25\n-d\n+v\n  %5D %22, elem)%0A    \n@@ -809,17 +809,17 @@\n ntf(%22%5B %25\n-d\n+v\n  %5D%5Cn%22, e\n@@ -856,17 +856,17 @@\n ntf(%22%5B %25\n-d\n+v\n  %5D %22, el\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-11_17-58-08",
+            "content": "@@ -807,69 +807,26 @@\n rint\n+f\n (%22%5B \n-%22)%0A            fmt.Print(elem)%0A            fmt.Print(%22 %5D%22\n+%25d %5D%5Cn%22, elem\n )%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-11_17-59-05",
+            "content": "@@ -280,32 +280,35 @@\n m := make(%5B%5Dint,\n+ 0,\n  len(montante))%0A\n@@ -335,16 +335,19 @@\n e(%5B%5Dint,\n+ 0,\n  len(mon\n@@ -555,36 +555,16 @@\n   %7D%0A\n-    fmt.Print(%22%5B %22)%0A\n     for \n _, e\n@@ -551,33 +551,33 @@\n %7D%0A    %7D%0A    for \n-_\n+i\n , elem := range \n@@ -600,39 +600,48 @@\n     \n-fmt.Print(elem, %22 %22)\n+if i == len(repetidas) - 1%7B\n %0A    \n-%7D%0A\n+ \n     \n+   \n fmt.\n@@ -649,22 +649,46 @@\n rint\n-ln(%22 %5D%22)%0A%0A\n+f(%22%5B %25d %5D%5Cn%22, elem)%0A        %7D%0A \n     \n+   \n fmt.\n@@ -696,14 +696,32 @@\n rint\n+f\n (%22%5B \n-%22)\n+%25d %5D %22, elem)%0A    %7D\n %0A   \n@@ -717,33 +717,33 @@\n )%0A    %7D%0A    for \n-_\n+i\n , elem := range \n@@ -750,32 +750,124 @@\n album %7B%0A        \n+if i == len(album) - 1%7B%0A            fmt.Print(%22%5B %22)%0A            fmt.Print(elem)%0A            \n fmt.Print(elem, \n@@ -864,29 +864,32 @@\n int(\n-elem, \n %22 \n+%5D\n %22)%0A    \n-%7D%0A\n+    %7D%0A   \n     \n+ \n fmt.\n@@ -897,16 +897,32 @@\n rint\n-ln(%22 %5D%22)\n+f(%22%5B %25d %5D %22, elem)%0A    %7D\n %0A%7D%0A%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-12_17-08-44",
+            "content": "@@ -150,17 +150,16 @@\n mt.Scan(\n-&\n Baruel%5Bi\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-12_17-20-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, B int\n    fmt.Scan(&qtd,&B)\n    Baruel := make([]int, qtd)\n    for i := range Baruel {\n        fmt.Scan(&Baruel[i])\n    }\n    montante := make([]int, qtd)\n    sep_fig(montante)\n}\n\nfunc sep_fig(montante []int) { //tupla\n    album := make([]int, len(montante))\n    repetidas := make([]int, len(montante))\n    for _, fig := range montante {\n        if contains(album, fig) == false {\n            album = append(album, fig)\n        } else {\n            repetidas = append(repetidas, fig)\n        }\n    }\n    fmt.Print(\"[ \")\n    for _, elem := range repetidas {\n        fmt.Print(elem, \" \")\n    }\n    fmt.Println(\" ]\")\n\n    fmt.Print(\"[ \")\n    for _, elem := range album {\n        fmt.Print(elem, \" \")\n    }\n    fmt.Println(\" ]\")\n}\n\nfunc contains(album []int, fig int) bool {\n    for _, elem := range album {\n        if elem == fig {\n            return true\n        }\n    }\n    return false\n}\n",
+            "lines": "44"
+        }
+    ]
+}

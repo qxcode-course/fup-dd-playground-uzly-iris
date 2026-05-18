@@ -1,0 +1,8 @@
+2026-05-05 22:46:21, MOVE, v:1, k:fup@repetidos, mode:PICK
+2026-05-05 22:46:29, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:0, size:5
+2026-05-05 22:46:29, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-05-05 22:52:37, MOVE, v:1, k:fup@repetidos, mode:BACK
+2026-05-05 22:52:43, MOVE, v:1, k:sandbox@user_003, mode:PICK
+2026-05-05 22:52:43, EXEC, v:1, k:sandbox@user_003, mode:FULL, fail:COMP
+2026-05-05 22:52:24, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-05-05 22:55:15, MOVE, v:1, k:fup@repetidos, mode:EDIT

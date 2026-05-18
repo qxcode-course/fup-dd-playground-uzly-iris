@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_00-19-27",
+            "content": "@@ -41,51 +41,35 @@\n     \n-list := make(%5B%5Dint, 5)%0A    fmt.Println(list\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_00-21-32",
+            "content": "@@ -41,17 +41,16 @@\n     list\n-a\n  := make\n@@ -68,69 +68,24 @@\n     \n-%0A    for i := range lista %7B%0A        fmt.Scan(%5B%5Dlista(i))%0A    %7D\n+fmt.Println(list)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-28_00-24-57",
+            "content": "@@ -114,340 +114,24 @@\n can(\n-&lista%5Bi%5D)%0A    %7D%0A    x := indenticar_menor(lista)%0A    fmt.Println(x)%0A%7D%0A%0Afunc indenticar_menor(lista %5B%5Dint) int %7B%0A    var i int%0A    for _, i = range lista %7B%0A        for _, elem := range lista %7B%0A            if i %3E elem %7B%0A                continue%0A            %7D else %7B%0A                return i%0A            %7D%0A        %7D%0A    %7D%0A     return 1\n+%5B%5Dlista(i))%0A    %7D\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-28_01-51-25",
+            "content": "@@ -446,8 +446,8 @@\n urn \n-0\n+1\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_01-51-56",
+            "content": "@@ -231,50 +231,223 @@\n     \n-for _, elem := range lista %7B%0A        %0A    %7D\n+var i int%0A    for _, i = range lista %7B%0A        for _, elem := range lista %7B%0A            if i %3E elem %7B%0A                continue%0A            %7D else %7B%0A                return i%0A            %7D%0A        %7D%0A    %7D%0A     return 0\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-28_16-51-55",
+            "content": "@@ -231,316 +231,50 @@\n     \n-var cont, elem int%0A    for _, elem = range lista %7B%0A        for _, i := range lista %7B%0A            if i %3C= elem %7B%0A                cont += 1%0A            %7D else %7B%0A                cont = 0%0A                break%0A            %7D%0A        %7D%0A%0A        if cont == 5 %7B%0A            return elem%0A        %7D%0A    %7D%0A    return elem\n+for _, elem := range lista %7B%0A        %0A    %7D\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_16-58-10",
+            "content": "@@ -333,9 +333,9 @@\n f i \n-%3E\n+%3C\n = el\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-28_16-59-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    lista := make([]int, 5)\n    \n    for i := range lista {\n        fmt.Scan(&lista[i])\n    }\n    x := indenticar_menor(lista)\n    fmt.Println(x)\n}\n\nfunc indenticar_menor(lista []int) int {\n    var cont, elem int\n    for _, elem = range lista {\n        for _, i := range lista {\n            if i >= elem {\n                cont += 1\n            } else {\n                cont = 0\n                break\n            }\n        }\n\n        if cont == 5 {\n            return elem\n        }\n    }\n    return elem\n}\n",
+            "lines": "30"
+        }
+    ]
+}

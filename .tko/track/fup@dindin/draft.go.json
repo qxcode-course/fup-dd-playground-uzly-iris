@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-44-27",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,176 +37,39 @@\n ) %7B%0A\n-%09var qtd int%0A%09fmt.Scan(&qtd)%0A    sabor := make(%5B%5Dint, qtd)%0A%09turno := make(%5B%5Dint, qtd)%0A%0A%09for i := 0 ; i %3C qtd ; i++ %7B%0A        fmt.Scan(&sabor%5Bi%5D)%0A%09%09fmt.Scan(&turno%5Bi%5D)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_18-05-31",
+            "content": "@@ -209,29 +209,6 @@\n %0A%09%7D%0A\n-    fmt.Println(sabor)%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-06-18",
+            "content": "@@ -68,19 +68,47 @@\n td)%0A    \n-inf\n+sabor := make(%5B%5Dint, qtd)%0A%09turn\n o := mak\n@@ -136,18 +136,25 @@\n  := \n-range info\n+0 ; i %3C qtd ; i++\n  %7B%0A \n@@ -170,19 +170,42 @@\n t.Scan(&\n-inf\n+sabor%5Bi%5D)%0A%09%09fmt.Scan(&turn\n o%5Bi%5D)%0A%09%7D\n@@ -225,12 +225,13 @@\n tln(\n-info\n+sabor\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_18-13-31",
+            "content": "@@ -72,42 +72,11 @@\n     \n-sabor := make(%5B%5Dstring, qtd)%0A%09turn\n+inf\n o :=\n@@ -87,14 +87,11 @@\n e(%5B%5D\n-str\n in\n-g\n+t\n , qt\n@@ -108,25 +108,18 @@\n  := \n-0 ; i %3C qtd ; i++\n+range info\n  %7B%0A \n@@ -139,34 +139,11 @@\n an(&\n-sabor%5Bi%5D)%0A%09%09fmt.Scan(&turn\n+inf\n o%5Bi%5D\n@@ -167,13 +167,12 @@\n tln(\n-sabor\n+info\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-14-11",
+            "content": "@@ -47,45 +47,13 @@\n  qtd\n-, contSC, contSL, contTM, contTT\n  int%0A\n+\n %09fmt\n@@ -215,588 +215,29 @@\n %0A%09%7D%0A\n-%0A    for _, i := range sabor %7B%0A        if i == %22c%22 %7B%0A            contSC += 1%0A        %7D else %7B%0A            contSL += 1%0A        %7D%0A    %7D%0A%0A    for _, i := range turno %7B%0A        if i == %22m%22 %7B%0A            contTM += 1%0A        %7D else %7B%0A            contTT += 1%0A        %7D%0A    %7D%0A%0A    if contSC %3E contSL %7B%0A        fmt.Print(%22c %22)%0A    %7D else if contSC == contSL %7B%0A        fmt.Println(%22empate%22)%0A    %7D else %7B%0A        fmt.Print(%22l %22)%0A    %7D%0A%0A    if contTM %3E contTT %7B%0A        fmt.Println(%22m%22)%0A    %7D else if contTM == contTT %7B%0A        fmt.Println(%22empate%22)%0A    %7D else %7B%0A        fmt.Println(%22t%22)%0A    %7D\n+    fmt.Println(sabor)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_18-24-06",
+            "content": "@@ -554,18 +554,16 @@\n mt.Print\n-ln\n (%22c %22)%0A \n@@ -654,18 +654,16 @@\n mt.Print\n-ln\n (%22l %22)%0A \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-28_18-24-18",
+            "content": "@@ -559,16 +559,17 @@\n intln(%22c\n+ \n %22)%0A    %7D\n@@ -661,16 +661,17 @@\n intln(%22l\n+ \n %22)%0A    %7D\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-28_18-24-34",
+            "content": "@@ -716,17 +716,17 @@\n rintln(%22\n-t\n+m\n %22)%0A    %7D\n@@ -809,28 +809,28 @@\n    fmt.Println(%22\n-m\n+t\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-04_18-19-35",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar qtd, contSC, contSL, contTM, contTT int\n\tfmt.Scan(&qtd)\n    sabor := make([]string, qtd)\n\tturno := make([]string, qtd)\n\n\tfor i := 0 ; i < qtd ; i++ {\n        fmt.Scan(&sabor[i])\n\t\tfmt.Scan(&turno[i])\n\t}\n\n    for _, i := range sabor {\n        if i == \"c\" {\n            contSC += 1\n        } else {\n            contSL += 1\n        }\n    }\n\n    for _, i := range turno {\n        if i == \"m\" {\n            contTM += 1\n        } else {\n            contTT += 1\n        }\n    }\n\n    if contSC > contSL {\n        fmt.Println(\"c\")\n    } else if contSC == contSL {\n        fmt.Println(\"empate\")\n    } else {\n        fmt.Println(\"l\")\n    }\n\n    if contTM > contTT {\n        fmt.Println(\"t\")\n    } else if contTM == contTT {\n        fmt.Println(\"empate\")\n    } else {\n        fmt.Println(\"m\")\n    }\n}\n",
+            "lines": "47"
+        }
+    ]
+}

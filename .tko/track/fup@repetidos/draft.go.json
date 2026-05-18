@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_22-46-29",
+            "content": "@@ -41,369 +41,35 @@\n     \n-var p, n int%0A    fmt.Scan(&p, &n)%0A    var lista %5B%5Dint = make(%5B%5Dint, n)%0A    %0A    for i := range lista %7B%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    cont := count(lista, p)%0A    fmt.Println(cont)%0A%7D%0A%0Afunc count(lista %5B%5Dint, p int) int %7B%0A    contador := 0%0A    for _, elem := range lista %7B%0A        if elem == p %7B%0A            contador += 1%0A        %7D%0A    %7D%0A    return contador\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-06_00-29-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, n int\n    fmt.Scan(&p, &n)\n    var lista []int = make([]int, n)\n    \n    for i := range lista {\n        fmt.Scan(&lista[i])\n    }\n    cont := count(lista, p)\n    fmt.Println(cont)\n}\n\nfunc count(lista []int, p int) int {\n    contador := 0\n    for _, elem := range lista {\n        if elem == p {\n            contador += 1\n        }\n    }\n    return contador\n}\n",
+            "lines": "23"
+        }
+    ]
+}

@@ -34,16 +34,6 @@ func contains(nums []int, valor int) bool {
     return false
 }
 
-func count(nums []int, valor int) int {
-    contador := 0
-    for _, elem := range nums {
-        if elem == valor {
-            contador += 1
-        }
-    }
-    return contador
-}
-
 func sep_fig(montante []int) ([]int, []int) { //tupla
     album := make([]int, 0, len(montante))
     repetidas := make([]int, 0, len(montante))

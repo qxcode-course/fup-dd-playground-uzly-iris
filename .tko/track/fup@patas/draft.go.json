@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-22-19",
+            "content": "@@ -10,792 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0A%0Afunc main() %7B%0A%09var qtd int%0A    var cebolinha, CB float64%0A%09fmt.Scan(&CB, &cebolinha, &qtd)%0A%09animais := make(%5B%5Dstring, qtd)%0A%0A%09for i := range animais %7B%0A%09%09fmt.Scan(&animais%5Bi%5D)%0A%09%7D%0A    pernas(animais, cebolinha, CB)%0A%7D%0A%0Afunc pernas(animais%5B%5D string, cebolinha float64, CB float64) %7B%0A    var cont float64%0A    for _, i := range animais %7B%0A        switch i %7B%0A        case %22v%22:%0A            cont += 4%0A        case %22g%22:%0A            cont += 2%0A        case %22c%22:%0A            cont +=4 %0A        %7D%0A    %7D%0A    fmt.Println(cont)%0A    if math.Abs(cont - CB) %3E math.Abs(cont - cebolinha) %7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D else if math.Abs(cont - CB) %3E math.Abs(cont - cebolinha) %7B%0A        fmt.Println(%22empate%22)%0A    %7D else %7B%0A        fmt.Println(%22Chico Bento%22)%0A    %7D%0A    \n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-43-02",
+            "content": "@@ -676,10 +676,9 @@\n CB) \n-==\n+%3E\n  mat\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-28_17-43-14",
+            "content": "package main\n\nimport (\n    \"fmt\"\n    \"math\"\n)\n\nfunc main() {\n\tvar qtd int\n    var cebolinha, CB float64\n\tfmt.Scan(&CB, &cebolinha, &qtd)\n\tanimais := make([]string, qtd)\n\n\tfor i := range animais {\n\t\tfmt.Scan(&animais[i])\n\t}\n    pernas(animais, cebolinha, CB)\n}\n\nfunc pernas(animais[] string, cebolinha float64, CB float64) {\n    var cont float64\n    for _, i := range animais {\n        switch i {\n        case \"v\":\n            cont += 4\n        case \"g\":\n            cont += 2\n        case \"c\":\n            cont +=4 \n        }\n    }\n    fmt.Println(cont)\n    if math.Abs(cont - CB) > math.Abs(cont - cebolinha) {\n        fmt.Println(\"Cebolinha\")\n    } else if math.Abs(cont - CB) == math.Abs(cont - cebolinha) {\n        fmt.Println(\"empate\")\n    } else {\n        fmt.Println(\"Chico Bento\")\n    }\n    \n}\n",
+            "lines": "41"
+        }
+    ]
+}
