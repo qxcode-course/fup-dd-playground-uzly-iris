@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_17-04-35",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,206 +41,35 @@\n     \n-var qtd int%0A    arr := make(%5B%5Dint, qtd)%0A    str := 0%0A    end := len(arr) - 1%0A%0A    for str %3C end %7B%0A        arr%5Bstr%5D, arr%5Bend%5D = arr%5Bend%5D, arr%5Bstr%5D%0A        str++%0A        end--%0A    %7D%0A%0A    fmt.Print(arr\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_17-13-39",
+            "content": "@@ -237,93 +237,11 @@\n int(\n-%22%5B %22)%0A    for i := range arr %7B%0A        fmt.Print(arr%5Bi%5D, %22 %22)%0A    %7D%0A    fmt.Print(%22%5D%22\n+arr\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_17-15-39",
+            "content": "@@ -54,27 +54,8 @@\n int%0A\n-    fmt.Scan(&qtd)%0A\n     \n@@ -82,65 +82,8 @@\n td)%0A\n-    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-25_17-20-33",
+            "content": "@@ -397,10 +397,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-25_17-20-41",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    arr := make([]int, qtd)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n    str := 0\n    end := len(arr) - 1\n\n    for str < end {\n        arr[str], arr[end] = arr[end], arr[str]\n        str++\n        end--\n    }\n\n    fmt.Print(\"[ \")\n    for i := range arr {\n        fmt.Print(arr[i], \" \")\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}

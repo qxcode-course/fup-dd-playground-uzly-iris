@@ -1,44 +1,30 @@
 package main
 import "fmt"
+import "slice"
+
 func main() {
-    var qtd, B int
-    fmt.Scan(&qtd,&B)
-    Baruel := make([]int, qtd)
-    for i := range Baruel {
-        fmt.Scan(&Baruel[i])
-    }
-    montante := make([]int, qtd)
-    sep_fig(montante)
+    var max, qtdb int
+    fmt.Scan(&max, &qtdb)
+    montante := make([]int, qtdb)
+
+    for i := range montante {
+        fmt.Scan(montante[i])
+    }  
+
+    sepfig(montante)
 }
 
-func sep_fig(montante []int) { //tupla
-    album := make([]int, len(montante))
-    repetidas := make([]int, len(montante))
+func sepfig(montante []int) {
+    album := make([]int, 0)
+    repet := make([]int, 0)
+
     for _, fig := range montante {
-        if contains(album, fig) == false {
+        if !Slices(album, fig) {
             album = append(album, fig)
         } else {
-            repetidas = append(repetidas, fig)
+            repet = append(repet, fig)
         }
     }
-    fmt.Print("[ ")
-    for _, elem := range repetidas {
-        fmt.Print(elem, " ")
-    }
-    fmt.Println(" ]")
 
-    fmt.Print("[ ")
-    for _, elem := range album {
-        fmt.Print(elem, " ")
-    }
-    fmt.Println(" ]")
-}
-
-func contains(album []int, fig int) bool {
-    for _, elem := range album {
-        if elem == fig {
-            return true
-        }
-    }
-    return false
+    
 }

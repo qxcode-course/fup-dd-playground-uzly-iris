@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-20_22-49-27",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import (\n@@ -19,15 +19,28 @@\n t (%0A\n-%09\n+  \n %22fmt%22%0A\n+  %22strconv%22%0A\n )%0Afu\n@@ -358,347 +358,67 @@\n     \n-balatro = append(balatro, %22A%22)%0A        %7D else if \n elem =\n-= 11 %7B%0A            balatro = append(balatro, %22J%22)%0A        %7D else if elem == 12 %7B%0A            balatro = append(balatro, %22Q%22)%0A        %7D else if elem == 13 %7B%0A            balatro = append(balatro, %22K%22)%0A        %7D else %7B%0A            i := string(elem)%0A            balatro = append(balatro, i\n+ s%0A            balatro = append(balatro, string(elem)\n )%0A  \n@@ -434,13 +434,7 @@\n    %7D\n-%0A%0A    \n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-21_00-00-48",
+            "content": "@@ -27,22 +27,8 @@\n mt%22%0A\n-    %22strconv%22%0A\n )%0Afu\n@@ -319,37 +319,22 @@\n     \n-switch elem %7B%0A        case 1:\n+if elem == 1 %7B\n %0A   \n@@ -385,16 +385,30 @@\n     \n-case 11:\n+%7D else if elem == 11 %7B\n %0A   \n@@ -459,16 +459,30 @@\n     \n-case 12:\n+%7D else if elem == 12 %7B\n %0A   \n@@ -533,16 +533,30 @@\n     \n-case 13:\n+%7D else if elem == 13 %7B\n %0A   \n@@ -607,16 +607,16 @@\n     \n-default:\n+%7D else %7B\n %0A   \n@@ -636,17 +636,11 @@\n  str\n-conv.Itoa\n+ing\n (ele\n@@ -704,56 +704,11 @@\n  %7D%0A%0A\n+\n     \n-for _, elem := range balatro %7B%0A        %0A    %7D\n %0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-21_00-39-13",
+            "content": "@@ -696,80 +696,8 @@\n   %7D%0A\n-    print(balatro)%0A%7D%0A%0Afunc print(balatro %5B%5Dstring) %7B%0A    fmt.Print(%22%5B %22)\n %0A   \n@@ -704,17 +704,20 @@\n  for _, \n-i\n+elem\n  := rang\n@@ -740,52 +740,13 @@\n     \n-fmt.Printf(%22%25v %22, i)%0A    %7D%0A    fmt.Print(%22%5D%22)\n+%0A    %7D\n %0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-21_01-02-16",
+            "content": "@@ -38,16 +38,189 @@\n rconv%22%0A)\n+%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    if qtd == 0 %7B%0A        fmt.Println(%22%22)%0A    %7D else %7B%0A        codb := make(%5B%5Dint, qtd)%0A        sep_cod(codb, qtd)%0A    %7D%0A%0A%7D\n %0A%0Afunc s\n@@ -857,178 +857,4 @@\n )%0A%7D%0A\n-%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    if qtd == 0 %7B%0A        fmt.Println(%22%22)%0A    %7D else %7B%0A        codb := make(%5B%5Dint, qtd)%0A        sep_cod(codb, qtd)%0A    %7D%0A%0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-21_01-02-45",
+            "content": "@@ -769,18 +769,16 @@\n rintln(%22\n-%5B%5D\n %22)%0A    %7D\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-21_01-03-17",
+            "content": "@@ -588,16 +588,17 @@\n Print(%22%5B\n+ \n %22)%0A    f\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-21_01-03-37",
+            "content": "@@ -27,64 +27,60 @@\n mt%22%0A\n-)%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    \n+    %22strconv%22%0A)%0A%0Afunc sep_cod(codb %5B%5Dint, qtd int) %7B\n %0A   \n@@ -111,16 +111,20 @@\n g, qtd)%0A\n+    \n %0A    for\n@@ -128,90 +128,112 @@\n for \n-i := 0 ; i %3C qtd; i++ %7B%0A        fmt.Scan(&balatro%5Bi%5D)%0A%0A        switch \n+_, elem := range codb %7B%0A        switch elem %7B%0A        case 1:%0A            balatro = append(\n balatro\n-%5Bi%5D %7B\n+, %22A%22)\n %0A   \n@@ -246,11 +246,10 @@\n ase \n-%221%22\n+11\n :%0A  \n@@ -269,17 +269,31 @@\n atro\n-%5Bi%5D = %22A%22\n+ = append(balatro, %22J%22)\n %0A   \n@@ -306,12 +306,10 @@\n ase \n-%2211%22\n+12\n :%0A  \n@@ -329,17 +329,31 @@\n atro\n-%5Bi%5D = %22J%22\n+ = append(balatro, %22Q%22)\n %0A   \n@@ -366,12 +366,10 @@\n ase \n-%2212%22\n+13\n :%0A  \n@@ -389,82 +389,194 @@\n atro\n-%5Bi%5D = %22Q%22%0A        case %2213%22:%0A            balatro%5Bi%5D = %22K%22%0A        %7D%0A    %7D%0A\n+ = append(balatro, %22K%22)%0A        default:%0A            i := strconv.Itoa(elem)%0A            balatro = append(balatro, i)%0A        %7D%0A    %7D%0A    print(balatro)%0A%7D%0A%0Afunc print(balatro %5B%5Dstring) %7B\n %0A   \n@@ -589,14 +589,11 @@\n rint\n-ln\n (%22%5B\n- \n %22)%0A \n@@ -602,38 +602,68 @@\n  for\n+ _,\n  i := \n-0 ; i %3C qtd ; i++ %7B\n+range balatro %7B%0A        fmt.Printf(%22%25v %22, i)\n %0A    \n+%7D%0A\n     \n@@ -675,33 +675,92 @@\n rint\n-ln(balatro%5Bi%5D)%0A    %7D%0A\n+(%22%5D%22)%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    if qtd == 0 %7B%0A   \n     \n+ \n fmt.\n@@ -768,14 +768,95 @@\n rintln(%22\n+%5B\n %5D%22)%0A\n+    %7D else %7B%0A        codb := make(%5B%5Dint, qtd)%0A        sep_cod(codb, qtd)%0A    %7D%0A%0A\n %7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-23_05-18-57",
+            "content": "@@ -428,16 +428,18 @@\n mt.Print\n+ln\n (%22%5B %22)%0A \n@@ -521,16 +521,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_05-19-07",
+            "content": "@@ -485,16 +485,18 @@\n mt.Print\n+ln\n (balatro\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_05-19-35",
+            "content": "@@ -439,65 +439,8 @@\n  %22)%0A\n-    if qtd == 0 %7B%0A        fmt.Print(%22%22)%0A    %7D else %7B%0A    \n     \n@@ -500,24 +500,9 @@\n o%5Bi%5D\n-, %22 %22)%0A        %7D\n+)\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_05-21-37",
+            "content": "@@ -431,16 +431,17 @@\n Print(%22%5B\n+ \n %22)%0A    i\n@@ -547,13 +547,8 @@\n int(\n-%22 %22, \n bala\n@@ -553,16 +553,21 @@\n latro%5Bi%5D\n+, %22 %22\n )%0A      \n@@ -591,15 +591,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-23_05-22-00",
+            "content": "@@ -590,14 +590,15 @@\n .Print(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-23_05-22-10",
+            "content": "@@ -536,116 +536,8 @@\n     \n-    if i == qtd - 1 %7B%0A                fmt.Print(balatro%5Bi%5D)%0A                break%0A            %7D%0A            \n fmt.\n@@ -542,16 +542,21 @@\n t.Print(\n+%22 %22, \n balatro%5B\n@@ -561,14 +561,8 @@\n o%5Bi%5D\n-, %22, %22\n )%0A  \n@@ -595,10 +595,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-23_05-29-45",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    \n    balatro := make([]string, qtd)\n\n    for i := 0 ; i < qtd; i++ {\n        fmt.Scan(&balatro[i])\n\n        switch balatro[i] {\n        case \"1\":\n            balatro[i] = \"A\"\n        case \"11\":\n            balatro[i] = \"J\"\n        case \"12\":\n            balatro[i] = \"Q\"\n        case \"13\":\n            balatro[i] = \"K\"\n        }\n    }\n\n    fmt.Print(\"[\")\n    if qtd == 0 {\n        fmt.Print(\"\")\n    } else {\n        for i := 0 ; i < qtd ; i++ {\n            if i == qtd - 1 {\n                fmt.Print(balatro[i])\n                break\n            }\n            fmt.Print(balatro[i], \", \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "41"
+        }
+    ]
+}

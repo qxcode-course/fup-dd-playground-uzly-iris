@@ -1,0 +1,50 @@
+2026-05-20 05:20:11, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-05-20 05:24:57, EXEC, v:1, k:fup@revolta, mode:FULL, size:18, fail:COMP
+2026-05-20 05:29:45, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:23
+2026-05-20 05:29:43, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:29:45, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:30:52, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0
+2026-05-20 05:32:46, EXEC, v:1, k:fup@revolta, mode:FREE, size:15
+2026-05-20 05:33:03, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:34:23, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:36:20, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:17
+2026-05-20 05:36:31, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:17
+2026-05-20 05:37:58, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:36:31, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:45:06, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:50:03, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:55:07, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 05:59:27, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:06:58, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:14:26, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:19:43, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:24:40, EXEC, v:1, k:fup@revolta, mode:FULL, rate:20, size:33
+2026-05-20 06:24:40, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:24:40, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:26:14, MOVE, v:1, k:fup@revolta, mode:BACK
+2026-05-20 06:26:17, MOVE, v:1, k:fup@cartas, mode:DOWN
+2026-05-20 06:27:50, MOVE, v:1, k:fup@cartas, mode:PICK
+2026-05-20 06:27:59, EXEC, v:1, k:fup@cartas, mode:FULL, rate:0, size:5
+2026-05-20 06:27:59, EXEC, v:1, k:fup@cartas, mode:FULL, rate:0, size:5
+2026-05-20 06:25:25, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-20 06:26:18, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:26:18, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:26:18, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:27:59, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:34:11, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:39:16, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:45:07, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:50:03, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 06:53:00, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 07:00:08, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 07:00:45, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 07:09:35, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 07:25:02, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 22:49:26, MOVE, v:1, k:fup@cartas, mode:PICK
+2026-05-20 22:49:27, EXEC, v:1, k:fup@cartas, mode:FULL, size:27, fail:COMP
+2026-05-20 22:54:21, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 22:59:20, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 23:04:08, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 23:05:48, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 23:12:09, MOVE, v:1, k:fup@cartas, mode:EDIT
+2026-05-20 23:53:28, MOVE, v:1, k:fup@cartas, mode:EDIT

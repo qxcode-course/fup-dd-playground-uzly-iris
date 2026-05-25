@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-26-34",
+            "content": "@@ -23,231 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criaScanea(qtd int) %7B%0A    fmt.Scan(&qtd)%0A    fun := make(%5B%5Dint, qtd)%0A    %0A    for i := range fun %7B%0A   \n+main() %7B%0A\n     \n- \n fmt.\n-Scan(&fun%5Bi%5D)%0A    %7D%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    soldados := criaScanea(qtd)%0A    println(soldados)%0A\n+Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-20_05-24-57",
+            "content": "@@ -197,127 +197,35 @@\n     \n-fmt.Scan(&qtd)%0A    soldados := make(%5B%5Dint, qtd)%0A    %0A    for i := range soldados %7B%0A        fmt.Scan(&soldados%5Bi%5D)%0A    %7D\n+soldados := criaScanea(qtd)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-20_05-29-45",
+            "content": "@@ -20,16 +20,155 @@\n  %22fmt%22%0A%0A\n+func criaScanea(qtd int) %7B%0A    fmt.Scan(&qtd)%0A    fun := make(%5B%5Dint, qtd)%0A    %0A    for i := range fun %7B%0A        fmt.Scan(&fun%5Bi%5D)%0A    %7D%0A%7D%0A%0A\n func mai\n@@ -313,17 +313,16 @@\n )%0A    %7D%0A\n-%0A\n     prin\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-20_05-32-46",
+            "content": "@@ -183,49 +183,9 @@\n     \n-for _, i := range soldados%7B%0A        fmt.P\n+p\n rint\n@@ -195,22 +195,13 @@\n soldados\n-%5Bi%5D)%0A    %7D\n+)\n %0A%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-20_05-36-20",
+            "content": "@@ -227,17 +227,27 @@\n Println(\n-i\n+soldados%5Bi%5D\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-20_05-36-31",
+            "content": "@@ -73,24 +73,24 @@\n td)%0A    \n-batalhao\n+soldados\n  := make\n@@ -122,32 +122,32 @@\n  i := range \n-batalhao\n+soldados\n  %7B%0A        f\n@@ -159,112 +159,27 @@\n an(&\n-batalhao%5Bi%5D)%0A    %7D%0A    sepsold(batalhao)%0A%7D%0A%0Afunc sepsold(batalhao %5B%5Dint) %7B%0A    conti := 0%0A    conts := 0\n+soldados%5Bi%5D)%0A    %7D%0A\n %0A   \n@@ -186,20 +186,17 @@\n  for _, \n-elem\n+i\n  := rang\n@@ -201,291 +201,46 @@\n nge \n-batalhao %7B%0A        if elem %25 2 == 0 %7B%0A            conts += 1%0A        %7D else %7B%0A            conti += 1%0A        %7D%0A    %7D%0A%0A    if conts %3E conti %7B%0A        fmt.Println(%22soldados%22)%0A    %7D else if conti == conts %7B%0A        fmt.Println(%22empate%22)%0A    %7D else %7B%0A        fmt.Println(%22rebeldes%22)%0A    %7D\n+soldados%7B%0A        fmt.Println(i)%0A    %7D%0A\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-20_06-24-40",
+            "content": "@@ -420,9 +420,9 @@\n nts \n-%3C\n+%3E\n  con\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_03-49-13",
+            "content": "@@ -19,16 +19,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -42,17 +42,19 @@\n     var \n-t\n+qtd\n  int%0A   \n@@ -68,19 +68,25 @@\n an(&\n-t)%0A\n+qtd)\n %0A    \n-num\n+batalhao\n  := \n@@ -101,10 +101,17 @@\n nt, \n-t)\n+qtd)%0A    \n %0A   \n@@ -116,37 +116,39 @@\n    for i := \n-0; i %3C t; i++\n+range batalhao \n %7B%0A        fm\n@@ -155,19 +155,24 @@\n t.Scan(&\n-num\n+batalhao\n %5Bi%5D)%0A   \n@@ -178,14 +178,73 @@\n   %7D%0A\n-%0A    r\n+    sepsold(batalhao)%0A%7D%0A%0Afunc sepsold(batalhao %5B%5Dint) %7B%0A    conti\n  := \n@@ -253,24 +253,27 @@\n     \n+cont\n s := 0%0A\n-%0A\n     for \n i :=\n@@ -272,26 +272,34 @@\n for \n-i := 0; i %3C t; i++\n+_, elem := range batalhao \n %7B%0A  \n@@ -307,22 +307,20 @@\n      if \n-num%5Bi%5D\n+elem\n  %25 2 == \n@@ -320,16 +320,17 @@\n %25 2 == 0\n+ \n %7B%0A      \n@@ -339,19 +339,18 @@\n     \n-r += num%5Bi%5D\n+conts += 1\n %0A   \n@@ -379,19 +379,18 @@\n     \n-s += num%5Bi%5D\n+conti += 1\n %0A   \n@@ -406,20 +406,30 @@\n   %7D%0A\n+%0A\n     if \n-r %3E s\n+conts %3C conti \n %7B%0A  \n@@ -451,15 +451,15 @@\n ln(%22\n-rebelde\n+soldado\n s%22)%0A\n@@ -476,13 +476,23 @@\n  if \n-s %3E r\n+conti == conts \n %7B%0A  \n@@ -506,32 +506,30 @@\n mt.Println(%22\n-soldados\n+empate\n %22)%0A    %7D els\n@@ -545,33 +545,35 @@\n    fmt.Println(%22\n-empate\n+rebeldes\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-25_17-04-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t int\n    fmt.Scan(&t)\n\n    num := make([]int, t)\n    for i := 0; i < t; i++{\n        fmt.Scan(&num[i])\n    }\n\n    r := 0\n    s := 0\n\n    for i := 0; i < t; i++{\n        if num[i] % 2 == 0{\n            r += num[i]\n        } else {\n            s += num[i]\n        }\n    }\n    if r > s{\n        fmt.Println(\"rebeldes\")\n    } else if s > r{\n        fmt.Println(\"soldados\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "29"
+        }
+    ]
+}
