@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_18-25-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar qnt int\n\tfmt.Scan(&qnt)\n\n\tcontagem := make(map[int]int)\n\tfor i := 0; i < qnt; i++ {\n\t\tvar animal int\n\t\tfmt.Scan(&animal)\n\t\tcontagem[animal]++\n\t}\n\n\tcasais := 0\n\n\tfor especie, qtdMachos := range contagem {\n\t\tif especie > 0 {\n\t\t\tqtdFemeas := contagem[-especie]\n\t\t\tif qtdMachos < qtdFemeas {\n\t\t\t\tcasais += qtdMachos\n\t\t\t} else {\n\t\t\t\tcasais += qtdFemeas\n\t\t\t}\n\t\t}\n\t}\n\tfmt.Println(casais)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

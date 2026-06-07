@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_12-33-13",
+            "content": "@@ -5,17 +5,16 @@\n age main\n- \n %0Aimport \n@@ -36,432 +36,40 @@\n () %7B\n- \n %0A    \n-    var str%0A        fmt.Scan(&str)%0A        // Get Unicode code points. %0A        n := 0%0A        rune := make(%5B%5Drune, len(str))%0A        for _, r := range str %7B %0A                rune%5Bn%5D = r%0A                n++%0A        %7D %0A        rune = rune%5B0:n%5D%0A        %0A        for i := 0; i %3C n/2; i++ %7B %0A                rune%5Bi%5D, rune%5Bn-1-i%5D = rune%5Bn-1-i%5D, rune%5Bi%5D %0A        %7D %0A%0A        output := string(rune)%0A        fmt.Println(output\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-04_12-39-31",
+            "content": "@@ -50,23 +50,16 @@\n  var str\n- string\n %0A       \n@@ -282,16 +282,24 @@\n ne%5B0:n%5D%0A\n+        \n %0A       \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-04_12-39-44",
+            "content": "@@ -35,16 +35,20 @@\n in() %7B %0A\n+    \n     var \n@@ -54,13 +54,8 @@\n  str\n-, rts\n  str\n@@ -58,24 +58,28 @@\n  string%0A    \n+  \n+  \n fmt.Scan(&st\n@@ -81,17 +81,111 @@\n n(&str)%0A\n-%0A\n+        // Get Unicode code points. %0A        n := 0%0A        rune := make(%5B%5Drune, len(str))%0A    \n     for \n@@ -187,17 +187,17 @@\n  for _, \n-e\n+r\n  := rang\n@@ -203,25 +203,30 @@\n ge str %7B\n-%0A\n+ %0A    \n         \n rts = st\n@@ -221,37 +221,225 @@\n     \n-rts = string(e) + rts%0A    %7D%0A%0A\n+    rune%5Bn%5D = r%0A                n++%0A        %7D %0A        rune = rune%5B0:n%5D%0A%0A        for i := 0; i %3C n/2; i++ %7B %0A                rune%5Bi%5D, rune%5Bn-1-i%5D = rune%5Bn-1-i%5D, rune%5Bi%5D %0A        %7D %0A%0A        output := string(rune)%0A    \n     \n@@ -454,11 +454,14 @@\n tln(\n-rts\n+output\n )%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-04_12-51-30",
+            "content": "@@ -82,28 +82,8 @@\n tr)%0A\n-    fmt.Println(str)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-04_12-52-02",
+            "content": "@@ -43,80 +43,132 @@\n     \n-str := make(%5B%5Dstring, 0)%0A    rts := make(%5B%5Dstring, 0)%0A    fmt.Scan(&str)\n+var str, rts string%0A    fmt.Scan(&str)%0A    fmt.Println(str)%0A    for _, e := range str %7B%0A        rts = string(e) + rts%0A    %7D%0A\n %0A   \n@@ -180,15 +180,15 @@\n Println(\n-str\n+rts\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-04_20-09-55",
+            "content": "@@ -68,16 +68,40 @@\n  0)%0A    \n+rts := make(%5B%5Dstring, 0)\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-04_20-10-06",
+            "content": "@@ -68,38 +68,13 @@\n  0)%0A\n-%0A\n     \n-for i := range str %7B%0A    \n+%0A\n     \n@@ -90,19 +90,9 @@\n &str\n-%5Bi%5D)%0A    %7D%0A\n+)\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-04_20-12-28",
+            "content": "package main \nimport \"fmt\"\nfunc main() { \n    str := make([]string, 0)\n\n    for i := range str {\n        fmt.Scan(&str[i])\n    }\n\n    fmt.Println(str)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_10-39-07",
+            "content": "@@ -41,582 +41,35 @@\n     \n-var qnt int%0A    fmt.Scan(&qnt)%0A%0A    sequencia := make(%5B%5Dint, qnt)%0A    for i := 0; i %3C qnt; i++%7B%0A        fmt.Scan(&sequencia%5Bi%5D)%0A    %7D%0A%0A    contador := 0%0A%0A%0A    for i := 0; i %3C len(sequencia); i++%7B%0A        if sequencia%5Bi%5D == 0%7B%0A            temUmPerto := false%0A%0A            if i %3E 0 && sequencia%5Bi-1%5D == 1%7B%0A                temUmPerto = true%0A            %7D%0A%0A            if i %3C len(sequencia)-1 && sequencia%5Bi+1%5D == 1%7B%0A                temUmPerto = true%0A            %7D%0A            if temUmPerto==false%7B%0A            contador++%0A            %7D%0A        %7D%0A%0A    %7D%0A%0A    fmt.Println(contador\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-04_10-39-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qnt int\n    fmt.Scan(&qnt)\n\n    sequencia := make([]int, qnt)\n    for i := 0; i < qnt; i++{\n        fmt.Scan(&sequencia[i])\n    }\n\n    contador := 0\n\n\n    for i := 0; i < len(sequencia); i++{\n        if sequencia[i] == 0{\n            temUmPerto := false\n\n            if i > 0 && sequencia[i-1] == 1{\n                temUmPerto = true\n            }\n\n            if i < len(sequencia)-1 && sequencia[i+1] == 1{\n                temUmPerto = true\n            }\n            if temUmPerto==false{\n            contador++\n            }\n        }\n\n    }\n\n    fmt.Println(contador)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-26-37",
+            "content": "@@ -23,686 +23,53 @@\n mt%22%0A\n-%0A\n func \n-contains(lista %5B%5Dint, valor int) bool%7B%0A    for _, elem := range lista%7B%0A        if elem == valor%7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D%0A%0Afunc separar_figurinhas(montante %5B%5Dint) (%5B%5Dint)%7B%0A%0A    especies := make(%5B%5Dint, 0)%0A%0A    for _, animal := range montante %7B%0A%0A        if !contains(especies, animal) %7B%0A            especies = append(especies, animal)%0A%0A        %7D%0A    %7D%0A%0A    return especies%0A%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    animais := make(%5B%5Dint, qtd)%0A%0A    for i := range animais%7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D%0A%0A    especies := separar_figurinhas(animais)%0A%0A    for _, elem := range especies%7B%0A        fmt.Print(elem, %22 %22)%0A    %7D   \n+main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-37-02",
+            "content": "@@ -691,10 +691,8 @@\n , %22 \n-%5Cn\n %22)%0A \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-01_17-37-10",
+            "content": "@@ -691,16 +691,18 @@\n , %22 \n+%5Cn\n %22)%0A    %7D\n %0A   \n@@ -701,27 +701,10 @@\n    %7D\n-%0A\n    \n- fmt.Print(%22%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-01_17-37-39",
+            "content": "@@ -665,51 +665,8 @@\n es%7B%0A\n-        if elem == len(especies) - 1 %7B%0A    \n     \n@@ -691,31 +691,21 @@\n , %22 \n-%5Cn\n %22)%0A    \n-  \n-  %7D%0A  \n+%7D%0A\n     \n-  \n fmt.\n@@ -710,27 +710,16 @@\n t.Print(\n-elem, %22 %22)%0A    %7D\n+%22%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-01_17-38-58",
+            "content": "@@ -661,16 +661,100 @@\n pecies%7B%0A\n+        if elem == len(especies) - 1 %7B%0A            fmt.Print(elem, %22 %5Cn%22)%0A        %7D%0A\n         \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-01_17-39-23",
+            "content": "@@ -665,88 +665,8 @@\n es%7B%0A\n-        if elem == len(especies) %7B%0A            fmt.Print(elem, %22 %5Cn%22)%0A        %7D%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-01_17-41-41",
+            "content": "@@ -735,26 +735,8 @@\n n%22)%0A\n-            break%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-01_17-41-55",
+            "content": "@@ -762,20 +762,9 @@\n    %7D\n- else %7B%0A    \n+%0A\n     \n@@ -792,27 +792,8 @@\n  %22)%0A\n-        %7D%0A        %0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-01_17-42-21",
+            "content": "@@ -721,15 +721,20 @@\n rint\n-ln\n (elem\n+, %22 %5Cn%22\n )%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-01_17-42-48",
+            "content": "@@ -634,17 +634,17 @@\n     for \n-i\n+_\n , elem :\n@@ -672,17 +672,20 @@\n      if \n-i\n+elem\n  == len(\n@@ -697,12 +697,8 @@\n ies)\n- - 1\n  %7B%0A \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-01_17-43-48",
+            "content": "@@ -22,22 +22,8 @@\n fmt%22\n-%0Aimport %22sort%22\n %0A%0Afu\n@@ -628,32 +628,8 @@\n ais)\n-%0A    sort.Ints(especies)\n %0A%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-01_17-45-25",
+            "content": "package main\nimport \"fmt\"\nimport \"sort\"\n\nfunc contains(lista []int, valor int) bool{\n    for _, elem := range lista{\n        if elem == valor{\n            return true\n        }\n    }\n    return false\n}\n\nfunc separar_figurinhas(montante []int) ([]int){\n\n    especies := make([]int, 0)\n\n    for _, animal := range montante {\n\n        if !contains(especies, animal) {\n            especies = append(especies, animal)\n\n        }\n    }\n\n    return especies\n\n}\n\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    animais := make([]int, qtd)\n\n    for i := range animais{\n        fmt.Scan(&animais[i])\n    }\n\n    especies := separar_figurinhas(animais)\n    sort.Ints(especies)\n\n    for i, elem := range especies{\n        if i == len(especies) - 1 {\n            fmt.Println(elem)\n            break\n        } else {\n            fmt.Print(elem, \" \")\n        }\n        \n    }\n}\n",
+            "lines": "51"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-48-38",
+            "content": "@@ -41,466 +41,35 @@\n     \n-var qtd, cont, res int%0A    fmt.Scan(&qtd)%0A    blocos := make (%5B%5Dint, qtd)%0A    for i := range blocos %7B%0A        fmt.Scan(&blocos%5Bi%5D)%0A    %7D%0A%0A    for _, elem := range blocos %7B%0A        if elem %3E res %7B%0A            if elem - 1 %3E res %7B%0A                cont += 1%0A                continue%0A            %7D%0A        %7D else if elem %3C res %7B%0A            if elem + 1 %3C res %7B%0A                cont += 1%0A                continue%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(cont\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_18-09-14",
+            "content": "@@ -320,54 +320,8 @@\n nue%0A\n-            %7D else %7B%0A                continue%0A\n     \n@@ -448,54 +448,8 @@\n nue%0A\n-            %7D else %7B%0A                continue%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-01_18-10-02",
+            "content": "@@ -295,35 +295,8 @@\n = 1%0A\n-                res = elem%0A\n     \n@@ -469,33 +469,8 @@\n = 1%0A\n-                res elem%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_18-10-37",
+            "content": "@@ -503,34 +503,32 @@\n              res\n- =\n  elem%0A          \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_18-10-46",
+            "content": "@@ -178,27 +178,8 @@\n   %7D%0A\n-    res = blocos%5B0%5D\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_18-11-30",
+            "content": "@@ -660,16 +660,12 @@\n tln(cont\n- - 1\n )%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_18-13-03",
+            "content": "@@ -660,12 +660,16 @@\n tln(cont\n+ - 1\n )%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_18-14-54",
+            "content": "@@ -627,46 +627,8 @@\n   %7D%0A\n-        %7D else %7B%0A            continue%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_18-15-25",
+            "content": "@@ -387,35 +387,8 @@\n e %7B%0A\n-                res = elem%0A\n     \n@@ -604,43 +604,47 @@\n     \n-res = elem%0A                continue\n+continue%0A            %7D%0A        %7D else %7B\n %0A   \n@@ -644,33 +644,40 @@\n e %7B%0A            \n-%7D\n+continue\n %0A        %7D%0A    %7D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_18-17-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, cont, res int\n    fmt.Scan(&qtd)\n    blocos := make ([]int, qtd)\n    for i := range blocos {\n        fmt.Scan(&blocos[i])\n    }\n    res = blocos[0]\n    for _, elem := range blocos {\n        if elem > res {\n            if elem - 1 > res {\n                cont += 1\n                res = elem\n                continue\n            } else {\n                res = elem\n                continue\n            }\n        } else if elem < res {\n            if elem + 1 < res {\n                cont += 1\n                res = elem\n                continue\n            } else {\n                res = elem\n                continue\n            }\n        }\n    }\n\n    fmt.Println(cont)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

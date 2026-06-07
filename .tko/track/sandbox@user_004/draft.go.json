@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-28_21-13-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var seios_fartos bool\n    fmt.Println(\"Pode mamar?\")\n    fmt.Scan(&seios_fartos)\n\n    if seios_fartos == true {\n        fmt.Println(\"gogogo\")\n    } else {\n        fmt.Println(\"poxa...\")\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}

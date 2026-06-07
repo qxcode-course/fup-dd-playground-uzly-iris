@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_18-14-04",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,434 +37,39 @@\n ) %7B%0A\n-%09var P, S, E int%0A%09if _, err := fmt.Scan(&P, &S, &E); err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09posicao := 0%0A%09salto := S%0A%0A%09for %7B%0A%09%09posSalto := posicao + salto%0A%09%09if salto %3C 0 %7B%0A%09%09%09posSalto = posicao + salto + 10%0A%09%09%7D%0A%0A%09%09if posSalto %3E= P %7B%0A%09%09%09fmt.Printf(%22%25d saiu%5Cn%22, posicao)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, posicao, posSalto)%0A%0A%09%09posicao = posSalto - E%0A%0A%09%09if posicao %3C 0 %7B%0A%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, posicao)%0A%09%09%09break%0A%09%09%7D%0A%09%09salto -= 10%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_18-14-11",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\tif _, err := fmt.Scan(&P, &S, &E); err != nil {\n\t\treturn\n\t}\n\n\tposicao := 0\n\tsalto := S\n\n\tfor {\n\t\tposSalto := posicao + salto\n\t\tif salto < 0 {\n\t\t\tposSalto = posicao + salto + 10\n\t\t}\n\n\t\tif posSalto >= P {\n\t\t\tfmt.Printf(\"%d saiu\\n\", posicao)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", posicao, posSalto)\n\n\t\tposicao = posSalto - E\n\n\t\tif posicao < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", posicao)\n\t\t\tbreak\n\t\t}\n\t\tsalto -= 10\n\t}\n}\n",
+            "lines": "35"
+        }
+    ]
+}

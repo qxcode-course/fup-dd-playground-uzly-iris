@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_11-15-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    esq := make([]int, 70)\n    dir := make([]int, 70)\n\n    for i := 0; i < n; i++ {\n\n        var tamanho int\n        var lado string\n\n        fmt.Scan(&tamanho, &lado)\n\n        if lado == \"E\" {\n            esq[tamanho]++\n        } else {\n            dir[tamanho]++\n        }\n    }\n\n    pares := 0\n\n    for i := 0; i < 70; i++ {\n\n        if esq[i] < dir[i] {\n            pares += esq[i]\n        } else {\n            pares += dir[i]\n        }\n    }\n\n    fmt.Println(pares)\n}\n",
+            "lines": "36"
+        }
+    ]
+}

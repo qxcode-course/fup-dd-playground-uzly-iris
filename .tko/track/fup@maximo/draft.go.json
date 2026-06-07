@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_16-50-28",
+            "content": "@@ -41,141 +41,35 @@\n     \n-var numA, numB int%0A    fmt.Scan(&numA, &numB)%0A%0A    if numA%3EnumB%7B%0A        fmt.Println(numA)%0A    %7D else%7B%0A        fmt.Println(numB)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_16-50-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numA, numB int\n    fmt.Scan(&numA, &numB)\n\n    if numA>numB{\n        fmt.Println(numA)\n    } else{\n        fmt.Println(numB)\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

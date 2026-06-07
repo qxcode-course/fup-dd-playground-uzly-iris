@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_11-22-51",
+            "content": "@@ -17,250 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A    primo := 1%0A%0A    for i := 2; i %3C= int(math.Sqrt(float64(n))); i++%7B%0A        if n %25 i == 0%7B%0A            primo = 0%0A            break%0A        %7D%0A    %7D%0A%0A    fmt.Println(primo\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-04_11-24-44",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    primo := 1\n\n    for i := 2; i <= int(math.Sqrt(float64(n))); i++{\n        if n % i == 0{\n            primo = 0\n            break\n        }\n    }\n\n    fmt.Println(primo)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

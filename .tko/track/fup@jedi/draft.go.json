@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_12-02-01",
+            "content": "@@ -41,405 +41,35 @@\n     \n-var qtd, cj, cs int%0A    fmt.Scan(&qtd)%0A    arr := make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A    for i, e := range arr %7B%0A        if i %3C= qtd / 2 %7B%0A            cj += e%0A        %7D else %7B%0A            cs += e%0A        %7D%0A    %7D%0A%0A    if cj %3E cs %7B%0A        fmt.Println(%22Jedi%22)%0A    %7D else if cj == cs %7B%0A        fmt.Println(%22Empate%22)%0A    %7D else %7B%0A        fmt.Println(Sith%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-04_12-16-42",
+            "content": "@@ -423,17 +423,16 @@\n Println(\n-%22\n Sith%22)%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-04_12-16-50",
+            "content": "@@ -293,47 +293,8 @@\n   %7D%0A\n-    fmt.Println(cj)%0A    fmt.Println(cs)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-04_12-17-29",
+            "content": "@@ -204,16 +204,17 @@\n   if i %3C\n+=\n  qtd / 2\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-04_12-17-40",
+            "content": "@@ -292,16 +292,51 @@\n   %7D%0A    \n+fmt.Println(cj)%0A    fmt.Println(cs)\n %0A    if \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-04_12-17-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, cj, cs int\n    fmt.Scan(&qtd)\n    arr := make([]int, qtd)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n\n    for i, e := range arr {\n        if i < qtd / 2 {\n            cj += e\n        } else {\n            cs += e\n        }\n    }\n    \n    if cj > cs {\n        fmt.Println(\"Jedi\")\n    } else if cj == cs {\n        fmt.Println(\"Empate\")\n    } else {\n        fmt.Println(\"Sith\")\n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}
