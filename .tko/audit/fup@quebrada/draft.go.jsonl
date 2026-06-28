@@ -1,0 +1,12 @@
+{"ts":1782530654,"hash":"77baaf077a3f1b10378c7d50386c1f610174a46cf375508929520c4bf490b064","mode":"full","content":"H4sIAGJCP2oC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAEFZYpFCnqGOQp6RQmZeCViIq5YLAKhxDa9CAAAA"}
+{"ts":1782530676,"hash":"2c37cb2197c3e2ff15ff8d66b5baede2ee5df6b270061abd329c52c5017fab9b","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"    fmt.Scan(&n1, &n2)\n    fmt\n"}]}
+{"ts":1782530697,"hash":"4f2850c392994fc8c54e34c71c076c1977acc296897e1e98fb922a76ce77577e","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    fmt.\n"}]}
+{"ts":1782530777,"hash":"baca4ec1559a545203aa8bedd1833cfae55f1a38aaeae2a1c1cae578f5b3f6ad","mode":"diff","ops":[{"tag":"replace","a1":5,"a2":6,"text":"    fmt.Println(n1/n2)\n    fmt.Println()\n"}]}
+{"ts":1782530802,"hash":"02d1f67ce8d0fd937e5c2833e3a12b432d0bd13ed15e84caec6a71410a9db988","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"    fmt.Println(n1%n2)\n    \n"}]}
+{"ts":1782531756,"hash":"e807a84e9f75c502dab7ef7bbf353feefc15f2a45c5a964be35bc633397e5539","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    x = mo\n"}]}
+{"ts":1782531778,"hash":"cc28d5994e7fa08fd82f64b850ebb2df3d2fe1947d3eaee589e21c997cc638f2","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    x := float64(n1/n2)\n"}]}
+{"ts":1782531812,"hash":"27d59e78387b5f1125b6132a17aad819c0747f2e44abb25327712201079c4243","mode":"diff","ops":[{"tag":"insert","a1":8,"a2":8,"text":"    fmt.Printf(\"%v\"x)\n"}]}
+{"ts":1782531834,"hash":"29df6a019725c4aa7f548f0789e48bb5aa0a8b9bc68dd30389e61575cdb23595","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    fmt.Printf(\"%.2f\"x)\n"}]}
+{"ts":1782531857,"hash":"4dfbff417b53acdf614b3f0718befea7659a82d0bc00b4c2257c9e2639792146","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    fmt.Printf(\"%.2f\\n\", x)\n"}]}
+{"ts":1782597206,"hash":"5dc2f1cba0817d19ecfaa947d7ded7a04b87b569810df31346be43be5168e466","mode":"full","content":"H4sIAGJGQGoC/23MSwrCMBSF4XlWcQikJFAqDeJA6B4Ep05CMBJsbkuI0lbcu2l9gOIdfvfn9MaezemIYDwxH/ouJnAXEmfuQnZhqXBjyHc1EVSXIA1PaaFcVntrSBbzoyCtPryLOWpJUr36z+LNA7YNXNuZtFlnf+L4ha9ymlEOEBh/Fp3kotLuQLzEpNidPQBTLWiT2QAAAA=="}
+{"ts":1782597278,"hash":"b0e6a46c127a211ebdc524dd0524f12c3bcfae67a998792953f0490b049d4fec","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    z := (10 % y)\n"}]}

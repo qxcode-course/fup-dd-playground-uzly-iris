@@ -1,0 +1,10 @@
+{"ts":1782529256,"hash":"475171e1c01716b47256e9306a3c8ce85afd89aaa046ecac0e547bc5149b5921","mode":"full","content":"H4sIAOk8P2oC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC84OREowFXLBQD5TMEBOQAAAA=="}
+{"ts":1782529293,"hash":"536f581f5fc0eaa738a6d49212d54655fb7d332a2a8a75e4dae56a16068c27cb","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    fmt.Scan(&l)\n    c := l\n"}]}
+{"ts":1782529317,"hash":"4efe0f7a284911877e9a18f409a71e3687024a024c6c3ad0776bf1ddb142adad","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"    c := l[0]\n\n    if c >= 'a' && \n"}]}
+{"ts":1782529755,"hash":"2e15a8601994a383f3359455eebe97888218e5f222ac5d7eb0b4412f2b4e73fb","mode":"diff","ops":[{"tag":"replace","a1":6,"a2":7,"text":"    if c >= 'a' && c <= 'z'{\n        fmt.Println()\n    }\n"}]}
+{"ts":1782529787,"hash":"69302ce0b31b07bdc8cc24c73ad4552cfabe247510fe900cfdaebd5bc11194f8","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":9,"text":"        fmt.Println(string(c - 32))\n    } if c \n"}]}
+{"ts":1782529817,"hash":"f863edf4694d3ed5e8bd4d732deb338f312740c62448d9adc8ee8b1394ca9b96","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    } if c >= 'A' && c \n"}]}
+{"ts":1782529847,"hash":"1891f9ee7171e423b001f84430086057c70e85a6cd5dd9bf20bcd8789ed02cd2","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    } if c >= 'A' && c <= 'Z'{\n        fmt.Println(string(c + 32))\n    }\n"}]}
+{"ts":1782529867,"hash":"f9b1203c712b52b6aed0c7a5fc2a2e4e816bde2f965440a2b073033ccd4ca1a4","mode":"diff","ops":[{"tag":"insert","a1":10,"a2":10,"text":"    } else {\n        \n"}]}
+{"ts":1782529895,"hash":"781894fe6d3d6659fb6102c26d16c05fa8ae23a9edfd75bebbf2b0bebe005ea5","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"    var l string\n"},{"tag":"replace","a1":8,"a2":9,"text":"    } else if c >= 'A' && c <= 'Z'{\n"},{"tag":"replace","a1":11,"a2":12,"text":"\n"}]}
+{"ts":1782529933,"hash":"33e38c14c877216ef80b58ba58fc2c6c088cb1a020b67bc8369df3467349ca41","mode":"diff","ops":[{"tag":"replace","a1":12,"a2":13,"text":"        fmt.Println(string(c))\n"}]}

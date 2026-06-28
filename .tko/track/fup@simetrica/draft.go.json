@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_08-21-57",
+            "content": "@@ -41,577 +41,35 @@\n     \n-var t%5B3%5D%5B3%5D int%0A    var matriz%5B3%5D%5B3%5D int%0A%0A    for i := 0 ; i %3C 3 ; i++ %7B%0A        for j := 0 ; j %3C 3 ; j++ %7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A    for j := 0 ; j %3C 3 ; j++ %7B%0A        for i := 0 ; i %3C 3 ; i++ %7B%0A            t%5Bj%5D%5Bi%5D = matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A%0A    s := true%0A%0A    for i := 0 ; i %3C 3 ; i++ %7B%0A        for j := 0 ; j %3C 3 ; j++ %7B%0A            if matriz%5Bi%5D%5Bj%5D != t%5Bi%5D%5Bj%5D %7B%0A                s = false%0A                break%0A            %7D%0A        %7D%0A    %7D%0A%0A    if s == true %7B%0A        fmt.Printf(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22nao%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_09-06-29",
+            "content": "@@ -553,18 +553,17 @@\n mt.Print\n-ln\n+f\n (%22sim%22)%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-28_09-06-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t[3][3] int\n    var matriz[3][3] int\n\n    for i := 0 ; i < 3 ; i++ {\n        for j := 0 ; j < 3 ; j++ {\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n    for j := 0 ; j < 3 ; j++ {\n        for i := 0 ; i < 3 ; i++ {\n            t[j][i] = matriz[i][j]\n        }\n    }\n\n    s := true\n\n    for i := 0 ; i < 3 ; i++ {\n        for j := 0 ; j < 3 ; j++ {\n            if matriz[i][j] != t[i][j] {\n                s = false\n                break\n            }\n        }\n    }\n\n    if s == true {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "35"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_02-59-47",
+            "content": "@@ -41,238 +41,35 @@\n     \n-var l string%0A    fmt.Scan(&l)%0A    c := l%5B0%5D%0A%0A    if c %3E= 'a' && c %3C= 'z'%7B%0A        fmt.Println(string(c - 32))%0A    %7D else if c %3E= 'A' && c %3C= 'Z'%7B%0A        fmt.Println(string(c + 32))%0A    %7D else %7B%0A        fmt.Println(string(c))%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_03-12-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l string\n    fmt.Scan(&l)\n    c := l[0]\n\n    if c >= 'a' && c <= 'z'{\n        fmt.Println(string(c - 32))\n    } else if c >= 'A' && c <= 'Z'{\n        fmt.Println(string(c + 32))\n    } else {\n        fmt.Println(string(c))\n    }\n}\n",
+            "lines": "15"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{"ts":1782528816,"hash":"e40381ddc82e7c47fe2653d4714c2afb8d7a1e927545062638274cc06ced1c4c","mode":"full","content":"H4sIADA7P2oC/y3MsQrDQAgG4N2nkAxFoZTOhb5DoWPIIEcuSHomXO0U8u4xR938P/1XSbNMIxZRQ9CyLtWRuMvFO8g/S02IcUPAmK9XfDwjnEfqh9jUpiveGZrmpaKeXsWi9DzeGjQsfnsnMbpE3uvATfb/Z+AryvxjFMywwwFlr8yKmwAAAA=="}
+{"ts":1782528836,"hash":"29e5bcb8b096d0049de4e726faf2f41064e29d718f851f6f1b138456c32896fe","mode":"diff","ops":[{"tag":"replace","a1":1,"a2":2,"text":"import (\n    \"fmt\"\n    \"\"\n)\n"}]}
+{"ts":1782528917,"hash":"f6c0af3f31390c8c8907bf42c0c74f28aa28f2f84a6ad2a32814a0c89f8f7bef","mode":"diff","ops":[{"tag":"replace","a1":3,"a2":4,"text":"    \"bufio\"\n    \"os\"\n"},{"tag":"replace","a1":6,"a2":13,"text":"    scanner := bufio.\n"}]}
+{"ts":1782528937,"hash":"b26bbf808eaff4510c13e36396e63e5900ed84918e2b2022fc2c845022423fbb","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    scanner := bufio.NewScanner(os.Stdin)\n    \n"}]}
+{"ts":1782528962,"hash":"bf334bb7e1776def7c899128552429d8756397f594a67b89012d579e3b0b1f24","mode":"diff","ops":[{"tag":"replace","a1":8,"a2":9,"text":"    scanner.Scan()\n\n    for i:=\n"}]}
+{"ts":1782528995,"hash":"e24738fb6eba7aabd4b3802b64fcbf216b641cd0531af7d70f56657513741a77","mode":"diff","ops":[{"tag":"insert","a1":9,"a2":9,"text":"    str := scanner.Text()\n"}]}
+{"ts":1782529017,"hash":"0f47c371922f1bd197f9b981eb9e397f1cebfcfbe7ce0338226accb8e0de4718","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    for i := len(str)\n"}]}
+{"ts":1782529054,"hash":"71436c9930a532d49ab4edc2bfb5cee970d30c56cd0b17ed8d584c9895ff8249","mode":"diff","ops":[{"tag":"replace","a1":11,"a2":12,"text":"    for i := len(str) - 1 ; i >= 0 ; i-- {\n        fmt.Print(string(frase))\n    }\n"}]}
+{"ts":1782529105,"hash":"a46bedb002349b99951e435576a566e03be44a07a8d691644901bb8a264dc5c9","mode":"diff","ops":[{"tag":"replace","a1":12,"a2":13,"text":"        fmt.Print(string(str[i]))\n"}]}

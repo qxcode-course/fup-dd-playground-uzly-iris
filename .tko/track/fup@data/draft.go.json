@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_22-06-39",
+            "content": "@@ -41,122 +41,35 @@\n     \n-var h, mi, d, me, a string%0A    fmt.Scan(&h, &mi, &d, &me, &a)%0A%0A    fmt.Println(h, %22:%22, mi, %22 %22, d, %22/%22, me, %22/%22, a\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_22-20-17",
+            "content": "@@ -141,12 +141,22 @@\n d, %22/%22, \n+me, %22/%22, a\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-27_22-21-33",
+            "content": "@@ -57,19 +57,22 @@\n , me, a \n+str\n in\n-t\n+g\n %0A    fmt\n@@ -108,528 +108,45 @@\n     \n-if h %3C 10 %7B%0A        fmt.Printf(%220%25d%22, h)%0A        fmt.Print(%22:%22)%0A    %7D else %7B%0A        fmt.Print(h)%0A        fmt.Print(%22:%22)%0A    %7D%0A    if mi %3C 10 %7B%0A        fmt.Printf(%220%25d%22, mi)%0A    %7D else %7B%0A        fmt.Print(mi)%0A    %7D%0A    fmt.Print(%22 %22)%0A    if d %3C 10 %7B%0A        fmt.Printf(%220%25d%22, d)%0A        fmt.Print(%22/%22)%0A    %7D else %7B%0A        fmt.Print(d)%0A        fmt.Print(%22/%22)%0A    %7D%0A    if me %3C 10 %7B%0A        fmt.Printf(%220%25d%22, me)%0A        fmt.Print(%22/%22)%0A    %7D else %7B%0A        fmt.Print(me)%0A        fmt.Print(%22/%22)%0A    %7D%0A    fmt.Print(%2288%5Cn%22)%0A\n+fmt.Println(h, %22:%22, mi, %22 %22, d, %22/%22, )\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-27_22-34-51",
+            "content": "@@ -608,93 +608,25 @@\n     \n-if a == 2005 %7B%0A        fmt.Println(%2205%22)%0A    %7D else %7B%0A        fmt.Println(%2288%22)%0A    %7D\n+fmt.Print(%2288%5Cn%22)\n %0A%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-27_22-36-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, mi, d, me, a int\n    fmt.Scan(&h, &mi, &d, &me, &a)\n\n    if h < 10 {\n        fmt.Printf(\"0%d\", h)\n        fmt.Print(\":\")\n    } else {\n        fmt.Print(h)\n        fmt.Print(\":\")\n    }\n    if mi < 10 {\n        fmt.Printf(\"0%d\", mi)\n    } else {\n        fmt.Print(mi)\n    }\n    fmt.Print(\" \")\n    if d < 10 {\n        fmt.Printf(\"0%d\", d)\n        fmt.Print(\"/\")\n    } else {\n        fmt.Print(d)\n        fmt.Print(\"/\")\n    }\n    if me < 10 {\n        fmt.Printf(\"0%d\", me)\n        fmt.Print(\"/\")\n    } else {\n        fmt.Print(me)\n        fmt.Print(\"/\")\n    }\n    if a == 2005 {\n        fmt.Println(\"05\")\n    } else {\n        fmt.Println(\"88\")\n    }\n\n}\n",
+            "lines": "40"
+        }
+    ]
+}

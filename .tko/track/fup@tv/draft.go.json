@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_22-53-22",
+            "content": "@@ -41,11 +41,35 @@\n     \n-var \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_22-55-47",
+            "content": "@@ -45,202 +45,7 @@\n var \n-tv, p float64%0A    fmt.Scan(&tv, &p)%0A    switch p %7B%0A    case 1:%0A        %0A    case 2:%0A%0A    case 3:%0A%0A    case 4:%0A%0A    case 5:%0A%0A    case 6:%0A%0A    case 7:%0A%0A    case 8:%0A%0A    case 9:%0A%0A    case 10:%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_23-14-09",
+            "content": "@@ -41,16 +41,17 @@\n     var \n+t\n v, p flo\n@@ -69,16 +69,17 @@\n t.Scan(&\n+t\n v, &p)%0A \n@@ -116,571 +116,126 @@\n     \n-fmt.Println(v)%0A    case 2:%0A        v += (v/100) * 5%0A        fmt.Println(v)%0A    case 3:%0A        v += (v/100) * 10%0A        fmt.Println(v)%0A    case 4:%0A        v += (v/100) * 15%0A        fmt.Println(v)%0A    case 5:%0A        v += (v/100) * 20%0A        fmt.Println(v)%0A    case 6:%0A        v += (v/100) * 25%0A        fmt.Println(v)%0A    case 7:%0A        v += (v/100) * 30%0A        fmt.Println(v)%0A    case 8:%0A        v += (v/100) * 35%0A        fmt.Println(v)%0A    case 9:%0A        v += (v/100) * 40%0A        fmt.Println(v)%0A    case 10:%0A        v += (v/100) * 45%0A        fmt.Println(v)\n+%0A    case 2:%0A%0A    case 3:%0A%0A    case 4:%0A%0A    case 5:%0A%0A    case 6:%0A%0A    case 7:%0A%0A    case 8:%0A%0A    case 9:%0A%0A    case 10:%0A\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-27_23-17-47",
+            "content": "@@ -175,34 +175,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -236,34 +236,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -297,34 +297,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -358,34 +358,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -419,34 +419,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -480,34 +480,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -541,34 +541,27 @@\n    fmt.Print\n-f(%22%25.2f%22, \n+ln(\n v)%0A    case \n@@ -672,18 +672,11 @@\n rint\n-f(%22%25.2f%22, \n+ln(\n v)%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-27_23-19-02",
+            "content": "@@ -123,48 +123,11 @@\n rint\n-f(%22%25.2f%22, v)%0A        fmt.Printf(%22%25.2f%22, \n+ln(\n v)%0A \n@@ -137,35 +137,35 @@\n case 2:%0A        \n-j :\n+v +\n = (v/100) * 5%0A  \n@@ -166,38 +166,8 @@\n * 5%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -204,35 +204,35 @@\n case 3:%0A        \n-j :\n+v +\n = (v/100) * 10%0A \n@@ -261,49 +261,15 @@\n f%22, \n-j)%0A        fmt.Printf(%22%25.2f%22, v)%0A   \n+v)%0A\n     \n- \n case\n@@ -272,35 +272,35 @@\n case 4:%0A        \n-j :\n+v +\n = (v/100) * 15%0A \n@@ -302,38 +302,8 @@\n  15%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -340,35 +340,35 @@\n case 5:%0A        \n-j :\n+v +\n = (v/100) * 20%0A \n@@ -370,38 +370,8 @@\n  20%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -408,35 +408,35 @@\n case 6:%0A        \n-j :\n+v +\n = (v/100) * 25%0A \n@@ -438,38 +438,8 @@\n  25%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -476,35 +476,35 @@\n case 7:%0A        \n-j :\n+v +\n = (v/100) * 30%0A \n@@ -506,38 +506,8 @@\n  30%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -544,35 +544,35 @@\n case 8:%0A        \n-j :\n+v +\n = (v/100) * 35%0A \n@@ -574,38 +574,8 @@\n  35%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -612,35 +612,35 @@\n case 9:%0A        \n-j :\n+v +\n = (v/100) * 40%0A \n@@ -642,38 +642,8 @@\n  40%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n@@ -686,11 +686,11 @@\n     \n-j :\n+v +\n = (v\n@@ -704,38 +704,8 @@\n  45%0A\n-        fmt.Printf(%22%25.2f%22, j)%0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-27_23-43-51",
+            "content": "@@ -118,34 +118,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A        fm\n@@ -148,34 +148,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 2\n@@ -215,34 +215,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -245,34 +245,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 3\n@@ -313,34 +313,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -343,34 +343,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A        ca\n@@ -415,34 +415,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -445,34 +445,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 5\n@@ -513,34 +513,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -543,34 +543,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 6\n@@ -611,34 +611,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -641,34 +641,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 7\n@@ -709,34 +709,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -739,34 +739,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 8\n@@ -807,34 +807,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -837,34 +837,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, v)%0A    case 9\n@@ -905,34 +905,32 @@\n fmt.Printf(%22%25.2f\n-%5Cn\n %22, j)%0A        fm\n@@ -932,36 +932,27 @@\n    fmt.Print\n-f(%22%25.2f%5Cn%22, \n+ln(\n v)%0A    case \n@@ -1005,18 +1005,16 @@\n tf(%22%25.2f\n-%5Cn\n %22, j)%0A  \n@@ -1039,10 +1039,8 @@\n %25.2f\n-%5Cn\n %22, v\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-27_23-51-32",
+            "content": "@@ -207,39 +207,8 @@\n * 5%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -227,32 +227,32 @@\n tf(%22%25.2f%5Cn%22, j)%0A\n+\n         fmt.Prin\n@@ -309,39 +309,8 @@\n  10%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -361,32 +361,36 @@\n tf(%22%25.2f%5Cn%22, v)%0A\n+    \n     case 4:%0A    \n@@ -385,16 +385,16 @@\n case 4:%0A\n-\n         \n@@ -415,39 +415,8 @@\n  15%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -517,39 +517,8 @@\n  20%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -619,39 +619,8 @@\n  25%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -721,39 +721,8 @@\n  30%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -823,39 +823,8 @@\n  35%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -925,39 +925,8 @@\n  40%0A\n-        v += j%0A        j = v/2%0A\n     \n@@ -998,16 +998,16 @@\n ase 10:%0A\n+\n         \n@@ -1028,39 +1028,8 @@\n  45%0A\n-        v += j%0A        j = v/2%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-28_02-00-06",
+            "content": "@@ -365,17 +365,17 @@\n   j = v/\n-3\n+2\n %0A       \n@@ -498,17 +498,17 @@\n   j = v/\n-4\n+2\n %0A       \n@@ -631,17 +631,17 @@\n   j = v/\n-5\n+2\n %0A       \n@@ -764,17 +764,17 @@\n   j = v/\n-6\n+2\n %0A       \n@@ -897,17 +897,17 @@\n   j = v/\n-7\n+2\n %0A       \n@@ -1030,17 +1030,17 @@\n   j = v/\n-8\n+2\n %0A       \n@@ -1163,17 +1163,17 @@\n   j = v/\n-9\n+2\n %0A       \n@@ -1297,18 +1297,17 @@\n   j = v/\n-10\n+2\n %0A       \n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-28_02-00-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v, p float64\n    fmt.Scan(&v, &p)\n    switch p {\n    case 1:\n        fmt.Printf(\"%.2f\\n\", v)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 2:\n        j := (v/100) * 5\n        v += j\n        j = v/2\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 3:\n        j := (v/100) * 10\n        v += j\n        j = v/3\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 4:\n        j := (v/100) * 15\n        v += j\n        j = v/4\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 5:\n        j := (v/100) * 20\n        v += j\n        j = v/5\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 6:\n        j := (v/100) * 25\n        v += j\n        j = v/6\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 7:\n        j := (v/100) * 30\n        v += j\n        j = v/7\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 8:\n        j := (v/100) * 35\n        v += j\n        j = v/8\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 9:\n        j := (v/100) * 40\n        v += j\n        j = v/9\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    case 10:\n        j := (v/100) * 45\n        v += j\n        j = v/10\n        fmt.Printf(\"%.2f\\n\", j)\n        fmt.Printf(\"%.2f\\n\", v)\n    }\n}\n",
+            "lines": "65"
+        }
+    ]
+}

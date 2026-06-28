@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_03-13-38",
+            "content": "@@ -41,90 +41,35 @@\n     \n-var n1, n2 int%0A    fmt.Scan(&n1, &n2)%0A    fmt.Println(n1/n2)%0A    fmt.Println(n1%25n2\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_03-26-24",
+            "content": "@@ -125,49 +125,6 @@\n n2)%0A\n-    x := float64(n1/n2)%0A    fmt.Println(x)%0A\n %7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-27_03-43-11",
+            "content": "@@ -162,16 +162,11 @@\n rint\n-f(%22%25f.2%22\n+ln(\n x)%0A%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-27_03-43-46",
+            "content": "@@ -166,11 +166,11 @@\n f(%22%25\n+f\n .2\n-f\n %22x)%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-27_03-43-54",
+            "content": "@@ -166,15 +166,13 @@\n f(%22%25.2f%22\n-, \n x)%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-27_03-44-08",
+            "content": "@@ -169,10 +169,8 @@\n %25.2f\n-%5Cn\n %22, x\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-27_03-44-18",
+            "content": "@@ -144,46 +144,11 @@\n 4(n1\n-)%0A    y := float64(n2)%0A    z := (x / y\n+/n2\n )%0A  \n@@ -174,9 +174,9 @@\n n%22, \n-z\n+x\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-27_21-54-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2 int\n    fmt.Scan(&n1, &n2)\n    fmt.Println(n1/n2)\n    fmt.Println(n1%n2)\n    x := float64(n1)\n    y := float64(n2)\n    z := (x / y)\n    fmt.Printf(\"%.2f\\n\", z)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

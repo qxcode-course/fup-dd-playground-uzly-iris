@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_06-35-14",
+            "content": "@@ -41,655 +41,35 @@\n     \n-var nums int%0A    var matriz%5B3%5D%5B3%5Dint%0A%0A    for i := range matriz%7B%0A        for j := range matriz %7B%0A            fmt.Scan(&nums)%0A            matriz%5Bi%5D%5Bj%5D = nums%0A        %7D%0A    %7D%0A%0A    var l%5B3%5Dint%0A    var c%5B3%5Dint%0A    dp := 0%0A    ds := 0%0A%0A    for j := 0 ; j %3C 3 ; j++ %7B%0A        for i := 0 ; i %3C 3 ; i ++ %7B%0A            l%5Bi%5D += matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A%0A    for i := 0 ; i %3C 3 ; i++ %7B%0A        ds += matriz%5Bi%5D%5B3-1-1%5D%0A    %7D%0A%0A    if l%5B0%5D != l%5B1%5D && l%5B1%5D != l%5B2%5D %7B%0A        fmt.Println(%22n%C3%A3o%22)%0A    %7D else if c%5B0%5D != c%5B1%5D && c%5B1%5D != c%5B2%5D %7B%0A        fmt.Println(%22%22)%0A    %7D else if dp != ds %7B%0A        fmt.Println(%22n%C3%A3o%22)%0A    %7D else %7B%0A        fmt.Println(%22sim%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_06-35-42",
+            "content": "@@ -506,33 +506,33 @@\n   fmt.Println(%22n\n-a\n+%C3%A3\n o%22)%0A    %7D else i\n@@ -577,35 +577,32 @@\n    fmt.Println(%22\n-nao\n %22)%0A    %7D else if\n@@ -635,17 +635,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A    \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-28_06-35-58",
+            "content": "@@ -272,33 +272,33 @@\n  0%0A%0A    for \n-i\n+j\n  := 0 ; \n i %3C 3 ; i++ \n@@ -281,33 +281,33 @@\n or j := 0 ; \n-i\n+j\n  %3C 3 ; \n-i\n+j\n ++ %7B%0A       \n@@ -307,33 +307,33 @@\n         for \n-j\n+i\n  := 0 ; \n j %3C 3 ; j ++\n@@ -320,25 +320,25 @@\n  := 0 ; \n-j\n+i\n  %3C 3 ; \n-j\n+i\n  ++ %7B%0A  \n@@ -349,17 +349,17 @@\n       l%5B\n-j\n+i\n %5D += mat\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-28_06-37-25",
+            "content": "@@ -272,124 +272,8 @@\n  0%0A%0A\n-    for j := 0 ; j %3C 3 ; j++ %7B%0A        for i := 0 ; i %3C 3 ; i++ %7B%0A            l%5Bj%5D += matriz%5Bi%5D%5Bj%5D%0A        %7D%0A    %7D%0A%0A\n     \n@@ -329,16 +329,17 @@\n  %3C 3 ; j\n+ \n ++ %7B%0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-28_06-42-42",
+            "content": "@@ -504,164 +504,8 @@\n  %7D%0A%0A\n-    for i := 0 ; i %3C 0 ; i++ %7B%0A        for j := 0 ; j %3C 3 ; j++ %7B%0A            if i == j %7B%0A                dp += matriz%5Bi%5D%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-28_06-45-33",
+            "content": "@@ -272,33 +272,33 @@\n  0%0A%0A    for \n-i\n+j\n  := 0 ; \n i %3C 3 ; i++ \n@@ -281,33 +281,33 @@\n or j := 0 ; \n-i\n+j\n  %3C 3 ; \n-i\n+j\n ++ %7B%0A       \n@@ -307,33 +307,33 @@\n         for \n-j\n+i\n  := 0 ; \n j %3C 3 ; j++ \n@@ -316,33 +316,33 @@\n or i := 0 ; \n-j\n+i\n  %3C 3 ; \n-j\n+i\n ++ %7B%0A       \n@@ -346,17 +346,17 @@\n         \n-c\n+l\n %5Bj%5D += m\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_06-48-25",
+            "content": "@@ -464,17 +464,17 @@\n       l%5B\n-i\n+j\n %5D += mat\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_06-48-56",
+            "content": "@@ -388,33 +388,33 @@\n  %7D%0A%0A    for \n-j\n+i\n  := 0 ; \n j %3C 3 ; j++ \n@@ -397,33 +397,33 @@\n or i := 0 ; \n-j\n+i\n  %3C 3 ; \n-j\n+i\n ++ %7B%0A       \n@@ -423,33 +423,33 @@\n         for \n-i\n+j\n  := 0 ; \n i %3C 3 ; i++ \n@@ -432,33 +432,33 @@\n or j := 0 ; \n-i\n+j\n  %3C 3 ; \n-i\n+j\n ++ %7B%0A       \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_06-50-44",
+            "content": "@@ -211,20 +211,16 @@\n %0A    %7D%0A%0A\n-    \n     var \n@@ -223,28 +223,24 @@\n var l%5B3%5Dint%0A\n-    \n     var c%5B3%5D\n@@ -243,20 +243,16 @@\n c%5B3%5Dint%0A\n-    \n     dp :\n@@ -255,20 +255,16 @@\n dp := 0%0A\n-    \n     ds :\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_06-56-13",
+            "content": "@@ -84,18 +84,20 @@\n    for i\n+ \n :=\n+ \n range ma\n@@ -115,16 +115,17 @@\n    for j\n+ \n := range\n@@ -123,32 +123,33 @@\n  := range matriz\n+ \n %7B%0A            fm\n@@ -186,17 +186,19 @@\n iz%5Bi%5D%5Bj%5D\n-=\n+ = \n nums%0A   \n@@ -206,24 +206,25 @@\n     %7D%0A    %7D%0A\n+%0A\n         var \n@@ -261,18 +261,20 @@\n       dp\n+ \n :=\n+ \n 0%0A      \n@@ -277,18 +277,20 @@\n       ds\n+ \n :=\n+ \n 0%0A%0A    f\n@@ -289,39 +289,45 @@\n 0%0A%0A    for i\n+ \n :=\n-0; i%3C3\n+ 0 ; i %3C 3 \n ; i++\n-%7B\n  \n+%7B\n %0A        for\n@@ -324,37 +324,44 @@\n        for j\n+ \n :=\n-0; j%3C3\n+ 0 ; j %3C 3 \n ; j++\n+ \n %7B%0A          \n@@ -366,18 +366,20 @@\n     c%5Bj%5D\n+ \n +=\n+ \n matriz%5Bi\n@@ -391,32 +391,33 @@\n         %7D%0A    %7D%0A\n+%0A\n     for j:=0; j%3C\n@@ -413,23 +413,29 @@\n or j\n+ \n :=\n-0; j%3C3\n+ 0 ; j %3C 3 \n ; j++\n-%7B\n  \n+%7B\n %0A   \n@@ -440,37 +440,44 @@\n        for i\n+ \n :=\n-0; i%3C3\n+ 0 ; i %3C 3 \n ; i++\n+ \n %7B%0A          \n@@ -482,18 +482,20 @@\n     l%5Bi%5D\n+ \n +=\n+ \n matriz%5Bi\n@@ -507,32 +507,33 @@\n         %7D%0A    %7D%0A\n+%0A\n     for i:=0; i%3C\n@@ -529,23 +529,29 @@\n or i\n+ \n :=\n-0; i%3C3\n+ 0 ; i %3C 0 \n ; i++\n-%7B\n  \n+%7B\n %0A   \n@@ -564,21 +564,28 @@\n or j\n+ \n :=\n-0; j%3C3\n+ 0 ; j %3C 3 \n ; j++\n+ \n %7B%0A  \n@@ -602,11 +602,14 @@\n if i\n+ \n ==\n-j\n+ j \n %7B%0A  \n@@ -624,18 +624,20 @@\n       dp\n+ \n +=\n+ \n matriz%5Bi\n@@ -667,24 +667,25 @@\n     %7D%0A    %7D%0A\n+%0A\n     for i:=0\n@@ -685,21 +685,28 @@\n or i\n+ \n :=\n-0; i%3C3\n+ 0 ; i %3C 3 \n ; i++\n+ \n %7B%0A  \n@@ -713,18 +713,20 @@\n       ds\n+ \n +=\n+ \n matriz%5Bi\n@@ -735,17 +735,17 @@\n 3-1-\n-i\n+1\n %5D%0A    %7D%0A\n     \n@@ -740,20 +740,16 @@\n %5D%0A    %7D%0A\n-    \n %0A    if \n@@ -979,16 +979,7 @@\n    %7D\n-   %0A    %0A\n %0A%7D%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-28_07-03-59",
+            "content": "@@ -84,20 +84,18 @@\n    for i\n- \n :=\n- \n range ma\n@@ -113,17 +113,16 @@\n    for j\n- \n := range\n@@ -128,17 +128,16 @@\n e matriz\n- \n %7B%0A      \n@@ -186,11 +186,9 @@\n %5D%5Bj%5D\n- = \n+=\n nums\n@@ -200,25 +200,28 @@\n     %7D%0A    %7D%0A\n-%0A\n+    \n     var l%5B3%5D\n@@ -224,24 +224,28 @@\n l%5B3%5Dint%0A    \n+ \n+   \n var c%5B3%5Dint%0A\n@@ -248,30 +248,34 @@\n int%0A\n+    \n     dp\n- \n :=\n- \n 0%0A    \n+   \n+ \n ds\n- \n :=\n- \n 0%0A%0A \n@@ -282,37 +282,31 @@\n    for i\n- \n :=\n- 0 ; i %3C 3 \n+0; i%3C3\n ; i++\n- \n %7B\n+ \n %0A       \n@@ -311,36 +311,29 @@\n    for j\n- \n :=\n- 0 ; j %3C 3 \n+0; j%3C3\n ; j++\n- \n %7B%0A      \n@@ -342,20 +342,18 @@\n     c%5Bj%5D\n- \n +=\n- \n matriz%5Bi\n@@ -365,33 +365,32 @@\n         %7D%0A    %7D%0A\n-%0A\n     for j := 0 ;\n@@ -382,37 +382,31 @@\n    for j\n- \n :=\n- 0 ; j %3C 3 \n+0; j%3C3\n ; j++\n- \n %7B\n+ \n %0A       \n@@ -411,36 +411,29 @@\n    for i\n- \n :=\n- 0 ; i %3C 3 \n+0; i%3C3\n ; i++\n- \n %7B%0A      \n@@ -442,20 +442,18 @@\n     l%5Bi%5D\n- \n +=\n- \n matriz%5Bi\n@@ -465,33 +465,32 @@\n         %7D%0A    %7D%0A\n-%0A\n     for i := 0 ;\n@@ -482,37 +482,31 @@\n    for i\n- \n :=\n- 0 ; i %3C 3 \n+0; i%3C3\n ; i++\n- \n %7B\n+ \n %0A       \n@@ -515,28 +515,21 @@\n or j\n- \n :=\n- 0 ; j %3C 3 \n+0; j%3C3\n ; j++\n- \n %7B%0A  \n@@ -546,14 +546,11 @@\n if i\n- \n ==\n- j \n+j\n %7B%0A  \n@@ -565,20 +565,18 @@\n       dp\n- \n +=\n- \n matriz%5Bi\n@@ -606,25 +606,24 @@\n     %7D%0A    %7D%0A\n-%0A\n     for i :=\n@@ -623,28 +623,21 @@\n or i\n- \n :=\n- 0 ; i %3C 3 \n+0; i%3C3\n ; i++\n- \n %7B%0A  \n@@ -648,12 +648,10 @@\n   ds\n- \n +=\n- \n matr\n@@ -664,17 +664,17 @@\n 3-1-\n-1\n+i\n %5D%0A    %7D%0A\n %0A   \n@@ -669,16 +669,20 @@\n %5D%0A    %7D%0A\n+    \n %0A    if \n@@ -908,11 +908,20 @@\n %22)%0A    %7D\n+   %0A    %0A\n %0A%7D%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-28_07-07-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nums int\n    var matriz[3][3]int\n\n    for i := range matriz{\n        for j := range matriz {\n            fmt.Scan(&nums)\n            matriz[i][j] = nums\n        }\n    }\n\n    var l[3]int\n    var c[3]int\n    dp := 0\n    ds := 0\n\n    for i := 0 ; i < 3 ; i++ {\n        for j := 0 ; j < 3 ; j++ {\n            c[j] += matriz[i][j]\n        }\n    }\n\n    for j := 0 ; j < 3 ; j++ {\n        for i := 0 ; i < 3 ; i++ {\n            l[i] += matriz[i][j]\n        }\n    }\n\n    for i := 0 ; i < 3 ; i++ {\n        for j := 0 ; j < 3 ; j++ {\n            if i == j {\n                dp += matriz[i][j]\n            }\n        }\n    }\n\n    for i := 0 ; i < 3 ; i++ {\n        ds += matriz[i][3-1-1]\n    }\n\n    if l[0] != l[1] && l[1] != l[2] {\n        fmt.Println(\"nao\")\n    } else if c[0] != c[1] && c[1] != c[2] {\n        fmt.Println(\"nao\")\n    } else if dp != ds {\n        fmt.Println(\"nao\")\n    } else {\n        fmt.Println(\"sim\")\n    }\n}\n",
+            "lines": "52"
+        }
+    ]
+}

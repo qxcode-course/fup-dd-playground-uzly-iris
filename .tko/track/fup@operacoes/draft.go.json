@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-27_21-55-18",
+            "content": "@@ -41,156 +41,35 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A%0A    fmt.Println(a + b)%0A    fmt.Println(a - b)%0A    fmt.Println(a * b)%0A    fmt.Println(a / b)%0A    fmt.Println(a %25 b\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-27_22-02-53",
+            "content": "@@ -161,16 +161,8 @@\n tln(\n-%22%25.2f%22, \n a / \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-27_22-03-30",
+            "content": "@@ -158,17 +158,16 @@\n rint\n-f\n+ln\n (%22%25.2f\n-%5Cn\n %22, a\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-27_22-03-42",
+            "content": "@@ -74,63 +74,8 @@\n  &b)\n-%0A    x := float64(a)%0A    y := float64(b)%0A    z := x / y\n %0A%0A  \n@@ -170,9 +170,13 @@\n n%22, \n-z\n+a / b\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-27_22-04-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    x := float64(a)\n    y := float64(b)\n    z := x / y\n\n    fmt.Println(a + b)\n    fmt.Println(a - b)\n    fmt.Println(a * b)\n    fmt.Printf(\"%.2f\\n\", z)\n    fmt.Println(a % b)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

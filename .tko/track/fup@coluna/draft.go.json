@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_09-42-24",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-import %22math%22%0A\n func\n@@ -41,466 +41,35 @@\n     \n-var n, mc int%0A    s := -1%0A%0A    fmt.Scan(&n)%0A    matriz := make(%5B%5D%5B%5Dint, n)%0A%0A    for i := range matriz %7B%0A        matriz%5Bi%5D = make(%5B%5Dint, n)%0A        for j := 0 ; j %3C n ; j++ %7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A    for j := 0 ; j %3C n ; j++ %7B%0A        sc := 0%0A        for i := 0 ; i %3C n ; i++ %7B%0A            e := matriz%5Bi%5D%5Bj%5D%0A            sc += e * e%0A        %7D%0A%0A        if j == 0 %7C%7C sc %3E s %7B%0A            mc = j%0A        %7D%0A    %7D%0A%0A    fmt.Println(mc\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_09-52-39",
+            "content": "@@ -19,16 +19,30 @@\n t %22fmt%22%0A\n+import %22math%22%0A\n func mai\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-28_09-52-49",
+            "content": "@@ -71,18 +71,8 @@\n %0A   \n- _, err :=\n  fmt\n@@ -85,45 +85,8 @@\n &n)%0A\n-    if err != nil %7C%7C n %3C= 0 %7B%0A%0A    %7D%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_09-54-16",
+            "content": "@@ -63,24 +63,34 @@\n s := -1%0A%0A   \n+ _, err :=\n  fmt.Scan(&n\n@@ -91,16 +91,53 @@\n can(&n)%0A\n+    if err != nil %7C%7C n %3C= 0 %7B%0A%0A    %7D%0A\n     matr\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_09-54-30",
+            "content": "@@ -456,17 +456,16 @@\n      mc \n-+\n = j%0A    \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_09-58-48",
+            "content": "@@ -456,16 +456,17 @@\n      mc \n++\n = j%0A    \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_09-58-54",
+            "content": "@@ -428,9 +428,9 @@\n f j \n-!\n+=\n = 0 \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_09-59-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, mc int\n    s := -1\n\n    fmt.Scan(&n)\n    matriz := make([][]int, n)\n\n    for i := range matriz {\n        matriz[i] = make([]int, n)\n        for j := 0 ; j < n ; j++ {\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n    for j := 0 ; j < n ; j++ {\n        sc := 0\n        for i := 0 ; i < n ; i++ {\n            e := matriz[i][j]\n            sc += e * e\n        }\n\n        if j != 0 || sc > s {\n            mc = j\n        }\n    }\n\n    fmt.Println(mc)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

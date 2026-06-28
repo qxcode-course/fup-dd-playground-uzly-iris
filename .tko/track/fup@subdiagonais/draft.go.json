@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_09-23-20",
+            "content": "@@ -41,436 +41,35 @@\n     \n-var matriz%5B5%5D%5B5%5D int%0A    dp := 0%0A    ds := 0%0A%0A    for i := 0 ; i %3C 5 ; i++ %7B%0A        for j := 0 ; j %3C 5 ; j++ %7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A    for i := 0 ; i %3C 5 ; i++ %7B%0A        for j := 0 ; i %3C 5 ; i++ %7B%0A            if i == j %7B%0A                dp += matriz%5Bi%5D%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A%0A    for i := 0 ; i %3C 5 ; i++ %7B%0A        ds += matriz%5Bi%5D%5B5 - 1 - i%5D%0A    %7D%0A%0A    r := dp - ds%0A    fmt.Println(r\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_09-28-06",
+            "content": "@@ -53,19 +53,44 @@\n iz%5B5%5D%5B5%5D\n+ \n int\n+%0A    dp := 0%0A    ds := 0\n %0A%0A    fo\n@@ -88,37 +88,44 @@\n 0%0A%0A    for i\n+ \n :=\n-0; i%3C5\n+ 0 ; i %3C 5 \n ; i++\n+ \n %7B%0A        fo\n@@ -123,37 +123,44 @@\n        for j\n+ \n :=\n-0; j%3C5\n+ 0 ; j %3C 5 \n ; j++\n+ \n %7B%0A          \n@@ -205,21 +205,8 @@\n   %7D%0A\n-        dp:=0\n %0A   \n@@ -207,37 +207,44 @@\n %7D%0A%0A    for i\n+ \n :=\n-0; i%3C5\n+ 0 ; i %3C 5 \n ; i++\n+ \n %7B%0A        fo\n@@ -250,21 +250,28 @@\n or j\n+ \n :=\n-0; j%3C5; j\n+ 0 ; i %3C 5 ; i\n ++\n+ \n %7B%0A  \n@@ -288,11 +288,14 @@\n if i\n+ \n ==\n-j\n+ j \n %7B%0A  \n@@ -310,18 +310,20 @@\n       dp\n+ \n +=\n+ \n matriz%5Bi\n@@ -361,21 +361,8 @@\n   %7D%0A\n-        ds:=0\n %0A   \n@@ -371,21 +371,28 @@\n or i\n+ \n :=\n-0; i%3C5\n+ 0 ; i %3C 5 \n ; i++\n+ \n %7B%0A  \n@@ -399,18 +399,20 @@\n       ds\n+ \n +=\n+ \n matriz%5Bi\n@@ -418,11 +418,15 @@\n i%5D%5B5\n--1-\n+ - 1 - \n i%5D%0A \n@@ -434,38 +434,30 @@\n   %7D%0A\n-    \n+%0A\n     r\n-esult\n+ \n :=\n+ \n dp\n--ds%0A   \n+ - ds%0A\n     \n- \n fmt.\n@@ -469,14 +469,8 @@\n ln(r\n-esult)%0A\n+)\n %0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-28_09-33-06",
+            "content": "@@ -57,36 +57,11 @@\n %5D%5B5%5D\n- \n int\n-%0A    dp := 0%0A    ds := 0\n %0A%0A  \n@@ -67,36 +67,29 @@\n    for i\n- \n :=\n- 0 ; i %3C 5 \n+0; i%3C5\n ; i++\n- \n %7B%0A      \n@@ -99,28 +99,21 @@\n or j\n- \n :=\n- 0 ; j %3C 5 \n+0; j%3C5\n ; j++\n- \n %7B%0A  \n@@ -154,32 +154,45 @@\n         %7D%0A    %7D%0A\n+        dp:=0\n %0A    for i := 0 \n@@ -185,36 +185,29 @@\n    for i\n- \n :=\n- 0 ; i %3C 5 \n+0; i%3C5\n ; i++\n- \n %7B%0A      \n@@ -217,28 +217,21 @@\n or j\n- \n :=\n- 0 ; i %3C 5 \n+0; j%3C5\n ; j++\n- \n %7B%0A  \n@@ -248,14 +248,11 @@\n if i\n- \n ==\n- j \n+j\n %7B%0A  \n@@ -267,20 +267,18 @@\n       dp\n- \n +=\n- \n matriz%5Bi\n@@ -308,24 +308,37 @@\n     %7D%0A    %7D%0A\n+        ds:=0\n %0A    for i :\n@@ -339,28 +339,21 @@\n or i\n- \n :=\n- 0 ; i %3C 5 \n+0; i%3C5\n ; i++\n- \n %7B%0A  \n@@ -364,12 +364,10 @@\n   ds\n- \n +=\n- \n matr\n@@ -377,15 +377,11 @@\n i%5D%5B5\n- - 1 - \n+-1-\n i%5D%0A \n@@ -389,30 +389,38 @@\n   %7D%0A\n-%0A\n+    \n     r\n- \n+esult\n :=\n- \n dp\n- - ds%0A\n+-ds%0A   \n     \n+ \n fmt.\n@@ -428,12 +428,18 @@\n rintln(r\n-)\n+esult)%0A\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-28_09-34-25",
+            "content": "@@ -246,33 +246,33 @@\n    for j := 0 ; \n-j\n+i\n  %3C 5 ; j++ %7B%0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-28_09-34-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var matriz[5][5] int\n    dp := 0\n    ds := 0\n\n    for i := 0 ; i < 5 ; i++ {\n        for j := 0 ; j < 5 ; j++ {\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n    for i := 0 ; i < 5 ; i++ {\n        for j := 0 ; j < 5 ; j++ {\n            if i == j {\n                dp += matriz[i][j]\n            }\n        }\n    }\n\n    for i := 0 ; i < 5 ; i++ {\n        ds += matriz[i][5 - 1 - i]\n    }\n\n    r := dp - ds\n    fmt.Println(r)\n}\n",
+            "lines": "28"
+        }
+    ]
+}

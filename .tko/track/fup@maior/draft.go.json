@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_02-02-37",
+            "content": "@@ -41,205 +41,35 @@\n     \n-var c1, m, c2 float64%0A    fmt.Scan(&c1, &m, &c2)%0A    %0A    if c1 == m %7C%7C m == 'm' && c2 %3E c1 %7C%7C m == 'M' && c2 %3C c1 %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else %7B%0A        fmt.Println(%22segundo%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_02-50-41",
+            "content": "@@ -110,123 +110,33 @@\n = m \n-%7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if m == 'm' && c2 %3E c1 %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if\n+%7C%7C m == 'm' && c2 %3E c1 %7C%7C\n  m =\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-28_03-15-58",
+            "content": "@@ -44,16 +44,19 @@\n  var c1,\n+ m,\n  c2 floa\n@@ -63,25 +63,8 @@\n t64%0A\n-    var m string%0A\n     \n@@ -163,11 +163,11 @@\n  == \n-%22m%22\n+'m'\n  && \n@@ -231,11 +231,11 @@\n  == \n-%22M%22\n+'M'\n  && \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-28_03-18-16",
+            "content": "@@ -118,18 +118,17 @@\n f c1 == \n-c2\n+m\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-28_03-18-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c1, c2 float64\n    var m string\n    fmt.Scan(&c1, &m, &c2)\n    \n    if c1 == c2 {\n        fmt.Println(\"primeiro\")\n    } else if m == \"m\" && c2 > c1 {\n        fmt.Println(\"primeiro\")\n    } else if m == \"M\" && c2 < c1 {\n        fmt.Println(\"primeiro\")\n    } else {\n        fmt.Println(\"segundo\")\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

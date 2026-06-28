@@ -25,14 +25,16 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
-- fup@string
+- fup@if2
+- fup@mat
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: true
+  interval_seconds: null
 lang: go
-selected: fup@xuxa
-selected_index: 62
+selected: fup@coluna
+selected_index: 46
